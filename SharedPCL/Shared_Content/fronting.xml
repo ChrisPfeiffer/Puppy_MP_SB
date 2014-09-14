@@ -1,0 +1,207 @@
+<Pairs>
+	<!---Beginning of content is below this line-------->
+	<Pair>
+		<Name>dumb gum</Name>
+		<LeftImage>dumb</LeftImage>
+		<RightImage>gum</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Name>bud bug</Name>
+		<LeftImage>bud</LeftImage>
+		<RightImage>bug</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+ <Pair>
+		<Name>Tea Key</Name>
+		<LeftImage>tea</LeftImage>
+		<RightImage>key</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Tick Kick</Name>
+		<LeftImage>tick</LeftImage>
+		<RightImage>kick</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Tap Cap</Name>
+		<LeftImage>tap</LeftImage>
+		<RightImage>cap</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Tan Can</Name>
+		<LeftImage>tan</LeftImage>
+		<RightImage>can</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Tub Cub</Name>
+		<LeftImage>tub</LeftImage>
+		<RightImage>cub</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Top Cop</Name>
+		<LeftImage>top</LeftImage>
+		<RightImage>cop</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Kit Kick</Name>
+		<LeftImage>kit</LeftImage>
+		<RightImage>kick</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+ <Pair>
+		<Name>Sit Sick</Name>
+		<LeftImage>sit</LeftImage>
+		<RightImage>sick</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+ <Pair>
+		<Name>Pet Peck</Name>
+		<LeftImage>pet</LeftImage>
+		<RightImage>peck</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+ <Pair>
+		<Name>Net Neck</Name>
+		<LeftImage>net</LeftImage>
+		<RightImage>neck</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+ <Pair>
+		<Name>Tall Call</Name>
+		<LeftImage>tall</LeftImage>
+		<RightImage>call</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+ <Pair>
+		<Name>Tool Cool</Name>
+		<LeftImage>tool</LeftImage>
+		<RightImage>cool</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tape Cape</Name>
+		<LeftImage>tape</LeftImage>
+		<RightImage>cape</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tight Kite</Name>
+		<LeftImage>tight</LeftImage>
+		<RightImage>kite</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tote Coat</Name>
+		<LeftImage>tote</LeftImage>
+		<RightImage>coat</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Toffee Coffee</Name>
+		<LeftImage>toffee</LeftImage>
+		<RightImage>coffee</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Dough Go</Name>
+		<LeftImage>dough</LeftImage>
+		<RightImage>go</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Down Gown</Name>
+		<LeftImage>down</LeftImage>
+		<RightImage>gown</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Date Gate</Name>
+		<LeftImage>date</LeftImage>
+		<RightImage>gate</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Dust Gust</Name>
+		<LeftImage>dust</LeftImage>
+		<RightImage>gust</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Dig Gig</Name>
+		<LeftImage>dig</LeftImage>
+		<RightImage>gig</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tar Car</Name>
+		<LeftImage>tar</LeftImage>
+		<RightImage>car</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Take Cake</Name>
+		<LeftImage>take</LeftImage>
+		<RightImage>cake</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Bat Back</Name>
+		<LeftImage>bat</LeftImage>
+		<RightImage>back</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+	<Pair>
+		<Name>Bed Beg</Name>
+		<LeftImage>bed</LeftImage>
+		<RightImage>beg</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+	<Pair>
+		<Name>Die Guy</Name>
+		<LeftImage>die</LeftImage>
+		<RightImage>guy</RightImage>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Mud Mug</Name>
+		<LeftImage>mud</LeftImage>
+		<RightImage>mug</RightImage>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+    </Pair>
+<!---Do not copy or paste below this line----------------->
+</Pairs>

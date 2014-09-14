@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733.0"/>
+    </dependencies>
+    <scenes>
+        <!--class Prefix:identifier View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="imagePgViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="25" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="64" width="382" height="573"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstItem="25" firstAttribute="height" constant="573" id="29"/>
+                                    <constraint firstItem="25" firstAttribute="width" constant="382" id="30"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="26" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="386" y="64" width="382" height="573"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="237" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="384" y="912" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Audio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="244" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="159" y="700" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="255" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="632" y="704" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="262" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="384" y="968" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <constraints>
+                                    <constraint firstItem="262" firstAttribute="height" constant="56" id="308"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="301" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="968" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="314" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="912" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Audio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="320" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="384" y="856" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="341" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="856" width="384" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="25" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="27"/>
+                            <constraint firstItem="25" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="0.0" id="28"/>
+                            <constraint firstItem="26" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="0.0" id="31"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="26" secondAttribute="trailing" constant="0.0" id="32"/>
+                            <constraint firstItem="26" firstAttribute="height" secondItem="25" secondAttribute="height" id="33"/>
+                            <constraint firstItem="26" firstAttribute="width" secondItem="25" secondAttribute="width" id="34"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="237" secondAttribute="trailing" constant="0.0" id="266"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="262" secondAttribute="trailing" constant="0.0" id="269"/>
+                            <constraint id="270" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="262" secondAttribute="bottom" constant="0.0"/>
+                            <constraint firstItem="301" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="302"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="301" secondAttribute="bottom" constant="0.0" id="303"/>
+                            <constraint firstItem="301" firstAttribute="width" secondItem="262" secondAttribute="width" id="305"/>
+                            <constraint firstItem="262" firstAttribute="leading" secondItem="301" secondAttribute="trailing" constant="0.0" id="306"/>
+                            <constraint firstItem="301" firstAttribute="height" secondItem="262" secondAttribute="height" id="309"/>
+                            <constraint firstItem="237" firstAttribute="height" secondItem="262" secondAttribute="height" id="311"/>
+                            <constraint firstItem="237" firstAttribute="width" secondItem="262" secondAttribute="width" id="312"/>
+                            <constraint firstItem="262" firstAttribute="top" secondItem="237" secondAttribute="bottom" constant="0.0" id="313"/>
+                            <constraint firstItem="301" firstAttribute="top" secondItem="314" secondAttribute="bottom" constant="0.0" id="348"/>
+                            <constraint firstItem="314" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="349"/>
+                            <constraint firstItem="314" firstAttribute="width" secondItem="301" secondAttribute="width" id="350"/>
+                            <constraint firstItem="314" firstAttribute="height" secondItem="301" secondAttribute="height" id="351"/>
+                            <constraint firstItem="314" firstAttribute="top" secondItem="341" secondAttribute="bottom" constant="0.0" id="352"/>
+                            <constraint firstItem="341" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="0.0" id="353"/>
+                            <constraint firstItem="341" firstAttribute="width" secondItem="314" secondAttribute="width" id="354"/>
+                            <constraint firstItem="341" firstAttribute="height" secondItem="314" secondAttribute="height" id="355"/>
+                            <constraint firstItem="237" firstAttribute="top" secondItem="320" secondAttribute="bottom" constant="0.0" id="356"/>
+                            <constraint firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="320" secondAttribute="trailing" constant="0.0" id="357"/>
+                            <constraint firstItem="320" firstAttribute="width" secondItem="237" secondAttribute="width" id="358"/>
+                            <constraint firstItem="320" firstAttribute="height" secondItem="237" secondAttribute="height" id="359"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Title" id="19" key="navigationItem"/>
+                    <connections>
+                        <outlet property="leftImageOutlet" destination="25" id="name-outlet-25"/>
+                        <outlet property="rightImageOutlet" destination="26" id="name-outlet-26"/>
+                        <outlet property="btnPlayAudio" destination="237" id="name-outlet-237"/>
+                        <outlet property="leftLabel" destination="244" id="name-outlet-244"/>
+                        <outlet property="rightLabel" destination="255" id="name-outlet-255"/>
+                        <outlet property="btnNext" destination="262" id="name-outlet-262"/>
+                        <outlet property="btnRecordAudio" destination="314" id="name-outlet-314"/>
+                        <outlet property="btnPlayVideo" destination="320" id="name-outlet-320"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="801"/>
+        </scene>
+        <scene sceneID="7">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="11">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="42" kind="relationship" relationship="rootViewController" id="54"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1003" y="11"/>
+        </scene>
+        <scene sceneID="41">
+            <objects>
+                <viewController id="42" sceneMemberID="viewController" customClass="speechTherapyViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39"/>
+                        <viewControllerLayoutGuide type="bottom" id="40"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Puppy Minimal Pairs" lineBreakMode="tailTruncation" minimumFontSize="10" id="56" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center" numberOfLines="4">
+                                <rect key="frame" x="0.0" y="64" width="768" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="60" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="0.0" y="492" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Initial Consonant Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="137" identifier="initial_consonant"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="61" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="384" y="596" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Stopping">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" id="143" identifier="stopping"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="62" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="810" width="384" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Deaffrication">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" id="135" identifier="deaffrication"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="63" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="384" y="810" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Vocalization">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" id="133" identifier="vocalization"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="64" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="916" width="384" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Pre-Vocalic Voicing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="129" identifier="pre_voicing"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="65" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="384" y="917" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Post-Vocalic Voicing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="127" identifier="post_voicing"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="66" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="343" y="1200" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="67" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="0.0" y="704" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Gliding">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="68" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="384" y="702" width="384" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Cluster Reduction">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" id="147" identifier="cluster_reduction"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="69" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="0.0" y="598" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Fronting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" id="145" identifier="fronting"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="98" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="384" y="489" width="384" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Final Consonant Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="139" identifier="final_consonant"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="100" translatesAutoresizingMaskIntoConstraints="NO" customClass="btnSyllableDeletion">
+                                <rect key="frame" x="0.0" y="382" width="768" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Syllable Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="141" identifier="syllable_deletion"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="56" secondAttribute="trailing" constant="0.0" id="57"/>
+                            <constraint firstItem="56" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="58"/>
+                            <constraint firstItem="56" firstAttribute="top" secondItem="39" secondAttribute="bottom" constant="0.0" id="59"/>
+                            <constraint firstItem="40" firstAttribute="top" secondItem="65" secondAttribute="bottom" constant="0.0" id="72"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="65" secondAttribute="trailing" constant="0.0" id="73"/>
+                            <constraint firstItem="64" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="74"/>
+                            <constraint firstItem="40" firstAttribute="top" secondItem="64" secondAttribute="bottom" constant="0.0" id="75"/>
+                            <constraint firstItem="65" firstAttribute="leading" secondItem="64" secondAttribute="trailing" constant="0.0" id="76"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="65" secondAttribute="width" id="77"/>
+                            <constraint firstItem="62" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="79"/>
+                            <constraint firstItem="64" firstAttribute="top" secondItem="62" secondAttribute="bottom" constant="0.0" id="80"/>
+                            <constraint firstItem="63" firstAttribute="leading" secondItem="62" secondAttribute="trailing" constant="0.0" id="81"/>
+                            <constraint firstItem="65" firstAttribute="top" secondItem="63" secondAttribute="bottom" constant="0.0" id="82"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="63" secondAttribute="trailing" constant="0.0" id="83"/>
+                            <constraint firstItem="62" firstAttribute="width" secondItem="63" secondAttribute="width" id="84"/>
+                            <constraint firstItem="63" firstAttribute="top" secondItem="68" secondAttribute="bottom" constant="0.0" id="85"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="68" secondAttribute="trailing" constant="0.0" id="86"/>
+                            <constraint firstItem="67" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="87"/>
+                            <constraint firstItem="62" firstAttribute="top" secondItem="67" secondAttribute="bottom" constant="0.0" id="88"/>
+                            <constraint firstItem="68" firstAttribute="leading" secondItem="67" secondAttribute="trailing" constant="0.0" id="89"/>
+                            <constraint firstItem="68" firstAttribute="width" secondItem="67" secondAttribute="width" id="91"/>
+                            <constraint firstItem="68" firstAttribute="top" secondItem="61" secondAttribute="bottom" constant="0.0" id="92"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="61" secondAttribute="trailing" constant="0.0" id="93"/>
+                            <constraint firstItem="61" firstAttribute="leading" secondItem="69" secondAttribute="trailing" constant="0.0" id="94"/>
+                            <constraint firstItem="69" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="95"/>
+                            <constraint firstItem="67" firstAttribute="top" secondItem="69" secondAttribute="bottom" constant="0.0" id="96"/>
+                            <constraint firstItem="61" firstAttribute="width" secondItem="69" secondAttribute="width" id="97"/>
+                            <constraint firstItem="61" firstAttribute="top" secondItem="98" secondAttribute="bottom" constant="0.0" id="101"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="98" secondAttribute="trailing" constant="0.0" id="102"/>
+                            <constraint firstItem="98" firstAttribute="leading" secondItem="60" secondAttribute="trailing" constant="0.0" id="103"/>
+                            <constraint firstItem="60" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="104"/>
+                            <constraint firstItem="60" firstAttribute="width" secondItem="98" secondAttribute="width" id="105"/>
+                            <constraint firstItem="69" firstAttribute="top" secondItem="60" secondAttribute="bottom" constant="0.0" id="106"/>
+                            <constraint firstItem="98" firstAttribute="top" secondItem="100" secondAttribute="bottom" constant="0.0" id="107"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="100" secondAttribute="trailing" constant="0.0" id="108"/>
+                            <constraint firstItem="100" firstAttribute="leading" secondItem="43" secondAttribute="leading" constant="0.0" id="113"/>
+                            <constraint firstItem="56" firstAttribute="height" secondItem="100" secondAttribute="height" id="115" multiplier="3"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="100" secondAttribute="height" id="116"/>
+                            <constraint firstItem="60" firstAttribute="height" secondItem="100" secondAttribute="height" id="117"/>
+                            <constraint firstItem="69" firstAttribute="height" secondItem="100" secondAttribute="height" id="118"/>
+                            <constraint firstItem="61" firstAttribute="height" secondItem="100" secondAttribute="height" id="119"/>
+                            <constraint firstItem="68" firstAttribute="height" secondItem="100" secondAttribute="height" id="120"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="100" secondAttribute="height" id="121"/>
+                            <constraint firstItem="63" firstAttribute="height" secondItem="100" secondAttribute="height" id="122"/>
+                            <constraint firstItem="65" firstAttribute="height" secondItem="100" secondAttribute="height" id="123"/>
+                            <constraint firstItem="62" firstAttribute="height" secondItem="100" secondAttribute="height" id="124"/>
+                            <constraint firstItem="64" firstAttribute="height" secondItem="100" secondAttribute="height" id="125"/>
+                            <constraint firstItem="100" firstAttribute="top" secondItem="56" secondAttribute="bottom" constant="0.0" id="126"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="Title" id="53" key="navigationItem"/>
+                    <connections>
+                        <outlet property="btnPreVoicing" destination="64" id="name-outlet-64"/>
+                        <outlet property="btnPostVoicing" destination="65" id="name-outlet-65"/>
+                        <outlet property="btnVocalization" destination="63" id="name-outlet-63"/>
+                        <outlet property="btnDeaffrication" destination="62" id="name-outlet-62"/>
+                        <outlet property="btnFronting" destination="69" id="name-outlet-69"/>
+                        <outlet property="btnStopping" destination="61" id="name-outlet-61"/>
+                        <outlet property="btnInitialConsonant" destination="60" id="name-outlet-60"/>
+                        <outlet property="btnFinalConsonant" destination="98" id="name-outlet-98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="31"/>
+        </scene>
+        <scene sceneID="48">
+            <objects>
+                <viewController id="49" sceneMemberID="viewController" customClass="PositionViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="46"/>
+                        <viewControllerLayoutGuide type="bottom" id="47"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="50">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="154" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="64" width="768" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.21176470588235294" green="0.71372549019607845" blue="1" alpha="1"/>
+                                <state key="normal" title="Initial Position">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.96470588235294119" green="0.8901960784313725" blue="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="166" identifier="initial_position"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="155" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="0.0" y="544" width="768" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.67450980392156867" green="1" blue="0.47843137254901963" alpha="1"/>
+                                <state key="normal" title="Final Position">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="164" identifier="final_position"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="50" firstAttribute="trailing" secondItem="154" secondAttribute="trailing" constant="0.0" id="156"/>
+                            <constraint firstItem="154" firstAttribute="leading" secondItem="50" secondAttribute="leading" constant="0.0" id="157"/>
+                            <constraint firstItem="154" firstAttribute="top" secondItem="46" secondAttribute="bottom" constant="0.0" id="158"/>
+                            <constraint firstItem="154" firstAttribute="height" secondItem="155" secondAttribute="height" id="159"/>
+                            <constraint firstItem="47" firstAttribute="top" secondItem="155" secondAttribute="bottom" constant="0.0" id="160"/>
+                            <constraint firstItem="50" firstAttribute="trailing" secondItem="155" secondAttribute="trailing" constant="0.0" id="161"/>
+                            <constraint firstItem="155" firstAttribute="leading" secondItem="50" secondAttribute="leading" constant="0.0" id="162"/>
+                            <constraint firstItem="155" firstAttribute="top" secondItem="154" secondAttribute="bottom" constant="0.0" id="163"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="-424"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="mic.png" width="256" height="256"/>
+    </resources>
+</document>

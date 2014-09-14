@@ -1,0 +1,189 @@
+<Pair>
+		<Name>Tip Sip</Name>
+		<LeftImage>tip</LeftImage>
+		<RightImage>sip</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+<Pair>
+		<Name>mitt miss</Name>
+		<LeftImage>mitt</LeftImage>
+		<RightImage>miss</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+<Pair>
+		<Name>Tub Sub</Name>
+		<LeftImage>tub</LeftImage>
+		<RightImage>sub</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tip Sip</Name>
+		<LeftImage>tip</LeftImage>
+		<RightImage>sip</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tell Cell</Name>
+		<LeftImage>tell</LeftImage>
+		<RightImage>cell</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tower Sour</Name>
+		<LeftImage>tower</LeftImage>
+		<RightImage>sour</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tea Sea</Name>
+		<LeftImage>tea</LeftImage>
+		<RightImage>sea</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tore Sore</Name>
+		<LeftImage>tore</LeftImage>
+		<RightImage>sore</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Turf Surf</Name>
+		<LeftImage>turf</LeftImage>
+		<RightImage>surf</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tail Sail</Name>
+		<LeftImage>tail</LeftImage>
+		<RightImage>sail</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Tick Sick</Name>
+		<LeftImage>tick</LeftImage>
+		<RightImage>sick</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Two Zoo</Name>
+		<LeftImage>two</LeftImage>
+		<RightImage>zoo</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Kit Kiss</Name>
+		<LeftImage>kit</LeftImage>
+		<RightImage>kiss</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Tent Cent</Name>
+		<LeftImage>tent</LeftImage>
+		<RightImage>cent</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Mitt Miss</Name>
+		<LeftImage>mitt</LeftImage>
+		<RightImage>miss</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Tack Sack</Name>
+		<LeftImage>tack</LeftImage>
+		<RightImage>sack</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Night Nice</Name>
+		<LeftImage>night</LeftImage>
+		<RightImage>nice</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Toe Sew</Name>
+		<LeftImage>toe</LeftImage>
+		<RightImage>sew</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Road Rose</Name>
+		<LeftImage>road</LeftImage>
+		<RightImage>rose</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Bead Bees</Name>
+		<LeftImage>bead</LeftImage>
+		<RightImage>bees</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Pull Full</Name>
+		<LeftImage>pull</LeftImage>
+		<RightImage>full</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Leap Leaf</Name>
+		<LeftImage>leap</LeftImage>
+		<RightImage>leaf</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Pour Four</Name>
+		<LeftImage>pour</LeftImage>
+		<RightImage>four</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Cup Cuff</Name>
+		<LeftImage>cup</LeftImage>
+		<RightImage>cuff</RightImage>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+    </Pair>
+<Pair>
+		<Name>Pork Fork</Name>
+		<LeftImage>pork</LeftImage>
+		<RightImage>fork</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Pan Fan</Name>
+		<LeftImage>pan</LeftImage>
+		<RightImage>fan</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>
+<Pair>
+		<Name>Pig Fig</Name>
+		<LeftImage>pig</LeftImage>
+		<RightImage>fig</RightImage>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+    </Pair>

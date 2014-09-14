@@ -1,0 +1,11 @@
+<Pairs>
+	<!------------copy in between the lines----------------->
+	<Pair>
+		<Name>Nana Banana</Name>
+		<LeftImage>nana</LeftImage>
+		<RightImage>banana</RightImage>
+		<Type>Syllable Deletion</Type>
+		<Position></Position>
+	</Pair>
+<!--DON'T Write below this line!!!!----------------------->
+</Pairs>

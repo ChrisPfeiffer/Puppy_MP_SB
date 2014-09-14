@@ -1,0 +1,179 @@
+<Pairs>
+<!--Beginning of content below this line ----->
+	<Pair>
+		<Name>fog frog</Name>
+		<LeftImage>fog</LeftImage>
+		<RightImage>frog</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Name>Nail Snail</Name>
+		<LeftImage>nail</LeftImage>
+		<RightImage>snail</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Name>sack sacks</Name>
+		<LeftImage>sack</LeftImage>
+		<RightImage>sacks</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Final</Position>
+	</Pair>
+<Pair>
+		<Name>Pot Spot</Name>
+		<LeftImage>pot</LeftImage>
+		<RightImage>spot</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Pie Spy</Name>
+		<LeftImage>pie</LeftImage>
+		<RightImage>spy</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Pill Spill</Name>
+		<LeftImage>pill</LeftImage>
+		<RightImage>spill</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tore Store</Name>
+		<LeftImage>tore</LeftImage>
+		<RightImage>store</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tick Stick</Name>
+		<LeftImage>tick</LeftImage>
+		<RightImage>stick</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>No Snow</Name>
+		<LeftImage>no</LeftImage>
+		<RightImage>snow</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Nail Snail</Name>
+		<LeftImage>nail</LeftImage>
+		<RightImage>snail</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Knees Sneeze</Name>
+		<LeftImage>knees</LeftImage>
+		<RightImage>sneeze</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Nap Snap</Name>
+		<LeftImage>nap</LeftImage>
+		<RightImage>snap</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Cool School</Name>
+		<LeftImage>cool</LeftImage>
+		<RightImage>school</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Key Ski</Name>
+		<LeftImage>key</LeftImage>
+		<RightImage>ski</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Car Scar</Name>
+		<LeftImage>car</LeftImage>
+		<RightImage>scar</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tar Star</Name>
+		<LeftImage>tar</LeftImage>
+		<RightImage>star</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tear Stare</Name>
+		<LeftImage>tear</LeftImage>
+		<RightImage>stare</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tool Stool</Name>
+		<LeftImage>tool</LeftImage>
+		<RightImage>stool</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Mile Smile</Name>
+		<LeftImage>mile</LeftImage>
+		<RightImage>smile</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Mall Small</Name>
+		<LeftImage>mall</LeftImage>
+		<RightImage>small</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Mock Smock</Name>
+		<LeftImage>mock</LeftImage>
+		<RightImage>smock</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Wing Swing</Name>
+		<LeftImage>wing</LeftImage>
+		<RightImage>swing</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Lead Sled</Name>
+		<LeftImage>led</LeftImage>
+		<RightImage>sled</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Top Stop</Name>
+		<LeftImage>top</LeftImage>
+		<RightImage>stop</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+	<Pair>
+		<Name>Tack Stack</Name>
+		<LeftImage>tack</LeftImage>
+		<RightImage>stack</RightImage>
+		<Type>Cluster Reduction</Type>
+		<Position>Initial</Position>
+    </Pair>
+<!--Do not write below this line-------------->
+</Pairs>

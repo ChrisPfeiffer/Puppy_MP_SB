@@ -1,0 +1,137 @@
+<Pairs>
+<!--Content starts below this line------------->
+	<Pair>
+		<Name>E Bee</Name>
+		<LeftImage>e</LeftImage>
+		<RightImage>bee</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+		<Position></Position>
+	</Pair>
+	<Pair>
+		<Name>Oat Boat</Name>
+		<LeftImage>oat</LeftImage>
+		<RightImage>boat</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+		<Position></Position>
+	</Pair>
+	<Pair>
+		<Name>Ed Bed</Name>
+		<LeftImage>ed</LeftImage>
+		<RightImage>bed</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ill Pill</Name>
+		<LeftImage>ill</LeftImage>
+		<RightImage>pill</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Oat Boat</Name>
+		<LeftImage>oat</LeftImage>
+		<RightImage>boat</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Pour Oar</Name>
+		<LeftImage>pour</LeftImage>
+		<RightImage>oar</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>L Bell</Name>
+		<LeftImage>l</LeftImage>
+		<RightImage>bell</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ants Pants</Name>
+		<LeftImage>ants</LeftImage>
+		<RightImage>pants</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Oil Boil</Name>
+		<LeftImage>oil</LeftImage>
+		<RightImage>boil</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Eat Feet</Name>
+		<LeftImage>eat</LeftImage>
+		<RightImage>feet</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Eat Meat</Name>
+		<LeftImage>eat</LeftImage>
+		<RightImage>meat</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Eye Pie</Name>
+		<LeftImage>eye</LeftImage>
+		<RightImage>pie</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>All Fall</Name>
+		<LeftImage>all</LeftImage>
+		<RightImage>fall</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Arm Farm</Name>
+		<LeftImage>arm</LeftImage>
+		<RightImage>farm</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Up Cup</Name>
+		<LeftImage>up</LeftImage>
+		<RightImage>cup</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ape Cape</Name>
+		<LeftImage>ape</LeftImage>
+		<RightImage>cape</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ice Dice</Name>
+		<LeftImage>ice</LeftImage>
+		<RightImage>dice</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ear Deer</Name>
+		<LeftImage>ear</LeftImage>
+		<RightImage>deer</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Off Cough</Name>
+		<LeftImage>off</LeftImage>
+		<RightImage>cough</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Add Dad</Name>
+		<LeftImage>add</LeftImage>
+		<RightImage>dad</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Ink Sink</Name>
+		<LeftImage>ink</LeftImage>
+		<RightImage>sink</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+	<Pair>
+		<Name>Art Chart</Name>
+		<LeftImage>art</LeftImage>
+		<RightImage>chart</RightImage>
+		<Type>Initial Consonant Deletion</Type>
+    </Pair>
+</Pairs>
