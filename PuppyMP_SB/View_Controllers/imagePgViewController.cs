@@ -11,13 +11,16 @@ using System.Collections;
 using System.IO;
 
 
-namespace speechTherapy
+namespace PuppyMP_SB
 {
 	public partial class imagePgViewController : UIViewController
 	{
 
 		List<Pair> pairList { get; set; }
 		private int pairIndex;
+		AudioHandler audioHandler;
+		//boolean to keep track of whether a recording is in progress.
+		bool recordingAudio;
 
 		//public speechTherapyViewController Delegate { get; set; }
 		public UIViewController Delegate{ get; set; }
@@ -31,7 +34,9 @@ namespace speechTherapy
 		{
 			base.ViewDidLoad ();
 
-			this.ARView.Hidden = true;
+
+			this.micImage.Hidden = true;
+			this.recordingAudio = false;
 
 			//shuffle the list of pairs
 			pairList = HelperFunctions.Shuffle (pairList);
@@ -41,8 +46,9 @@ namespace speechTherapy
 
 
 			this.btnNext.TouchUpInside += theNextClick;
-			this.btnRecordAudio.TouchUpInside += launchRecordAudio;
-			this.btnDoneAR.TouchUpInside += hideRecordAudio;
+			this.btnRecordAudio.TouchUpInside += toggleRecordAudio;
+			this.audioHandler = new AudioHandler ();
+
 
 
 		}
@@ -64,15 +70,23 @@ namespace speechTherapy
 			}
 		}
 
-		private void launchRecordAudio(Object sender, EventArgs ea)
+		private void toggleRecordAudio(Object sender, EventArgs ea)
 		{
-			this.ARView.Hidden = false;
+			if (!recordingAudio) {
+				//start the audio recording.
+
+				audioHandler.startrecording ();
+				this.micImage.Hidden = false;
+				recordingAudio = true;
+			} 
+			else {
+				//end the audio recording.
+				audioHandler.stopRecording ();
+				this.micImage.Hidden = true;
+			}
 		}
 
-		private void hideRecordAudio(Object send, EventArgs ea)
-		{
-			this.ARView.Hidden = true;
-		}
+
 
 		private void displayPair(int index)
 		{

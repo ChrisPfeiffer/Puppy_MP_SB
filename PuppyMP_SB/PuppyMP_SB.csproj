@@ -107,18 +107,9 @@
     <Compile Include="View_Controllers\imagePgViewController.designer.cs" />
     <Compile Include="View_Controllers\PositionViewController.cs" />
     <Compile Include="View_Controllers\PositionViewController.designer.cs" />
-    <Compile Include="View_Controllers\secondView.cs" />
-    <Compile Include="View_Controllers\secondView.designer.cs" />
     <Compile Include="View_Controllers\speechTherapyViewController.cs" />
     <Compile Include="View_Controllers\speechTherapyViewController.designer.cs" />
-    <Compile Include="btnVocalization.cs" />
-    <Compile Include="btnVocalization.designer.cs">
-      <DependentUpon>btnVocalization.cs</DependentUpon>
-    </Compile>
-    <Compile Include="btnSyllableDeletion.cs" />
-    <Compile Include="btnSyllableDeletion.designer.cs">
-      <DependentUpon>btnSyllableDeletion.cs</DependentUpon>
-    </Compile>
+    <Compile Include="AudioHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
@@ -128,6 +119,7 @@
   <ItemGroup>
     <Folder Include="View_Controllers\" />
     <Folder Include="Shared_Content\" />
+    <Folder Include="AV\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedPCL\SharedPCL.csproj">

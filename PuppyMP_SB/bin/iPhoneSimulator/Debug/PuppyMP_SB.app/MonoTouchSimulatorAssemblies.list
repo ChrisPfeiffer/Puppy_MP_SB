@@ -1,0 +1,11 @@
+mscorlib.dll
+System.Core.dll
+System.dll
+System.Xml.dll
+Mono.Dynamic.Interpreter.dll
+SharedPCL.dll
+System.Runtime.dll
+System.ComponentModel.Composition.dll
+System.Runtime.Extensions.dll
+System.Collections.dll
+System.Xml.ReaderWriter.dll
