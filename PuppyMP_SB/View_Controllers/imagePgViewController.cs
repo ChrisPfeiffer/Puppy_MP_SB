@@ -11,7 +11,7 @@ using System.Collections;
 using System.IO;
 
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	public partial class imagePgViewController : UIViewController
 	{
@@ -46,7 +46,11 @@ namespace PuppyMP_SB
 
 
 			this.btnNext.TouchUpInside += theNextClick;
+			this.btnPrevious.TouchUpInside += previousClick;
 			this.btnRecordAudio.TouchUpInside += toggleRecordAudio;
+			this.btnPlayAudio.TouchUpInside += playAudio;
+			this.btnPlayAudio.Enabled = false;
+			this.btnPrevious.Enabled = false;
 			this.audioHandler = new AudioHandler ();
 
 
@@ -56,6 +60,9 @@ namespace PuppyMP_SB
 		private void theNextClick(Object sender, EventArgs ea)
 		{
 			pairIndex++;
+			this.btnPlayAudio.Enabled = false;
+			this.btnPrevious.Enabled = true;
+
 			if(pairList.Count > pairIndex)
 			{
 				//display the next image
@@ -70,6 +77,20 @@ namespace PuppyMP_SB
 			}
 		}
 
+		void previousClick (object sender, EventArgs e)
+		{
+		
+			pairIndex--;
+			this.btnPlayAudio.Enabled = false;
+			displayPair (pairIndex);
+			if (pairIndex == 0) {
+				this.btnPrevious.Enabled = false;
+			}
+
+
+
+		}
+
 		private void toggleRecordAudio(Object sender, EventArgs ea)
 		{
 			if (!recordingAudio) {
@@ -78,11 +99,15 @@ namespace PuppyMP_SB
 				audioHandler.startrecording ();
 				this.micImage.Hidden = false;
 				recordingAudio = true;
+				this.btnRecordAudio.SetTitle ("Done!", UIControlState.Normal);
 			} 
 			else {
 				//end the audio recording.
 				audioHandler.stopRecording ();
+				this.btnPlayAudio.Enabled = true;
 				this.micImage.Hidden = true;
+				this.btnRecordAudio.SetTitle ("Record", UIControlState.Normal);
+				recordingAudio = false;
 			}
 		}
 
@@ -90,8 +115,8 @@ namespace PuppyMP_SB
 
 		private void displayPair(int index)
 		{
-			String leftImagePath = "Photos/" + pairList [index].leftImageName + ".png";
-			String rightImagePath = "Photos/" + pairList [index].rightImageName + ".png";
+			String leftImagePath = "iPad_Images/" + pairList [index].leftImageName + ".jpg";
+			String rightImagePath = "iPad_Images/" + pairList [index].rightImageName + ".jpg";
 
 			if(File.Exists(leftImagePath))
 			{
@@ -149,9 +174,9 @@ namespace PuppyMP_SB
 			}
 		}
 
-
-
-		
-		
+		public void playAudio (object sender, EventArgs e)
+		{
+			audioHandler.playAudio ();
+		}
 	}
 }

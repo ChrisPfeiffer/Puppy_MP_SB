@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.CodeDom.Compiler;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	[Register ("imagePgViewController")]
 	partial class imagePgViewController
@@ -43,6 +43,10 @@ namespace PuppyMP_SB
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnPrevious { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnRecordAudio { get; set; }
 
 		[Outlet]
@@ -62,6 +66,10 @@ namespace PuppyMP_SB
 			if (btnPlayVideo != null) {
 				btnPlayVideo.Dispose ();
 				btnPlayVideo = null;
+			}
+			if (btnPrevious != null) {
+				btnPrevious.Dispose ();
+				btnPrevious = null;
 			}
 			if (btnRecordAudio != null) {
 				btnRecordAudio.Dispose ();

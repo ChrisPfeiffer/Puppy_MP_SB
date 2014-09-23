@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.CodeDom.Compiler;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	[Register ("PositionViewController")]
 	partial class PositionViewController

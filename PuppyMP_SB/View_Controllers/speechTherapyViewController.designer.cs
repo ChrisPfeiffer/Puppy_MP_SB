@@ -9,7 +9,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.CodeDom.Compiler;
 
-namespace PuppMP_SB
+namespace speechTherapy
 {
 	[Register ("speechTherapyViewController")]
 	partial class speechTherapyViewController

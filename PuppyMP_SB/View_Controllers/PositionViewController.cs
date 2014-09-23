@@ -6,7 +6,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using SharedPCL;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	public partial class PositionViewController : UIViewController
 	{

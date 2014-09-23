@@ -6,7 +6,7 @@ using System.Xml;
 using SharedPCL;
 using System.Collections.Generic;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	public partial class speechTherapyViewController : UIViewController
 	{

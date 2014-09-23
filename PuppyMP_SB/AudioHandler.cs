@@ -10,7 +10,7 @@ using MonoTouch.CoreGraphics;
 using MonoTouch.CoreFoundation;
 using System.Runtime.InteropServices;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	public class AudioHandler
 	{
@@ -18,8 +18,8 @@ namespace PuppyMP_SB
 		AVAudioRecorder recorder;
 		NSUrl url;
 		NSDictionary settings;
-
-
+		AVAudioSession session;
+		AVAudioPlayer player;
 
 		public AudioHandler ()
 		{
@@ -31,13 +31,16 @@ namespace PuppyMP_SB
 
 			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			var library = System.IO.Path.Combine (documents, "..", "Library");
-			var urlpath = System.IO.Path.Combine (library, "audioRecording.mp3");
+			var urlpath = System.IO.Path.Combine (library, "audioRecording.wav");
+
+			session = AVAudioSession.SharedInstance ();
+			session.SetCategory (AVAudioSessionCategory.PlayAndRecord);
 
 			url = new NSUrl (urlpath, false);
 
 
 			NSFileManager manager = new NSFileManager ();
-			NSError error = new NSError ();
+			NSError error = new NSError (new NSString ("world"), 1);
 
 			//if there is a file at the save location, delete it so we can save there
 			if (manager.FileExists (urlpath)) {
@@ -74,6 +77,8 @@ namespace PuppyMP_SB
 
 		public void startrecording()
 		{
+
+			session.SetActive(true);
 			recorder.PrepareToRecord ();
 			recorder.Record ();
 		}
@@ -81,8 +86,24 @@ namespace PuppyMP_SB
 		public void stopRecording()
 		{
 			this.recorder.Stop ();
+			session.SetActive (false);
 		}
 
+		public void playAudio()
+		{
+			session.SetActive (true);
+
+			player = AVAudioPlayer.FromUrl (url);
+
+			AVAudioPlayerDelegate avDel = new AVAudioPlayerDelegate ();
+			player.Delegate = avDel;
+
+			player.Play ();
+
+
+
+	
+		}
 
 	}
 }

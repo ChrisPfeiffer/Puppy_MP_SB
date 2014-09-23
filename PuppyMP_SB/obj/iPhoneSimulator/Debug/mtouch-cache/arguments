@@ -1,6 +1,6 @@
-# Version: 7.4.0.108 (77efa3f)
+# Version: 8.0.0.62 (8bd8158)
 # [first argument, ignore] # /Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/bin/iPhoneSimulator/Debug/mtouch.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/7.4.0.108/bin/mtouch \
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.62/bin/mtouch \
 	-sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
 	--cache \
@@ -22,7 +22,7 @@
 	-debug \
 	-nolink \
 	-sdk \
-	7.1 \
+	8.0 \
 	-targetver \
 	7.0 \
 	--abi=i386 \
