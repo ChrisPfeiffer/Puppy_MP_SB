@@ -1,0 +1,7 @@
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/PuppyMP_SB.exe
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/SharedPCL.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/System.Xml.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache/Link/System.dll

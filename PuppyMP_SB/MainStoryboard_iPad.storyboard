@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26" misplaced="YES">
                                 <rect key="frame" x="386" y="64" width="382" height="573"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="237">
@@ -26,8 +26,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="244">
-                                <rect key="frame" x="170" y="700" width="100" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="244" textAlignment="center">
+                                <rect key="frame" x="141" y="700" width="100" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,8 +37,8 @@
                                     <constraint firstItem="244" firstAttribute="height" constant="21" id="462"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="255">
-                                <rect key="frame" x="556" y="700" width="99" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="255" textAlignment="center">
+                                <rect key="frame" x="528" y="700" width="99" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -184,14 +184,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Puppy Minimal Pairs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="56">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Puppy Minimal Pairs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="56" misplaced="YES">
                                 <rect key="frame" x="0.0" y="64" width="768" height="320"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60" misplaced="YES">
                                 <rect key="frame" x="0.0" y="491" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Initial Consonant Deletion">
@@ -201,7 +201,7 @@
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="initial_consonant" id="137"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61" misplaced="YES">
                                 <rect key="frame" x="384" y="598" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Stopping">
@@ -211,7 +211,7 @@
                                     <segue destination="49" kind="push" identifier="stopping" id="143"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62" misplaced="YES">
                                 <rect key="frame" x="0.0" y="811" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Deaffrication">
@@ -221,7 +221,7 @@
                                     <segue destination="49" kind="push" identifier="deaffrication" id="135"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63" misplaced="YES">
                                 <rect key="frame" x="384" y="811" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Vocalization">
@@ -231,7 +231,7 @@
                                     <segue destination="49" kind="push" identifier="vocalization" id="133"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64" misplaced="YES">
                                 <rect key="frame" x="0.0" y="918" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Pre-Vocalic Voicing">
@@ -241,7 +241,7 @@
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="pre_voicing" id="129"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65" misplaced="YES">
                                 <rect key="frame" x="384" y="918" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Post-Vocalic Voicing">
@@ -257,14 +257,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67" misplaced="YES">
                                 <rect key="frame" x="0.0" y="704" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Gliding">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68" misplaced="YES">
                                 <rect key="frame" x="384" y="704" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Cluster Reduction">
@@ -274,7 +274,7 @@
                                     <segue destination="49" kind="push" identifier="cluster_reduction" id="147"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69" misplaced="YES">
                                 <rect key="frame" x="0.0" y="598" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Fronting">
@@ -284,7 +284,7 @@
                                     <segue destination="49" kind="push" identifier="fronting" id="145"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98" misplaced="YES">
                                 <rect key="frame" x="384" y="491" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Final Consonant Deletion">
@@ -295,7 +295,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="100" customClass="btnSyllableDeletion">
-                                <rect key="frame" x="0.0" y="384" width="768" height="107"/>
+                                <rect key="frame" x="0.0" y="382" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Syllable Deletion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -303,6 +303,14 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="syllable_deletion" id="141"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="518" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="384" y="381" width="384" height="108"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Help">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -341,7 +349,6 @@
                             <constraint firstItem="60" firstAttribute="width" secondItem="98" secondAttribute="width" id="105"/>
                             <constraint firstItem="69" firstAttribute="top" secondItem="60" secondAttribute="bottom" id="106"/>
                             <constraint firstItem="98" firstAttribute="top" secondItem="100" secondAttribute="bottom" id="107"/>
-                            <constraint firstAttribute="trailing" secondItem="100" secondAttribute="trailing" id="108"/>
                             <constraint firstItem="100" firstAttribute="leading" secondItem="43" secondAttribute="leading" id="113"/>
                             <constraint firstItem="56" firstAttribute="height" secondItem="100" secondAttribute="height" multiplier="3" id="115"/>
                             <constraint firstItem="98" firstAttribute="height" secondItem="100" secondAttribute="height" id="116"/>
@@ -355,9 +362,14 @@
                             <constraint firstItem="62" firstAttribute="height" secondItem="100" secondAttribute="height" id="124"/>
                             <constraint firstItem="64" firstAttribute="height" secondItem="100" secondAttribute="height" id="125"/>
                             <constraint firstItem="100" firstAttribute="top" secondItem="56" secondAttribute="bottom" id="126"/>
+                            <constraint firstItem="98" firstAttribute="top" secondItem="518" secondAttribute="bottom" constant="0.0" id="519"/>
+                            <constraint firstItem="518" firstAttribute="leading" secondItem="100" secondAttribute="trailing" constant="0.0" id="520"/>
+                            <constraint firstItem="518" firstAttribute="height" secondItem="100" secondAttribute="height" id="521"/>
+                            <constraint firstItem="518" firstAttribute="width" secondItem="100" secondAttribute="width" id="522"/>
+                            <constraint firstItem="43" firstAttribute="trailing" secondItem="518" secondAttribute="trailing" constant="0.0" id="523"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="53"/>
+                    <navigationItem key="navigationItem" title="Home" id="53"/>
                     <connections>
                         <outlet property="btnDeaffrication" destination="62" id="name-outlet-62"/>
                         <outlet property="btnFinalConsonant" destination="98" id="name-outlet-98"/>
@@ -429,7 +441,7 @@
         <!--Video Recorder Controller-->
         <scene sceneID="423">
             <objects>
-                <viewController id="424" customClass="videoRecorderController" sceneMemberID="viewController">
+                <viewController id="424" customClass="videoController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="421"/>
                         <viewControllerLayoutGuide type="bottom" id="422"/>
@@ -444,20 +456,53 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="501" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="508" y="941" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Video!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="497" kind="push" id="504"/>
+                                </connections>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="509"/>
+                                </constraints>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="436" secondAttribute="trailing" constant="328" id="447"/>
                             <constraint firstAttribute="bottom" secondItem="436" secondAttribute="bottom" constant="53" id="448"/>
+                            <constraint id="507" firstItem="425" firstAttribute="trailing" secondItem="501" secondAttribute="trailing" constant="132"/>
+                            <constraint id="508" firstItem="425" firstAttribute="bottom" secondItem="501" secondAttribute="bottom" constant="53"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnRecord" destination="436" id="name-outlet-436"/>
+                        <outlet property="btnPlayVideo" destination="501" id="name-outlet-501"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="426" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2441" y="787"/>
+        </scene>
+        <scene sceneID="496">
+            <objects>
+                <viewController id="497" sceneMemberID="viewController" customClass="videoPlayController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="494"/>
+                        <viewControllerLayoutGuide type="bottom" id="495"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="498">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="499" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2436" y="1948"/>
         </scene>
     </scenes>
     <resources>

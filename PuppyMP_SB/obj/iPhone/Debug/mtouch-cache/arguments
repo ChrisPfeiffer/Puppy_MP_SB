@@ -1,0 +1,29 @@
+# Version: 8.0.0.63 (58b46df)
+# [first argument, ignore] # /Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/bin/iPhone/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.0.0.63/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/obj/iPhone/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-dev \
+	/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/bin/iPhone/Debug/PuppyMP_SB.app \
+	-r \
+	/Users/christopherpfeiffer/Projects/PuppyMP_SB/SharedPCL/bin/Debug/SharedPCL.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-linksdkonly \
+	-sdk \
+	8.0 \
+	-targetver \
+	7.0 \
+	--abi=armv7 \
+	/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/bin/iPhone/Debug/PuppyMP_SB.exe \

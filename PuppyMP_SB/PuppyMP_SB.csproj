@@ -312,11 +312,6 @@
     <Compile Include="View_Controllers\PositionViewController.designer.cs" />
     <Compile Include="View_Controllers\speechTherapyViewController.cs" />
     <Compile Include="View_Controllers\speechTherapyViewController.designer.cs" />
-    <Compile Include="AudioHandler.cs" />
-    <Compile Include="View_Controllers\videoRecorderController.cs" />
-    <Compile Include="View_Controllers\videoRecorderController.designer.cs">
-      <DependentUpon>videoRecorderController.cs</DependentUpon>
-    </Compile>
     <Compile Include="View_Controllers\videoController.cs" />
     <Compile Include="View_Controllers\videoController.designer.cs">
       <DependentUpon>videoController.cs</DependentUpon>
@@ -324,6 +319,11 @@
     <Compile Include="btnSyllableDeletion.cs" />
     <Compile Include="btnSyllableDeletion.designer.cs">
       <DependentUpon>btnSyllableDeletion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AV\AudioHandler.cs" />
+    <Compile Include="View_Controllers\videoPlayController.cs" />
+    <Compile Include="View_Controllers\videoPlayController.designer.cs">
+      <DependentUpon>videoPlayController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
