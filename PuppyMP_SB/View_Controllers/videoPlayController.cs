@@ -21,11 +21,18 @@ namespace PuppyMP_SB
 		AVAsset _asset;
 		AVPlayerItem _playerItem;
 		NSUrl url;
-		Boolean isPlaying;
+		Boolean _isPlaying;
+		NSObject _notificationHandle;
 
+		Boolean _playNow;
 
 		public videoPlayController (IntPtr handle) : base (handle)
 		{
+		}
+
+		private void playerItemDidReachEnd(NSNotification notification)
+		{
+			Console.WriteLine("done playing");
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -39,6 +46,8 @@ namespace PuppyMP_SB
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
+
+			setButtonVisibility (true);
 
 			initializeVideo ();
 			playVideo ();
@@ -54,8 +63,12 @@ namespace PuppyMP_SB
 			this.View.SendSubviewToBack (cameraView);
 			cameraView.Layer.AddSublayer (_playerLayer);
 
-			isPlaying = true;
+
+			_isPlaying = true;
 			_player.Play ();
+
+
+
 
 		}
 
@@ -69,12 +82,24 @@ namespace PuppyMP_SB
 
 			_asset = AVAsset.FromUrl(url);
 			_playerItem = new AVPlayerItem (_asset);
+
+
 			_player = new AVPlayer (_playerItem);
+
+			_notificationHandle = NSNotificationCenter.DefaultCenter.AddObserver (AVPlayerItem.DidPlayToEndTimeNotification, VideoDonePlaying);
+
 
 			_playerLayer = AVPlayerLayer.FromPlayer (_player);
 			_playerLayer.Frame = View.Frame;
 
 
+		}
+
+		
+		private void VideoDonePlaying(NSNotification notification)
+		{
+			setButtonVisibility (false);
+			Console.WriteLine ("finished Playing");	
 		}
 
 		public override void ViewWillDisappear (bool animated)
@@ -84,8 +109,22 @@ namespace PuppyMP_SB
 				view.RemoveFromSuperview ();
 			}
 
+			NSNotificationCenter.DefaultCenter.RemoveObserver (_notificationHandle);
+
 			base.ViewWillDisappear (animated);
 		}
+
+		private void setButtonVisibility(Boolean hidden)
+		{
+			this.btnHome.Hidden = hidden;
+			this.btnPlayAgain.Hidden = hidden;
+			this.btnRecordAgain.Hidden = hidden;
+		}
+
+
+		//called by image page controller to determine which button was pressed (play or record)
+
+
 	}
 }
 

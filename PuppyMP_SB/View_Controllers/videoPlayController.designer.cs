@@ -14,8 +14,32 @@ namespace PuppyMP_SB
 	[Register ("videoPlayController")]
 	partial class videoPlayController
 	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnHome { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnPlayAgain { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnRecordAgain { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnHome != null) {
+				btnHome.Dispose ();
+				btnHome = null;
+			}
+			if (btnPlayAgain != null) {
+				btnPlayAgain.Dispose ();
+				btnPlayAgain = null;
+			}
+			if (btnRecordAgain != null) {
+				btnRecordAgain.Dispose ();
+				btnRecordAgain = null;
+			}
 		}
 	}
 }

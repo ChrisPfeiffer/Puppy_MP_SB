@@ -74,6 +74,9 @@
                                 <state key="normal" title="Play Video">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="424" kind="push" id="596" identifier="playSegue"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="341">
                                 <rect key="frame" x="0.0" y="856" width="384" height="56"/>
@@ -81,7 +84,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="424" kind="push" id="428"/>
+                                    <segue destination="424" kind="push" id="428" identifier="recordSegue"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25">
@@ -151,6 +154,7 @@
                         <outlet property="rightImageOutlet" destination="26" id="name-outlet-26"/>
                         <outlet property="rightLabel" destination="255" id="name-outlet-255"/>
                         <outlet property="micImage" destination="456" id="name-outlet-456"/>
+                        <outlet property="btnRecordVideo" destination="341" id="name-outlet-341"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -294,8 +298,8 @@
                                     <segue destination="BYZ-38-t0r" kind="push" identifier="final_consonant" id="139"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="100" customClass="btnSyllableDeletion">
-                                <rect key="frame" x="0.0" y="382" width="384" height="107"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="100" customClass="btnSyllableDeletion" misplaced="YES">
+                                <rect key="frame" x="0.0" y="385" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Syllable Deletion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -451,31 +455,27 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="436">
-                                <rect key="frame" x="328" y="941" width="112" height="30"/>
+                                <rect key="frame" x="328" y="909" width="112" height="30"/>
                                 <state key="normal" title="Start Recording!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="501" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="508" y="941" width="128" height="30"/>
+                                <rect key="frame" x="346" y="962" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play Video!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="497" kind="push" id="504"/>
                                 </connections>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="509"/>
-                                </constraints>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="436" secondAttribute="trailing" constant="328" id="447"/>
-                            <constraint firstAttribute="bottom" secondItem="436" secondAttribute="bottom" constant="53" id="448"/>
-                            <constraint id="507" firstItem="425" firstAttribute="trailing" secondItem="501" secondAttribute="trailing" constant="132"/>
-                            <constraint id="508" firstItem="425" firstAttribute="bottom" secondItem="501" secondAttribute="bottom" constant="53"/>
+                            <constraint firstItem="425" firstAttribute="centerX" secondItem="501" secondAttribute="centerX" constant="0.0" id="564"/>
+                            <constraint firstItem="425" firstAttribute="centerX" secondItem="436" secondAttribute="centerX" constant="0.0" id="565"/>
+                            <constraint firstItem="422" firstAttribute="top" secondItem="436" secondAttribute="bottom" constant="85" id="566"/>
+                            <constraint firstItem="422" firstAttribute="top" secondItem="501" secondAttribute="bottom" constant="32" id="567"/>
                         </constraints>
                     </view>
                     <connections>
@@ -498,7 +498,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="537" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="338" y="788" width="93" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="538" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="324" y="865" width="120" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Record Again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="539" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="361" y="941" width="47" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="537" firstAttribute="centerX" secondItem="498" secondAttribute="centerX" constant="0.0" id="540"/>
+                            <constraint firstItem="538" firstAttribute="centerX" secondItem="498" secondAttribute="centerX" constant="0.0" id="541"/>
+                            <constraint firstItem="495" firstAttribute="top" secondItem="537" secondAttribute="bottom" constant="200" id="543"/>
+                            <constraint firstItem="538" firstAttribute="top" secondItem="537" secondAttribute="bottom" constant="41" id="544"/>
+                            <constraint firstItem="539" firstAttribute="centerX" secondItem="498" secondAttribute="centerX" constant="0.0" id="545"/>
+                            <constraint firstItem="539" firstAttribute="top" secondItem="538" secondAttribute="bottom" constant="40" id="546"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnPlayAgain" destination="537" id="name-outlet-537"/>
+                        <outlet property="btnRecordAgain" destination="538" id="name-outlet-538"/>
+                        <outlet property="btnHome" destination="539" id="name-outlet-539"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="499" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

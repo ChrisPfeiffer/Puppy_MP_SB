@@ -11,22 +11,37 @@ using MonoTouch.CoreMedia;
 using System.Runtime.InteropServices;
 using System.Collections.Generic;
 
-namespace PuppyMP_SB
+namespace speechTherapy
 {
 	public partial class videoController : UIViewController
 	{
+		//recording variables
 		Boolean weAreRecording;
 		AVCaptureMovieFileOutput output;
 		AVCaptureDevice device;
 		AVCaptureDevice audioDevice;
-
 		AVCaptureDeviceInput input;
 		AVCaptureDeviceInput audioInput;
 		AVCaptureSession session;
-
 		AVCaptureVideoPreviewLayer previewlayer;
 		NSUrl videoLocation;
 		String videoPath;
+		UIView cameraView;
+
+		Boolean _playNow; //used to determine which button was pushed to get here.
+
+		//player variables
+
+		AVPlayer _player;
+		AVPlayerLayer _playerLayer;
+		AVAsset _asset;
+		AVPlayerItem _playerItem;
+		NSUrl url;
+		Boolean _isPlaying;
+		NSObject _notificationHandle;
+		UIView _videoView;
+
+		public UIViewController Delegate{ get; set; }
 
 		public videoController (IntPtr handle) : base (handle)
 		{
@@ -44,11 +59,33 @@ namespace PuppyMP_SB
 		{
 			base.ViewDidLoad ();			
 			// Perform any additional setup after loading the view, typically from a nib.
-			weAreRecording = false;
-			btnRecord.SetTitle ("Start Recording!", UIControlState.Normal);
+
 			initializeRecorder();
-			createPreview ();
 			configureOutput ();
+			createPreview ();
+
+			//If the play video button was pushed just show the latest recording right 
+
+
+			if (_playNow) {
+
+				initializeVideo ();
+				startPlaying ();
+			} else {
+
+				weAreRecording = false;
+				btnRecord.SetTitle ("Start Recording!", UIControlState.Normal);
+				this.btnPlayVideo.Hidden = true;
+				showPreview ();
+
+			}
+
+			//a recording hasn't been done yet, hide the button
+
+			this.btnPlayVideo.TouchUpInside += playVideo;
+
+
+
 
 		}
 		private void initializeRecorder()
@@ -92,11 +129,17 @@ namespace PuppyMP_SB
 			previewlayer = new AVCaptureVideoPreviewLayer (session);
 			previewlayer.Frame = this.View.Bounds;
 
-			UIView cameraView = new UIView ();
-			cameraView.Layer.AddSublayer (previewlayer);
+			this.cameraView = new UIView ();
 
+			this.cameraView.Layer.AddSublayer (previewlayer);
+
+		}
+
+		private void showPreview()
+		{
 			this.View.AddSubview (cameraView);
 			this.View.SendSubviewToBack (cameraView);
+
 		}
 
 		private void configureOutput()
@@ -140,7 +183,8 @@ namespace PuppyMP_SB
 			else {
 				output.StopRecording ();
 				weAreRecording = false;
-				btnRecord.SetTitle ("Start Recording!", UIControlState.Normal);
+				btnRecord.SetTitle ("Record Again!", UIControlState.Normal);
+				btnPlayVideo.Hidden = false;
 			}
 		}
 
@@ -159,12 +203,91 @@ namespace PuppyMP_SB
 		{
 			session.StopRunning ();
 			this.btnRecord.TouchUpInside -= startStopPushed;
+			clearSubViews ();
+
+			base.ViewWillDisappear (animated);
+		}
+
+		//play video functionality
+
+		private void playVideo(Object sender, EventArgs ea)
+		{
+
+			initializeVideo ();
+			startPlaying ();
+
+		}
+
+		private void startPlaying ()
+		{
+			//first, remove recording subview
+			//if this doesn't work it's because we went straight to player and now cameraview exists yet.
+			try{
+			this.cameraView.RemoveFromSuperview ();
+			}
+			catch(Exception) {
+				//swallow
+			}
+
+			View.Layer.AddSublayer (_playerLayer);
+			_videoView = new UIView ();
+			this.View.AddSubview (_videoView);
+			//this.View.SendSubviewToBack (_videoView);
+			_videoView.Layer.AddSublayer (_playerLayer);
+
+
+			_isPlaying = true;
+			_player.Play ();
+		}
+
+		private void initializeVideo()
+		{
+			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			var library = System.IO.Path.Combine (documents, "..", "Library");
+			var urlpath = System.IO.Path.Combine (library, "sweetMovieFilm.mov");
+
+			url = new NSUrl (urlpath, false);
+
+			_asset = AVAsset.FromUrl(url);
+			_playerItem = new AVPlayerItem (_asset);
+
+
+			_player = new AVPlayer (_playerItem);
+
+			_notificationHandle = NSNotificationCenter.DefaultCenter.AddObserver (AVPlayerItem.DidPlayToEndTimeNotification, VideoDonePlaying);
+
+
+			_playerLayer = AVPlayerLayer.FromPlayer (_player);
+			_playerLayer.Frame = View.Frame;
+
+		}
+
+		private void VideoDonePlaying(NSNotification notification)
+		{
+
+			_videoView.RemoveFromSuperview ();
+
+			this.View.AddSubview (this.cameraView);
+			this.View.SendSubviewToBack (this.cameraView);
+
+			this.btnRecord.Hidden = false;
+			Console.WriteLine ("finished Playing");	
+		}
+
+		private void clearSubViews()
+		{
 
 			foreach (var view in this.View.Subviews) {
 				view.RemoveFromSuperview ();
-			}
+			} 			
+		}
 
-			base.ViewWillDisappear (animated);
+		public void setPlayNow(UIViewController vc, Boolean playNow)
+		{
+			Delegate = vc;
+
+			_playNow = playNow;
+
 		}
 
 	}

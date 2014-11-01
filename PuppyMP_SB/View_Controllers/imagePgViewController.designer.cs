@@ -51,6 +51,10 @@ namespace speechTherapy
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnRecordVideo { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIImageView micImage { get; set; }
 
 		void ReleaseDesignerOutlets ()
@@ -74,6 +78,10 @@ namespace speechTherapy
 			if (btnRecordAudio != null) {
 				btnRecordAudio.Dispose ();
 				btnRecordAudio = null;
+			}
+			if (btnRecordVideo != null) {
+				btnRecordVideo.Dispose ();
+				btnRecordVideo = null;
 			}
 			if (micImage != null) {
 				micImage.Dispose ();
