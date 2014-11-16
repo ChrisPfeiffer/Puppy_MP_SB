@@ -1,0 +1,2133 @@
+<Pairs>
+	<Pair>
+		<Left>tip</Left>
+		<Right>sip</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>mitt</Left>
+		<Right>miss</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>tub</Left>
+		<Right>sub</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tip</Left>
+		<Right>sip</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tell</Left>
+		<Right>cell</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tower</Left>
+		<Right>sour</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tea</Left>
+		<Right>sea</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tore</Left>
+		<Right>sore</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>turf</Left>
+		<Right>surf</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tail</Left>
+		<Right>sail</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tick</Left>
+		<Right>sick</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>two</Left>
+		<Right>zoo</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>kit</Left>
+		<Right>kiss</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>tent</Left>
+		<Right>cent</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>mitt</Left>
+		<Right>miss</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>tack</Left>
+		<Right>sack</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>night</Left>
+		<Right>nice</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>toe</Left>
+		<Right>sew</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>road</Left>
+		<Right>rose</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>bead</Left>
+		<Right>bees</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>pull</Left>
+		<Right>full</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>leap</Left>
+		<Right>leaf</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>pour</Left>
+		<Right>four</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>cup</Left>
+		<Right>cuff</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>pork</Left>
+		<Right>fork</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>pan</Left>
+		<Right>fan</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>take</Left>
+		<Right>shake</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>beet</Left>
+		<Right>beach</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>tear</Left>
+		<Right>chair</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>coat</Left>
+		<Right>coach</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>tape</Left>
+		<Right>shape</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>two</Left>
+		<Right>shoe</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>cat</Left>
+		<Right>cash</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>top</Left>
+		<Right>shop</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+	<Pair>
+		<Left>tent</Left>
+		<Right>cent</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>lap</Left>
+		<Right>laugh</Right>
+		<Type>Stopping</Type>
+		<Position>Final</Position>
+	</Pair>
+	<Pair>
+		<Left>toe</Left>
+		<Right>sew</Right>
+		<Position>Intial</Position>
+	</Pair>
+	<Pair>
+		<Left>pig</Left>
+		<Right>fig</Right>
+		<Type>Stopping</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<!--____Fronting____________-->
+	<Pair>
+		<Left>dumb</Left>
+		<Right>gum</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>bud</Left>
+		<Right>bug</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tea</Left>
+		<Right>key</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tick</Left>
+		<Right>kick</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tap</Left>
+		<Right>cap</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tan</Left>
+		<Right>can</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tub</Left>
+		<Right>cub</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>top</Left>
+		<Right>cop</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>kit</Left>
+		<Right>kick</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sit</Left>
+		<Right>sick</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>pet</Left>
+		<Right>peck</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>net</Left>
+		<Right>neck</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tall</Left>
+		<Right>call</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tool</Left>
+		<Right>cool</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tape</Left>
+		<Right>cape</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tight</Left>
+		<Right>kite</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tote</Left>
+		<Right>coat</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>toffee</Left>
+		<Right>coffee</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>dough</Left>
+		<Right>go</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>down</Left>
+		<Right>gown</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>date</Left>
+		<Right>gate</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>dust</Left>
+		<Right>gust</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>dig</Left>
+		<Right>gig</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>tar</Left>
+		<Right>car</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>take</Left>
+		<Right>cake</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>bat</Left>
+		<Right>back</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>bed</Left>
+		<Right>beg</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>die</Left>
+		<Right>guy</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Ed</Left>
+		<Right>egg</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>pat</Left>
+		<Right>pack</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>deer</Left>
+		<Right>gear</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>down</Left>
+		<Right>gown</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>bite</Left>
+		<Right>bike</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sat</Left>
+		<Right>sack</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sour</Left>
+		<Right>shower</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sign</Left>
+		<Right>shine</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Sue</Left>
+		<Right>shoe</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sew</Left>
+		<Right>shoe</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sip</Left>
+		<Right>ship</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sell</Left>
+		<Right>shell</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>save</Left>
+		<Right>shave</Right>
+		<Type>Fronting</Type>
+		<Position>Initial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>mud</Left>
+		<Right>bug</Right>
+		<Type>Fronting</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>fee</Left>
+		<Right>feed</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ma</Left>
+		<Right>mop</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>row</Left>
+		<Right>rope</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pie</Left>
+		<Right>pipe</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pa</Left>
+		<Right>pop</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bow</Left>
+		<Right>boat</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>no</Left>
+		<Right>note</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>boo</Left>
+		<Right>boot</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bay</Left>
+		<Right>bait</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bee</Left>
+		<Right>beet</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bee</Left>
+		<Right>bean</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bee</Left>
+		<Right>beep</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ray</Left>
+		<Right>rain</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bow</Left>
+		<Right>bone</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>moo</Left>
+		<Right>moon</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>raw</Left>
+		<Right>rock</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>k</Left>
+		<Right>case</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>go</Left>
+		<Right>goat</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>knee</Left>
+		<Right>neat</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>buy</Left>
+		<Right>bite</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>me</Left>
+		<Right>meat</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>weigh</Left>
+		<Right>wave</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tie</Left>
+		<Right>type</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bye</Left>
+		<Right>bike</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>four</Left>
+		<Right>fork</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>row</Left>
+		<Right>robe</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>toe</Left>
+		<Right>toad</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tie</Left>
+		<Right>time</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tea</Left>
+		<Right>team</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>c</Left>
+		<Right>seed</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>eye</Left>
+		<Right>ice</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>Sue</Left>
+		<Right>soup</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>knee</Left>
+		<Right>neat</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>she</Left>
+		<Right>sheep</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cow</Left>
+		<Right>couch</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>moo</Left>
+		<Right>moon</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>P</Left>
+		<Right>peach</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>buy</Left>
+		<Right>bite</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>sew</Left>
+		<Right>soap</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>T</Left>
+		<Right>team</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>Ray</Left>
+		<Right>race</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>hoe</Left>
+		<Right>home</Right>
+		<Type>Final Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>buck</Left>
+		<Right>bug</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tack</Left>
+		<Right>tag</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>rack</Left>
+		<Right>rag</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>puck</Left>
+		<Right>pug</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pick</Left>
+		<Right>pig</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lock</Left>
+		<Right>log</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>back</Left>
+		<Right>bag</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>duck</Left>
+		<Right>dug</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wick</Left>
+		<Right>wig</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>Matt</Left>
+		<Right>mad</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>write</Left>
+		<Right>ride</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>sat</Left>
+		<Right>sad</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>seat</Left>
+		<Right>seed</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lit</Left>
+		<Right>lid</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bus</Left>
+		<Right>buzz</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ice</Left>
+		<Right>eyes</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>niece</Left>
+		<Right>knees</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>race</Left>
+		<Right>raise</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>rice</Left>
+		<Right>rise</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>piece</Left>
+		<Right>peas</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>rope</Left>
+		<Right>robe</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cop</Left>
+		<Right>cab</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cup</Left>
+		<Right>cub</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lap</Left>
+		<Right>lab</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>rip</Left>
+		<Right>rib</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>safe</Left>
+		<Right>save</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>leaf</Left>
+		<Right>leave</Right>
+		<Type>Postvocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gap</Left>
+		<Right>cap</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gauge</Left>
+		<Right>cage</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>goal</Left>
+		<Right>coal</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>barp</Left>
+		<Right>park</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>beach</Left>
+		<Right>peach</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bat</Left>
+		<Right>pat</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bass</Left>
+		<Right>pass</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>buck</Left>
+		<Right>puck</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bush</Left>
+		<Right>push</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bath</Left>
+		<Right>path</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bowl</Left>
+		<Right>pole</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bear</Left>
+		<Right>pear</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bees</Left>
+		<Right>peas</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>back</Left>
+		<Right>pack</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>dip</Left>
+		<Right>tip</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>down</Left>
+		<Right>town</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>dot</Left>
+		<Right>tot</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>dime</Left>
+		<Right>time</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>dough</Left>
+		<Right>toe</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>deer</Left>
+		<Right>tear</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gold</Left>
+		<Right>cold</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>goat</Left>
+		<Right>coat</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ghost</Left>
+		<Right>coast</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>guard</Left>
+		<Right>card</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gate</Left>
+		<Right>Kate</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>van</Left>
+		<Right>fan</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>vase</Left>
+		<Right>face</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>zip</Left>
+		<Right>sip</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>zoo</Left>
+		<Right>Sue</Right>
+		<Type>Prevocalic</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wipe</Left>
+		<Right>ripe</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>whale</Left>
+		<Right>rail</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wok</Left>
+		<Right>rock</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wag</Left>
+		<Right>rag</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>weed</Left>
+		<Right>read</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wed</Left>
+		<Right>red</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>witch</Left>
+		<Right>rich</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>one</Left>
+		<Right>run</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>west</Left>
+		<Right>rest</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wing</Left>
+		<Right>ring</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>white</Left>
+		<Right>right</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>week</Left>
+		<Right>leak</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wick</Left>
+		<Right>lick</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>whip</Left>
+		<Right>lip</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>weigh</Left>
+		<Right>lay</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>weep</Left>
+		<Right>leap</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wake</Left>
+		<Right>rake</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>win</Left>
+		<Right>Lynn</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wizard</Left>
+		<Right>lizard</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>yuck</Left>
+		<Right>luck</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>yam</Left>
+		<Right>lamb</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>yawn</Left>
+		<Right>lawn</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wink</Left>
+		<Right>rink</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wake</Left>
+		<Right>rake</Right>
+		<Type>Gliding</Type>
+	</Pair>
+
+	<!--____________________________-Initial Consonant Deletion__________________________-->
+
+	<Pair>
+		<Left>E</Left>
+		<Right>bee</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>oat</Left>
+		<Right>boat</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ed</Left>
+		<Right>bed</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ill</Left>
+		<Right>pill</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>oat</Left>
+		<Right>boat</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pour</Left>
+		<Right>oar</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>L</Left>
+		<Right>bell</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ants</Left>
+		<Right>pants</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>oil</Left>
+		<Right>boil</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>eat</Left>
+		<Right>feet</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>eat</Left>
+		<Right>meat</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>eye</Left>
+		<Right>pie</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>all</Left>
+		<Right>fall</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>arm</Left>
+		<Right>farm</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>up</Left>
+		<Right>cup</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ape</Left>
+		<Right>cape</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ice</Left>
+		<Right>dice</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ear</Left>
+		<Right>deer</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>off</Left>
+		<Right>cough</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>add</Left>
+		<Right>dad</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ink</Left>
+		<Right>sink</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ache</Left>
+		<Right>cake</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>oat</Left>
+		<Right>boat</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>owl</Left>
+		<Right>howl</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>old</Left>
+		<Right>gold</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>in</Left>
+		<Right>chin</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>egg</Left>
+		<Right>leg</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>on</Left>
+		<Right>yawn</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>aim</Left>
+		<Right>game</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>add</Left>
+		<Right>dad</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>ace</Left>
+		<Right>vase</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>art</Left>
+		<Right>chart</Right>
+		<Type>Initial Consonant Deletion</Type>
+	</Pair>
+<!--__________________________-Stridency deletion______________________________________-->
+
+	<Pair>
+		<Left>pan</Left>
+		<Right>fan</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pin</Left>
+		<Right>fin</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>paint</Left>
+		<Right>faint</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pine</Left>
+		<Right>fine</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>peel</Left>
+		<Right>feel</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pat</Left>
+		<Right>fat</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pair</Left>
+		<Right>fair</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>purr</Left>
+		<Right>fur</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tin</Left>
+		<Right>shin</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tack</Left>
+		<Right>shack</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>take</Left>
+		<Right>shake</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tip</Left>
+		<Right>ship</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tower</Left>
+		<Right>shower</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>top</Left>
+		<Right>shop</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tie</Left>
+		<Right>shy</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>T's</Left>
+		<Right>cheese</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tin</Left>
+		<Right>chin</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>two</Left>
+		<Right>shoe</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tick</Left>
+		<Right>chick</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>test</Left>
+		<Right>chest</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tip</Left>
+		<Right>chip</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>two</Left>
+		<Right>chew</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+	<Pair>
+		<Left>top</Left>
+		<Right>chop</Right>
+		<Type>Stridency Deletion</Type>
+	</Pair>
+
+<!--____________________________Nasalization______________________________________-->
+
+	<Pair>
+		<Left>knock</Left>
+		<Right>dock</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>knot</Left>
+		<Right>dot</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>nice</Left>
+		<Right>dice</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>near</Left>
+		<Right>deer</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>nine</Left>
+		<Right>dine</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>neigh</Left>
+		<Right>day</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>neck</Left>
+		<Right>deck</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>no</Left>
+		<Right>dough</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>nose</Left>
+		<Right>does</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>crown</Left>
+		<Right>crowd</Right>
+		<Type>Nasalization</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>bean</Left>
+		<Right>bead</Right>
+		<Type>Nasalization</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>mare</Left>
+		<Right>bear</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>mall</Left>
+		<Right>ball</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Matt</Left>
+		<Right>bat</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>mug</Left>
+		<Right>bug</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>make</Left>
+		<Right>bake</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>math</Left>
+		<Right>bath</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>melt</Left>
+		<Right>belt</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Mark</Left>
+		<Right>bark</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>money</Left>
+		<Right>bunny</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Mike</Left>
+		<Right>bike</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>men</Left>
+		<Right>Ben</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>moo</Left>
+		<Right>boo</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>Meg</Left>
+		<Right>beg</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>mud</Left>
+		<Right>bud</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>meat</Left>
+		<Right>beet</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>sum</Left>
+		<Right>sub</Right>
+		<Type>Nasalization</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>rim</Left>
+		<Right>rib</Right>
+		<Type>Nasalization</Type>
+		<Position>Final</Position>
+	</Pair>
+
+	<Pair>
+		<Left>knee</Left>
+		<Right>D</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>nip</Left>
+		<Right>dip</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+
+	<Pair>
+		<Left>name</Left>
+		<Right>dame</Right>
+		<Type>Nasalization</Type>
+		<Position>Inial</Position>
+	</Pair>
+<!--______________________________-Cluster Reduction______________________________-->
+	<Pair>
+		<Left>fog</Left>
+		<Right>frog</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>nail</Left>
+		<Right>snail</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>sack</Left>
+		<Right>sacks</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pot</Left>
+		<Right>spot</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pie</Left>
+		<Right>spy</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pill</Left>
+		<Right>spill</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tore</Left>
+		<Right>store</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tick</Left>
+		<Right>stick</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>no</Left>
+		<Right>snow</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>nail</Left>
+		<Right>snail</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>knees</Left>
+		<Right>sneeze</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>nap</Left>
+		<Right>snap</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cool</Left>
+		<Right>school</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>key</Left>
+		<Right>ski</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>car</Left>
+		<Right>scar</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tar</Left>
+		<Right>star</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tear</Left>
+		<Right>stare</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tool</Left>
+		<Right>stool</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>mile</Left>
+		<Right>smile</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>mall</Left>
+		<Right>small</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>mock</Left>
+		<Right>smock</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>wing</Left>
+		<Right>swing</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>led</Left>
+		<Right>sled</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bow</Left>
+		<Right>blow</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>top</Left>
+		<Right>stop</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bake</Left>
+		<Right>break</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>bed</Left>
+		<Right>bread</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tip</Left>
+		<Right>trip</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>T</Left>
+		<Right>tree</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tail</Left>
+		<Right>trail</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>dip</Left>
+		<Right>drip</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>call</Left>
+		<Right>crawl</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cab</Left>
+		<Right>crab</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pool</Left>
+		<Right>spool</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>4</Left>
+		<Right>floor</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>cap</Left>
+		<Right>clap</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pay</Left>
+		<Right>play</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>box</Left>
+		<Right>blocks</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gas</Left>
+		<Right>glass</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>gas</Left>
+		<Right>grass</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>go</Left>
+		<Right>glow</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pout</Left>
+		<Right>spout</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>fog</Left>
+		<Right>frog</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>pain</Left>
+		<Right>plane</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lip</Left>
+		<Right>clip</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>love</Left>
+		<Right>glove</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lip</Left>
+		<Right>flip</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lock</Left>
+		<Right>block</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lane</Left>
+		<Right>plane</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>late</Left>
+		<Right>plate</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lap</Left>
+		<Right>clap</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>loud</Left>
+		<Right>cloud</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>lock</Left>
+		<Right>clock</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+	<Pair>
+		<Left>tack</Left>
+		<Right>stack</Right>
+		<Type>Cluster Reduction</Type>
+	</Pair>
+
+</Pairs>
