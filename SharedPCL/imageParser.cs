@@ -5,10 +5,6 @@ using System.Xml.Schema;
 using System.Collections.Generic;
 using System.IO;
 
-
-
-
-
 namespace SharedPCL
 {
 	public class imageParser
@@ -21,7 +17,7 @@ namespace SharedPCL
 		//xmlreader cannot be instantiated in PCL, must be passed in.
 		public Dictionary<string, List<Pair>> parsePairs(XmlReader reader)
 		{
-			//will return a dictionary containing six lists. string will be pair type.
+			//will return a dictionary containing multiple lists. string will be pair type.
 			Dictionary<string, List<Pair>> pairLists = new Dictionary<string, List<Pair>> ();
 
 			//A list for each type
@@ -31,14 +27,19 @@ namespace SharedPCL
 			List<Pair> stopping = new List<Pair> ();
 			List<Pair> fronting = new List<Pair> ();
 			List<Pair> syllableDeletion = new List<Pair> ();
+			List<Pair> nasalization = new List<Pair> ();
+			List<Pair> preVocalic = new List<Pair> ();
+			List<Pair> postVocalic = new List<Pair> ();
+			List<Pair> gliding = new List<Pair> ();
+			List<Pair> stridencyDeletion = new List<Pair> ();
 
 			//read the xml file and add each pair to the appropriate list 
 			while (reader.ReadToFollowing ("Pair")) {
 				Pair pairToAdd = new Pair ();
 
-				reader.ReadToFollowing ("LeftImage");
+				reader.ReadToFollowing ("Left");
 				pairToAdd.leftImageName = reader.ReadElementContentAsString ();
-				reader.ReadToFollowing ("RightImage");
+				reader.ReadToFollowing ("Right");
 				pairToAdd.rightImageName = reader.ReadElementContentAsString ();
 				reader.ReadToFollowing ("Type");
 				string type = reader.ReadElementContentAsString ();
@@ -54,8 +55,7 @@ namespace SharedPCL
 					break;
 
 				case "Cluster Reduction":
-					reader.ReadToFollowing ("Position");
-					pairToAdd.position = reader.ReadElementContentAsString ();
+
 					clusterReduction.Add (pairToAdd);
 					break;
 
@@ -71,6 +71,28 @@ namespace SharedPCL
 					fronting.Add (pairToAdd);
 					break;
 
+				case "Nasalization":
+					reader.ReadToFollowing("Position");
+					pairToAdd.position = reader.ReadElementContentAsString();
+					nasalization.Add(pairToAdd);
+					break;
+
+				case "Stridency Deletion":
+					stridencyDeletion.Add (pairToAdd);
+					break;
+				
+				case "Gliding":
+					gliding.Add (pairToAdd);
+					break;
+
+				case "Prevocalic":
+					preVocalic.Add (pairToAdd);
+					break;
+
+				case "Postvocalic":
+					postVocalic.Add (pairToAdd);
+					break;
+
 				case "Syllable Deletion":
 					syllableDeletion.Add (pairToAdd);
 					break;
@@ -80,12 +102,17 @@ namespace SharedPCL
 			}
 
 			//add each list that has been built along with type as the key
-			pairLists.Add ("Initial Consonant Deletion", initConsonant);
-			pairLists.Add ("Final Consonant Deletion", finConsonant);
-			pairLists.Add ("Cluster Reduction", clusterReduction);
-			pairLists.Add ("Stopping", stopping);
-			pairLists.Add ("Fronting", fronting);
+			pairLists.Add ("initial_consonant", initConsonant);
+			pairLists.Add ("final_consonant", finConsonant);
+			pairLists.Add ("cluster_reduction", clusterReduction);
+			pairLists.Add ("stopping", stopping);
+			pairLists.Add ("fronting", fronting);
 			pairLists.Add ("Syllable Deletion", syllableDeletion);
+			pairLists.Add ("postvocalic", postVocalic);
+			pairLists.Add ("prevocalic", preVocalic);
+			pairLists.Add ("gliding", gliding);
+			pairLists.Add ("stridency_deletion", stridencyDeletion);
+			pairLists.Add ("nasalization", nasalization);
 
 
 			return pairLists;

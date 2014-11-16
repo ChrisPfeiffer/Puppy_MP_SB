@@ -5,6 +5,7 @@ using MonoTouch.UIKit;
 using System.Xml;
 using SharedPCL;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace speechTherapy
 {
@@ -36,7 +37,7 @@ namespace speechTherapy
 
 
 			//create an xmlreader to pass so it can be parsed
-			XmlReader reader = XmlReader.Create("Shared_Content/Pairs.xml");
+			XmlReader reader = XmlReader.Create("Shared_Content/Pairs2.xml");
 
 			imageParser parser = new imageParser ();
 
@@ -70,28 +71,22 @@ namespace speechTherapy
 		{
 			base.PrepareForSegue (segue, Sender);
 			//based on segue, pass appropriate list to either position choice or image displayer
+			List<Pair> listToPass = new List<Pair>();
+			listToPass = pairLists[segue.Identifier];
 
+			var pairsWithPositions = listToPass.Where (p => p.position != null);
 
-			if (segue.Identifier == "initial_consonant") {
+			if (pairsWithPositions.Count() == listToPass.Count) {
+				//pass it to the positioncontroller
+				var posVC = segue.DestinationViewController as PositionViewController;
+				posVC.setPairList (this,listToPass);
+			} else {
 
-				var initialVC = segue.DestinationViewController as imagePgViewController;
-				initialVC.setPairList (this, pairLists ["Initial Consonant Deletion"]);
-			} else if (segue.Identifier == "final_consonant") {
-				var finalVC = segue.DestinationViewController as imagePgViewController;
-				finalVC.setPairList (this, pairLists ["Final Consonant Deletion"]);
-			} else if (segue.Identifier == "cluster_reduction") {
-				var clusterVC = segue.DestinationViewController as PositionViewController;
-				clusterVC.setPairList (this, pairLists ["Cluster Reduction"]);
-			} else if (segue.Identifier == "stopping") {
-				var stopVC = segue.DestinationViewController as PositionViewController;
-				stopVC.setPairList (this, pairLists ["Stopping"]);
-			} else if (segue.Identifier == "syllable_deletion") {
-				var sylDelVC = segue.DestinationViewController as imagePgViewController;
-				sylDelVC.setPairList (this, pairLists ["Syllable Deletion"]);
-			} else if (segue.Identifier == "fronting") {
-				var frontVC = segue.DestinationViewController as PositionViewController;
-				frontVC.setPairList (this, pairLists ["Fronting"]);
+				var imageVC = segue.DestinationViewController as imagePgViewController;
+				imageVC.setPairList (this,listToPass);
 			}
+
+
 		}
 
 		#endregion

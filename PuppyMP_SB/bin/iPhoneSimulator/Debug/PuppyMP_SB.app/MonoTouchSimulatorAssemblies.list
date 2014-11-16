@@ -9,3 +9,4 @@ System.ComponentModel.Composition.dll
 System.Runtime.Extensions.dll
 System.Collections.dll
 System.Xml.ReaderWriter.dll
+System.Diagnostics.Debug.dll

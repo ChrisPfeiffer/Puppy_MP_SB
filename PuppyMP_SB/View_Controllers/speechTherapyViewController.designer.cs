@@ -44,7 +44,7 @@ namespace speechTherapy
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton btnVocalization { get; set; }
+		UIButton btnStridency { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -76,9 +76,9 @@ namespace speechTherapy
 				btnStopping.Dispose ();
 				btnStopping = null;
 			}
-			if (btnVocalization != null) {
-				btnVocalization.Dispose ();
-				btnVocalization = null;
+			if (btnStridency != null) {
+				btnStridency.Dispose ();
+				btnStridency = null;
 			}
 		}
 	}

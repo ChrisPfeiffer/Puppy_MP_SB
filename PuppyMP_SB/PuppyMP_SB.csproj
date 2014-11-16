@@ -294,6 +294,9 @@
     <BundleResource Include="iPad_Images\type%402x.jpg" />
     <BundleResource Include="iPad_Images\walkie talkie.jpg" />
     <BundleResource Include="iPad_Images\walkie talkie%402x.jpg" />
+    <BundleResource Include="..\SharedPCL\Shared_Content\Pairs2.xml">
+      <Link>Shared_Content\Pairs2.xml</Link>
+    </BundleResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />

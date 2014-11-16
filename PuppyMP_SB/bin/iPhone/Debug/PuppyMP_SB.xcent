@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>52B5GTYRZF.com.your-company.PuppyMP_SB</string>
+	<string>52B5GTYRZF.com.chrispcodes.PuppyMPSB</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>52B5GTYRZF.com.your-company.PuppyMP_SB</string>
+		<string>52B5GTYRZF.com.chrispcodes.PuppyMPSB</string>
 	</array>
 </dict>
 </plist>

@@ -228,11 +228,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63" misplaced="YES">
                                 <rect key="frame" x="384" y="811" width="384" height="107"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Vocalization">
+                                <state key="normal" title="Stridency Deletion">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49" kind="push" identifier="vocalization" id="133"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="618" identifier="stridency_deletion"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64" misplaced="YES">
@@ -242,7 +242,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" identifier="pre_voicing" id="129"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="prevocalic" id="129"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65" misplaced="YES">
@@ -252,7 +252,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" identifier="post_voicing" id="127"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="postvocalic" id="127"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66">
@@ -267,6 +267,9 @@
                                 <state key="normal" title="Gliding">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="609" identifier="gliding"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68" misplaced="YES">
                                 <rect key="frame" x="384" y="704" width="384" height="107"/>
@@ -275,7 +278,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49" kind="push" identifier="cluster_reduction" id="147"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="627" identifier="cluster_reduction"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69" misplaced="YES">
@@ -382,7 +385,7 @@
                         <outlet property="btnPostVoicing" destination="65" id="name-outlet-65"/>
                         <outlet property="btnPreVoicing" destination="64" id="name-outlet-64"/>
                         <outlet property="btnStopping" destination="61" id="name-outlet-61"/>
-                        <outlet property="btnVocalization" destination="63" id="name-outlet-63"/>
+                        <outlet property="btnStridency" destination="63" id="name-outlet-63"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -660,6 +663,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="166"/>
-        <segue reference="147"/>
     </inferredMetricsTieBreakers>
 </document>
