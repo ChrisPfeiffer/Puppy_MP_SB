@@ -26,7 +26,7 @@ namespace SharedPCL
 			List<Pair> clusterReduction = new List<Pair> ();
 			List<Pair> stopping = new List<Pair> ();
 			List<Pair> fronting = new List<Pair> ();
-			List<Pair> syllableDeletion = new List<Pair> ();
+			List<Pair> multi = new List<Pair> ();
 			List<Pair> nasalization = new List<Pair> ();
 			List<Pair> preVocalic = new List<Pair> ();
 			List<Pair> postVocalic = new List<Pair> ();
@@ -94,7 +94,7 @@ namespace SharedPCL
 					break;
 
 				case "Syllable Deletion":
-					syllableDeletion.Add (pairToAdd);
+					multi.Add (pairToAdd);
 					break;
 										
 				}
@@ -107,12 +107,12 @@ namespace SharedPCL
 			pairLists.Add ("cluster_reduction", clusterReduction);
 			pairLists.Add ("stopping", stopping);
 			pairLists.Add ("fronting", fronting);
-			pairLists.Add ("Syllable Deletion", syllableDeletion);
 			pairLists.Add ("postvocalic", postVocalic);
 			pairLists.Add ("prevocalic", preVocalic);
 			pairLists.Add ("gliding", gliding);
 			pairLists.Add ("stridency_deletion", stridencyDeletion);
 			pairLists.Add ("nasalization", nasalization);
+			pairLists.Add ("multi", multi);
 
 
 			return pairLists;

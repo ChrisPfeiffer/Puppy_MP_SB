@@ -16,6 +16,10 @@ namespace speechTherapy
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnCluster { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnDeaffrication { get; set; }
 
 		[Outlet]
@@ -25,6 +29,10 @@ namespace speechTherapy
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnFronting { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnGliding { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -46,8 +54,16 @@ namespace speechTherapy
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnStridency { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton buyFronting { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnCluster != null) {
+				btnCluster.Dispose ();
+				btnCluster = null;
+			}
 			if (btnDeaffrication != null) {
 				btnDeaffrication.Dispose ();
 				btnDeaffrication = null;
@@ -59,6 +75,10 @@ namespace speechTherapy
 			if (btnFronting != null) {
 				btnFronting.Dispose ();
 				btnFronting = null;
+			}
+			if (btnGliding != null) {
+				btnGliding.Dispose ();
+				btnGliding = null;
 			}
 			if (btnInitialConsonant != null) {
 				btnInitialConsonant.Dispose ();
@@ -79,6 +99,10 @@ namespace speechTherapy
 			if (btnStridency != null) {
 				btnStridency.Dispose ();
 				btnStridency = null;
+			}
+			if (buyFronting != null) {
+				buyFronting.Dispose ();
+				buyFronting = null;
 			}
 		}
 	}
