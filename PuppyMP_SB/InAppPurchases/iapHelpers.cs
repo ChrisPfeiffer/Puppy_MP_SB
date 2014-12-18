@@ -1,7 +1,7 @@
 ﻿using System;
 using MonoTouch.StoreKit;
 using MonoTouch.Foundation;
-
+using System.Collections.Generic;
 
 
 namespace speechTherapy
@@ -15,8 +15,9 @@ namespace speechTherapy
 
 		public static void reflectPurchase(String product)
 		{
-			var key = new NSString (product);
-			NSUserDefaults.StandardUserDefaults.SetBool (true, key);
+			//todo: add full logic here.
+			Dictionary<String, String> prods = getAllProductIDs ();
+			NSUserDefaults.StandardUserDefaults.SetBool (true, prods[product]);
 			NSUserDefaults.StandardUserDefaults.Synchronize ();
 		}
 
@@ -26,12 +27,36 @@ namespace speechTherapy
 			return NSUserDefaults.StandardUserDefaults.BoolForKey (key);
 		}
 
-		//this method should be removed.  For testing purposes only.
-		public static void resetPurchasing()
+		public static Dictionary<String, String> getAllProductIDs()
 		{
-			//resets.  tests restoring/re-doing transactions.
-			NSUserDefaults.StandardUserDefaults.SetBool (false, "Fronting");
-		}
-	}
-}
+			Dictionary<String, String> prodIDs = new Dictionary<String, String> ();
 
+			prodIDs.Add ("com.chrispcodes.pmp.clusterreduction", "cluster_reduction");
+			prodIDs.Add ("Fronting", "fronting");
+			prodIDs.Add ("com.chrispcodes.pmp.stopping", "stopping");
+			prodIDs.Add ("com.chrispcodes.pmp.gliding", "gliding");
+			prodIDs.Add ("com.chrispcodes.pmp.multi", "multi");
+			prodIDs.Add ("com.chrispcodes.pmp.stridencydeletion", "stridency_deletion");
+			prodIDs.Add ("com.chrispcodes.pmp.prevocalic", "prevocalic");
+			prodIDs.Add ("com.chrispcodes.pmp.postvocalic", "postvocalic");
+			prodIDs.Add ("com.chrispcodes.pmp.finalconsonantdeletion", "final_consonant");
+
+			return prodIDs;
+
+		}
+
+		public static List<String> getAllKeys()
+		{
+			Dictionary<String, String> dict = new Dictionary<String, String> ();
+			List<String> allKeys = new List<String> ();
+
+			dict = getAllProductIDs ();
+
+			foreach (String key in dict.Keys) {
+				allKeys.Add (key);
+			}
+
+			return allKeys;
+		}
+}
+}

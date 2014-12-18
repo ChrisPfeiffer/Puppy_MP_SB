@@ -1,3 +1,4 @@
+monotouch_GetFolderPath
 monotouch_log
 monotouch_release_managed_ref
 monotouch_create_managed_ref

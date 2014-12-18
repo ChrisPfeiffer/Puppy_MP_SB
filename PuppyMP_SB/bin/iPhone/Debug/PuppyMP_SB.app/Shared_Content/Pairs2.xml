@@ -2130,4 +2130,127 @@
 		<Type>Cluster Reduction</Type>
 	</Pair>
 
+<Pair>
+	<Left>strawberry</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>elephant</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>grasshopper</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>hippopotamus</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>polar bear</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>dinosaur</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>octopus</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>maraca</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>cowboy hat</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>hoola hoop</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>waterbottle</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>stethlescope</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>banana</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>walkie talkie</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>sunglasses</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>teddybear</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>calculator</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>register</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>superman</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>helicopter</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>Superman</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>baluga</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>astronaut</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+<Pair>
+	<Left>tamborine</Left>
+	<Right>NULL</Right>
+	<Type>Multi</Type>
+</Pair>
+
+
+
 </Pairs>

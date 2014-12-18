@@ -485,6 +485,7 @@
     <Compile Include="InAppPurchases\iapHelpers.cs" />
     <Compile Include="InAppPurchases\InAppPurchaseManager.cs" />
     <Compile Include="InAppPurchases\CustomPaymentObserver.cs" />
+    <Compile Include="Helpers\reachability.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard" />
@@ -497,6 +498,7 @@
     <Folder Include="AV\" />
     <Folder Include="iPad_Images\" />
     <Folder Include="InAppPurchases\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharedPCL\SharedPCL.csproj">

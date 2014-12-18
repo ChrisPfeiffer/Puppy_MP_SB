@@ -1,18 +1,21 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/View_Controllers/speechTherapyViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Christopher Pfeiffer’s iPad" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/InAppPurchases/CustomPaymentObserver.cs">
     <Files>
-      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/View_Controllers/speechTherapyViewController.cs" Line="29" Column="29" />
-      <File FileName="SharedPCL/imageParser.cs" Line="1" Column="1" />
-      <File FileName="SharedPCL/HelperFunctions.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/Info.plist" />
-      <File FileName="PuppyMP_SB/InAppPurchases/iapBuilder.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/InAppPurchases/iapHelpers.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="4" Column="4" />
+      <File FileName="PuppyMP_SB/View_Controllers/speechTherapyViewController.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/InAppPurchases/iapHelpers.cs" Line="4" Column="4" />
+      <File FileName="PuppyMP_SB/Main.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/InAppPurchases/InAppPurchaseManager.cs" Line="63" Column="63" />
+      <File FileName="PuppyMP_SB/InAppPurchases/CustomPaymentObserver.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/btnSyllableDeletion.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/Helpers/reachability.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/christopherpfeiffer/Projects/PuppyMP_SB/PuppyMP_SB/InAppPurchases/InAppPurchaseManager.cs" line="144" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

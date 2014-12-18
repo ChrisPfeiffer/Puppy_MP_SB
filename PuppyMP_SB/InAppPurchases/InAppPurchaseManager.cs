@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using MonoTouch.StoreKit;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using MonoTouch.SystemConfiguration;
 
 namespace speechTherapy {
 	public class InAppPurchaseManager : SKProductsRequestDelegate {
@@ -10,6 +11,7 @@ namespace speechTherapy {
 		public static NSString InAppPurchaseManagerTransactionFailedNotification = new NSString("InAppPurchaseManagerTransactionFailedNotification");
 		public static NSString InAppPurchaseManagerTransactionSucceededNotification = new NSString("InAppPurchaseManagerTransactionSucceededNotification");
 		public static NSString InAppPurchaseManagerRequestFailedNotification = new NSString("InAppPurchaseManagerRequestFailedNotification");
+		public static NSString NoInternetNotification = new NSString ("NoInternetNotification");
 
 
 		SKProductsRequest productsRequest;
@@ -69,9 +71,17 @@ namespace speechTherapy {
 
 		public void PurchaseProduct(SKProduct appStoreProductId)
 		{
-			Console.WriteLine("PurchaseProduct " + appStoreProductId);
-			SKPayment payment = SKPayment.PaymentWithProduct (appStoreProductId);	
-			SKPaymentQueue.DefaultQueue.AddPayment (payment);
+			NetworkStatus internetStatus = Reachability.InternetConnectionStatus ();
+			//make sure the internet is still good.  If it is, go ahead.
+			if (internetStatus == NetworkStatus.NotReachable) {
+
+				NSNotificationCenter.DefaultCenter.PostNotificationName (NoInternetNotification, null);
+			} else {
+
+				Console.WriteLine ("PurchaseProduct " + appStoreProductId);
+				SKPayment payment = SKPayment.PaymentWithProduct (appStoreProductId);	
+				SKPaymentQueue.DefaultQueue.AddPayment (payment);
+			}
 		}
 		public void CompleteTransaction (SKPaymentTransaction transaction)
 		{
@@ -101,7 +111,9 @@ namespace speechTherapy {
 				Console.WriteLine("User CANCELLED FailedTransaction Code=" + transaction.Error.Code + " " + transaction.Error.LocalizedDescription);
 			else // error!
 				Console.WriteLine("FailedTransaction Code=" + transaction.Error.Code + " " + transaction.Error.LocalizedDescription);
-			
+
+			SKPaymentQueue.DefaultQueue.FinishTransaction(transaction);
+
 			FinishTransaction(transaction,false);
 		}
 
@@ -109,11 +121,12 @@ namespace speechTherapy {
 		{
 			Console.WriteLine("FinishTransaction " + wasSuccessful);
 			// remove the transaction from the payment queue.
-			SKPaymentQueue.DefaultQueue.FinishTransaction(transaction);		// THIS IS IMPORTANT - LET'S APPLE KNOW WE'RE DONE !!!!
+				// THIS IS IMPORTANT - LET'S APPLE KNOW WE'RE DONE !!!!
 			
 			using (var pool = new NSAutoreleasePool()) {
 				NSDictionary userInfo = NSDictionary.FromObjectsAndKeys(new NSObject[] {transaction},new NSObject[] {new NSString("transaction")});
 				if (wasSuccessful) {
+					SKPaymentQueue.DefaultQueue.FinishTransaction(transaction);	
 					// send out a notification that we’ve finished the transaction
 					NSNotificationCenter.DefaultCenter.PostNotificationName(InAppPurchaseManagerTransactionSucceededNotification,this,userInfo);
 				} else {

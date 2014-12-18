@@ -16,7 +16,7 @@ namespace speechTherapy {
 		// called when the transaction status is updated
 		public override void UpdatedTransactions (SKPaymentQueue queue, SKPaymentTransaction[] transactions)
 		{
-			Console.WriteLine ("UpdatedTransactions");
+			Console.WriteLine ("Updating Transactions in Custom Payment Observer");
 			foreach (SKPaymentTransaction transaction in transactions)
 			{
 			    switch (transaction.TransactionState)
@@ -30,7 +30,7 @@ namespace speechTherapy {
 			        case SKPaymentTransactionState.Restored:
 			            theManager.RestoreTransaction(transaction);
 			            break;
-			        default:
+				default:
 			            break;
 			    }
 			}

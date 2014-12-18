@@ -20,10 +20,6 @@ namespace speechTherapy
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton btnDeaffrication { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnFinalConsonant { get; set; }
 
 		[Outlet]
@@ -37,6 +33,10 @@ namespace speechTherapy
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnInitialConsonant { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnMulti { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -64,10 +64,6 @@ namespace speechTherapy
 				btnCluster.Dispose ();
 				btnCluster = null;
 			}
-			if (btnDeaffrication != null) {
-				btnDeaffrication.Dispose ();
-				btnDeaffrication = null;
-			}
 			if (btnFinalConsonant != null) {
 				btnFinalConsonant.Dispose ();
 				btnFinalConsonant = null;
@@ -83,6 +79,10 @@ namespace speechTherapy
 			if (btnInitialConsonant != null) {
 				btnInitialConsonant.Dispose ();
 				btnInitialConsonant = null;
+			}
+			if (btnMulti != null) {
+				btnMulti.Dispose ();
+				btnMulti = null;
 			}
 			if (btnPostVoicing != null) {
 				btnPostVoicing.Dispose ();
