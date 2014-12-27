@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CF62B2F0000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8737CD000000000000000000 /* UIKit.framework */; };
+		1E8BCE620000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221CDB000000000000000000 /* MapKit.framework */; };
+		33BF36FA0000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375043980000000000000000 /* Foundation.framework */; };
+		272A19430000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ABB25E10000000000000000 /* CoreGraphics.framework */; };
+		13F4D1E50000000000000000 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1785DE830000000000000000 /* Default-568h@2x.png */; };
+		29283A7D0000000000000000 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9471B0000000000000000 /* mic.png */; };
+		1752FB670000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AE408050000000000000000 /* Info.plist */; };
+		57DBC5100000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90EC8EF00000000000000000 /* Entitlements.plist */; };
+		21D33E250000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25644AC30000000000000000 /* MainStoryboard_iPhone.storyboard */; };
+		28C274450000000000000000 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5380E30000000000000000 /* MainStoryboard_iPad.storyboard */; };
+		16ED352F0000000000000000 /* Home_Top_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7E41CD0000000000000000 /* Home_Top_Logo.png */; };
+		1C2D568E0000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE632C0000000000000000 /* AppDelegate.h */; };
+		285CAE0D0000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDBAAB0000000000000000 /* AppDelegate.m */; };
+		1F589CF40000000000000000 /* PuppyMP_SBViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 22E9A9920000000000000000 /* PuppyMP_SBViewController.h */; };
+		12C37F3D0000000000000000 /* PuppyMP_SBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16548BDB0000000000000000 /* PuppyMP_SBViewController.m */; };
+		32AA0DAF0000000000000000 /* imagePgViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 363B1A4D0000000000000000 /* imagePgViewController.h */; };
+		1D10DEDF0000000000000000 /* imagePgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20A1EB7D0000000000000000 /* imagePgViewController.m */; };
+		1CDDFBC30000000000000000 /* PositionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 206F08610000000000000000 /* PositionViewController.h */; };
+		3211645B0000000000000000 /* PositionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A270F90000000000000000 /* PositionViewController.m */; };
+		302F6C7E0000000000000000 /* speechTherapyViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 33C0791C0000000000000000 /* speechTherapyViewController.h */; };
+		2FFC89620000000000000000 /* speechTherapyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338D96000000000000000000 /* speechTherapyViewController.m */; };
+		8C0FE9800000000000000000 /* videoController.h in Sources */ = {isa = PBXBuildFile; fileRef = C520B3600000000000000000 /* videoController.h */; };
+		218573CE0000000000000000 /* videoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2516806C0000000000000000 /* videoController.m */; };
+		2334888F0000000000000000 /* btnSyllableDeletion.h in Sources */ = {isa = PBXBuildFile; fileRef = 26C5952D0000000000000000 /* btnSyllableDeletion.h */; };
+		1A3077760000000000000000 /* btnSyllableDeletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC184140000000000000000 /* btnSyllableDeletion.m */; };
+		1BDF8C370000000000000000 /* videoPlayController.h in Sources */ = {isa = PBXBuildFile; fileRef = 1F7098D50000000000000000 /* videoPlayController.h */; };
+		12DB7B1E0000000000000000 /* videoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 166C87BC0000000000000000 /* videoPlayController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		400488A00000000000000000 /* PuppyMP_SB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "PuppyMP_SB.app"; path = "PuppyMP_SB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8737CD000000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		221CDB000000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		375043980000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		2ABB25E10000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		1785DE830000000000000000 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2CB9471B0000000000000000 /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mic.png"; path = "mic.png"; sourceTree = "<group>"; };
+		1AE408050000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		90EC8EF00000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		25644AC30000000000000000 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPhone.storyboard"; path = "MainStoryboard_iPhone.storyboard"; sourceTree = "<group>"; };
+		2C5380E30000000000000000 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard_iPad.storyboard"; path = "MainStoryboard_iPad.storyboard"; sourceTree = "<group>"; };
+		1A7E41CD0000000000000000 /* Home_Top_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Home_Top_Logo.png"; path = "Home_Top_Logo.png"; sourceTree = "<group>"; };
+		1FBE632C0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		2BEDBAAB0000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		22E9A9920000000000000000 /* PuppyMP_SBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PuppyMP_SBViewController.h"; path = "PuppyMP_SBViewController.h"; sourceTree = "<group>"; };
+		16548BDB0000000000000000 /* PuppyMP_SBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PuppyMP_SBViewController.m"; path = "PuppyMP_SBViewController.m"; sourceTree = "<group>"; };
+		363B1A4D0000000000000000 /* imagePgViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "imagePgViewController.h"; path = "imagePgViewController.h"; sourceTree = "<group>"; };
+		20A1EB7D0000000000000000 /* imagePgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "imagePgViewController.m"; path = "imagePgViewController.m"; sourceTree = "<group>"; };
+		206F08610000000000000000 /* PositionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PositionViewController.h"; path = "PositionViewController.h"; sourceTree = "<group>"; };
+		35A270F90000000000000000 /* PositionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "PositionViewController.m"; path = "PositionViewController.m"; sourceTree = "<group>"; };
+		33C0791C0000000000000000 /* speechTherapyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "speechTherapyViewController.h"; path = "speechTherapyViewController.h"; sourceTree = "<group>"; };
+		338D96000000000000000000 /* speechTherapyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "speechTherapyViewController.m"; path = "speechTherapyViewController.m"; sourceTree = "<group>"; };
+		C520B3600000000000000000 /* videoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "videoController.h"; path = "videoController.h"; sourceTree = "<group>"; };
+		2516806C0000000000000000 /* videoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "videoController.m"; path = "videoController.m"; sourceTree = "<group>"; };
+		26C5952D0000000000000000 /* btnSyllableDeletion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "btnSyllableDeletion.h"; path = "btnSyllableDeletion.h"; sourceTree = "<group>"; };
+		1DC184140000000000000000 /* btnSyllableDeletion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "btnSyllableDeletion.m"; path = "btnSyllableDeletion.m"; sourceTree = "<group>"; };
+		1F7098D50000000000000000 /* videoPlayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "videoPlayController.h"; path = "videoPlayController.h"; sourceTree = "<group>"; };
+		166C87BC0000000000000000 /* videoPlayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "videoPlayController.m"; path = "videoPlayController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12775E1E0000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CF62B2F0000000000000000 /* UIKit.framework in Frameworks */,
+				1E8BCE620000000000000000 /* MapKit.framework in Frameworks */,
+				33BF36FA0000000000000000 /* Foundation.framework in Frameworks */,
+				272A19430000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3290CFAC0000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				1D2A83F80000000000000000 /* PuppyMP_SB */,
+				3D43F5860000000000000000 /* Frameworks */,
+				27DDA9D20000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27DDA9D20000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				400488A00000000000000000 /* PuppyMP_SB.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		3D43F5860000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8737CD000000000000000000 /* UIKit.framework */,
+				221CDB000000000000000000 /* MapKit.framework */,
+				375043980000000000000000 /* Foundation.framework */,
+				2ABB25E10000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		1D2A83F80000000000000000 /* PuppyMP_SB */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE632C0000000000000000 /* AppDelegate.h */,
+				26C5952D0000000000000000 /* btnSyllableDeletion.h */,
+				1785DE830000000000000000 /* Default-568h@2x.png */,
+				90EC8EF00000000000000000 /* Entitlements.plist */,
+				1A7E41CD0000000000000000 /* Home_Top_Logo.png */,
+				363B1A4D0000000000000000 /* imagePgViewController.h */,
+				1AE408050000000000000000 /* Info.plist */,
+				2C5380E30000000000000000 /* MainStoryboard_iPad.storyboard */,
+				25644AC30000000000000000 /* MainStoryboard_iPhone.storyboard */,
+				2CB9471B0000000000000000 /* mic.png */,
+				206F08610000000000000000 /* PositionViewController.h */,
+				22E9A9920000000000000000 /* PuppyMP_SBViewController.h */,
+				33C0791C0000000000000000 /* speechTherapyViewController.h */,
+				C520B3600000000000000000 /* videoController.h */,
+				1F7098D50000000000000000 /* videoPlayController.h */,
+				3C13E5000000000000000000 /* Supporting Files */,
+			);
+			name = "PuppyMP_SB";
+			sourceTree = "<group>";
+		};
+		3C13E5000000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDBAAB0000000000000000 /* AppDelegate.m */,
+				1DC184140000000000000000 /* btnSyllableDeletion.m */,
+				20A1EB7D0000000000000000 /* imagePgViewController.m */,
+				35A270F90000000000000000 /* PositionViewController.m */,
+				16548BDB0000000000000000 /* PuppyMP_SBViewController.m */,
+				338D96000000000000000000 /* speechTherapyViewController.m */,
+				2516806C0000000000000000 /* videoController.m */,
+				166C87BC0000000000000000 /* videoPlayController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E40EF650000000000000000 /* PuppyMP_SB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394D22B00000000000000000 /* Build configuration list for PBXNativeTarget "PuppyMP_SB" */;
+			buildPhases = (
+				A21F08000000000000000000 /* Sources */,
+				12775E1E0000000000000000 /* Frameworks */,
+				298CBE930000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PuppyMP_SB";
+			productName = "PuppyMP_SB";
+			productReference = 400488A00000000000000000 /* PuppyMP_SB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		138DC98B0000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2E99FCD60000000000000000 /* Build configuration list for PBXProject "PuppyMP_SB" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3290CFAC0000000000000000;
+			productRefGroup = 27DDA9D20000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E40EF650000000000000000 /* PuppyMP_SB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298CBE930000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F4D1E50000000000000000 /* Default-568h@2x.png in Resources */,
+				29283A7D0000000000000000 /* mic.png in Resources */,
+				1752FB670000000000000000 /* Info.plist in Resources */,
+				57DBC5100000000000000000 /* Entitlements.plist in Resources */,
+				21D33E250000000000000000 /* MainStoryboard_iPhone.storyboard in Resources */,
+				28C274450000000000000000 /* MainStoryboard_iPad.storyboard in Resources */,
+				16ED352F0000000000000000 /* Home_Top_Logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A21F08000000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2D568E0000000000000000 /* AppDelegate.h in Sources */,
+				285CAE0D0000000000000000 /* AppDelegate.m in Sources */,
+				1F589CF40000000000000000 /* PuppyMP_SBViewController.h in Sources */,
+				12C37F3D0000000000000000 /* PuppyMP_SBViewController.m in Sources */,
+				32AA0DAF0000000000000000 /* imagePgViewController.h in Sources */,
+				1D10DEDF0000000000000000 /* imagePgViewController.m in Sources */,
+				1CDDFBC30000000000000000 /* PositionViewController.h in Sources */,
+				3211645B0000000000000000 /* PositionViewController.m in Sources */,
+				302F6C7E0000000000000000 /* speechTherapyViewController.h in Sources */,
+				2FFC89620000000000000000 /* speechTherapyViewController.m in Sources */,
+				8C0FE9800000000000000000 /* videoController.h in Sources */,
+				218573CE0000000000000000 /* videoController.m in Sources */,
+				2334888F0000000000000000 /* btnSyllableDeletion.h in Sources */,
+				1A3077760000000000000000 /* btnSyllableDeletion.m in Sources */,
+				1BDF8C370000000000000000 /* videoPlayController.h in Sources */,
+				12DB7B1E0000000000000000 /* videoPlayController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13C0ACA70000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		23E6D6FC0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "PuppyMP_SB";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E99FCD60000000000000000 /* Build configuration list for PBXProject "PuppyMP_SB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13C0ACA70000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		394D22B00000000000000000 /* Build configuration list for PBXNativeTarget "PuppyMP_SB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23E6D6FC0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 138DC98B0000000000000000 /* Project object */;
+}

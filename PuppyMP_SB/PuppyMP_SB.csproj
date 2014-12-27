@@ -451,6 +451,7 @@
     <BundleResource Include="iPad_Images\waterbottle%402x.jpg" />
     <BundleResource Include="iPad_Images\whale.jpg" />
     <BundleResource Include="iPad_Images\whale%402x.jpg" />
+    <BundleResource Include="Resources\Home_Top_Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
