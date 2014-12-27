@@ -78,6 +78,20 @@ namespace speechTherapy
 			}
 		}
 
+		void previousClick (object sender, EventArgs e)
+		{
+
+			pairIndex--;
+			this.btnPlayAudio.Enabled = false;
+			displayPair (pairIndex);
+			if (pairIndex == 0) {
+				this.btnPrevious.Enabled = false;
+			}
+
+
+
+		}
+
 		private void toggleRecordAudio(Object sender, EventArgs ea)
 		{
 			if (!recordingAudio) {
@@ -167,19 +181,7 @@ namespace speechTherapy
 				displayPair(pairIndex);
 			}
 		}
-		void previousClick (object sender, EventArgs e)
-		{
 
-			pairIndex--;
-			this.btnPlayAudio.Enabled = false;
-			displayPair (pairIndex);
-			if (pairIndex == 0) {
-				this.btnPrevious.Enabled = false;
-			}
-
-
-
-		}
 
 		public void playAudio (object sender, EventArgs e)
 		{

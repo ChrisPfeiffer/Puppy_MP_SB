@@ -1,12 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Christopher Pfeiffer’s iPad" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/InAppPurchases/CustomPaymentObserver.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="4" Column="4" />
+      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="28" Column="28" />
       <File FileName="PuppyMP_SB/View_Controllers/speechTherapyViewController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/InAppPurchases/iapHelpers.cs" Line="4" Column="4" />
+      <File FileName="PuppyMP_SB/InAppPurchases/iapHelpers.cs" Line="1" Column="1" />
       <File FileName="PuppyMP_SB/Main.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/InAppPurchases/InAppPurchaseManager.cs" Line="63" Column="63" />
+      <File FileName="PuppyMP_SB/InAppPurchases/InAppPurchaseManager.cs" Line="1" Column="1" />
       <File FileName="PuppyMP_SB/InAppPurchases/CustomPaymentObserver.cs" Line="1" Column="1" />
       <File FileName="PuppyMP_SB/btnSyllableDeletion.cs" Line="1" Column="1" />
       <File FileName="PuppyMP_SB/Helpers/reachability.cs" Line="1" Column="1" />
