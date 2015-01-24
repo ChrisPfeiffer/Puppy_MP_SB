@@ -9,4 +9,7 @@
 
 @implementation videoController
 
+@synthesize btnPlayVideo = _btnPlayVideo;
+@synthesize btnRecord = _btnRecord;
+
 @end

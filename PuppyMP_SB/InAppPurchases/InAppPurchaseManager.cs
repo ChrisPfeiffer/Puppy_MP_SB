@@ -34,17 +34,24 @@ namespace speechTherapy {
 		// request multiple products at once
 		public void RequestProductData (List<string> productIds)
 		{
-			var array = new NSString[productIds.Count];
-			for (var i = 0; i < productIds.Count; i++) {
-				array[i] = new NSString(productIds[i]);
+			NetworkStatus internetStatus = Reachability.InternetConnectionStatus ();
+			if (internetStatus == NetworkStatus.NotReachable) {
+
+				NSNotificationCenter.DefaultCenter.PostNotificationName (NoInternetNotification, null);
+				Console.WriteLine ("No Internet");
+			} else {
+				var array = new NSString[productIds.Count];
+				for (var i = 0; i < productIds.Count; i++) {
+					array [i] = new NSString (productIds [i]);
+				}
+				NSSet productIdentifiers = NSSet.MakeNSObjectSet<NSString> (array);			
+
+				//set up product request for in-app purchase
+
+				productsRequest = new SKProductsRequest (productIdentifiers);
+				productsRequest.Delegate = this; // SKProductsRequestDelegate.ReceivedResponse
+				productsRequest.Start ();
 			}
-		 	NSSet productIdentifiers = NSSet.MakeNSObjectSet<NSString>(array);			
-
-			//set up product request for in-app purchase
-
-			productsRequest  = new SKProductsRequest(productIdentifiers);
-			productsRequest.Delegate = this; // SKProductsRequestDelegate.ReceivedResponse
-			productsRequest.Start();
 		}
 		// received response to RequestProductData - with price,title,description info
 		public override void ReceivedResponse (SKProductsRequest request, SKProductsResponse response)
@@ -76,6 +83,7 @@ namespace speechTherapy {
 			if (internetStatus == NetworkStatus.NotReachable) {
 
 				NSNotificationCenter.DefaultCenter.PostNotificationName (NoInternetNotification, null);
+				Console.WriteLine ("No Internet");
 			} else {
 
 				Console.WriteLine ("PurchaseProduct " + appStoreProductId);

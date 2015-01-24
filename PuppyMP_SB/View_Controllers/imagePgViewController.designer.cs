@@ -4,9 +4,9 @@
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
-using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using System;
 using System.CodeDom.Compiler;
 
 namespace speechTherapy
@@ -55,7 +55,19 @@ namespace speechTherapy
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIImageView micImage { get; set; }
+		UIButton micImage { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIImageView multiImage { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel multiLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIActivityIndicatorView spinner { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -86,6 +98,18 @@ namespace speechTherapy
 			if (micImage != null) {
 				micImage.Dispose ();
 				micImage = null;
+			}
+			if (multiImage != null) {
+				multiImage.Dispose ();
+				multiImage = null;
+			}
+			if (multiLabel != null) {
+				multiLabel.Dispose ();
+				multiLabel = null;
+			}
+			if (spinner != null) {
+				spinner.Dispose ();
+				spinner = null;
 			}
 		}
 	}

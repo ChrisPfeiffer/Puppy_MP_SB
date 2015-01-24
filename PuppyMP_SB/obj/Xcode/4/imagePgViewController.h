@@ -20,7 +20,11 @@
 	UIButton *_btnPlayVideo;
 	UIButton *_btnPrevious;
 	UIButton *_btnRecordAudio;
-	UIImageView *_micImage;
+	UIButton *_btnRecordVideo;
+	UIButton *_micImage;
+	UIImageView *_multiImage;
+	UILabel *_multiLabel;
+	UIActivityIndicatorView *_spinner;
 }
 
 @property (nonatomic, retain) IBOutlet UIImageView *leftImageOutlet;
@@ -43,6 +47,14 @@
 
 @property (nonatomic, retain) IBOutlet UIButton *btnRecordAudio;
 
-@property (nonatomic, retain) IBOutlet UIImageView *micImage;
+@property (nonatomic, retain) IBOutlet UIButton *btnRecordVideo;
+
+@property (nonatomic, retain) IBOutlet UIButton *micImage;
+
+@property (nonatomic, retain) IBOutlet UIImageView *multiImage;
+
+@property (nonatomic, retain) IBOutlet UILabel *multiLabel;
+
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *spinner;
 
 @end

@@ -10,6 +10,12 @@
 
 
 @interface videoController : UIViewController {
+	UIButton *_btnPlayVideo;
+	UIButton *_btnRecord;
 }
+
+@property (nonatomic, retain) IBOutlet UIButton *btnPlayVideo;
+
+@property (nonatomic, retain) IBOutlet UIButton *btnRecord;
 
 @end

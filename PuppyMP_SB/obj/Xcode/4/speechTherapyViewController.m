@@ -9,13 +9,16 @@
 
 @implementation speechTherapyViewController
 
-@synthesize btnDeaffrication = _btnDeaffrication;
+@synthesize btnCluster = _btnCluster;
 @synthesize btnFinalConsonant = _btnFinalConsonant;
 @synthesize btnFronting = _btnFronting;
+@synthesize btnGliding = _btnGliding;
 @synthesize btnInitialConsonant = _btnInitialConsonant;
+@synthesize btnMulti = _btnMulti;
 @synthesize btnPostVoicing = _btnPostVoicing;
 @synthesize btnPreVoicing = _btnPreVoicing;
 @synthesize btnStopping = _btnStopping;
-@synthesize btnVocalization = _btnVocalization;
+@synthesize btnStridency = _btnStridency;
+@synthesize buyFronting = _buyFronting;
 
 @end

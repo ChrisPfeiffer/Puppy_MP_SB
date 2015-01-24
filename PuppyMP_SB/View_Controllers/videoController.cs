@@ -54,7 +54,7 @@ namespace speechTherapy
 			
 			// Release any cached data, images, etc that aren't in use.
 		}
-
+			
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();			
@@ -81,11 +81,7 @@ namespace speechTherapy
 			}
 
 			//a recording hasn't been done yet, hide the button
-
 			this.btnPlayVideo.TouchUpInside += playVideo;
-
-
-
 
 		}
 		private void initializeRecorder()
@@ -97,8 +93,6 @@ namespace speechTherapy
 
 			try{
 				//add front facing camera
-
-
 				foreach(AVCaptureDevice capdevice in AVCaptureDevice.Devices)
 				{
 					if(capdevice.HasMediaType(AVMediaType.Video))
@@ -173,31 +167,46 @@ namespace speechTherapy
 		{
 			if (!weAreRecording) {
 
-				deleteVideo ();
+				deleteVideo (videoPath);
 
 				AVCaptureFileOutputRecordingDelegate avDel = new AVCaptureFileOutputRecordingDelegate ();
 				output.StartRecordingToOutputFile (videoLocation, avDel);
-				btnRecord.SetTitle ("Done!", UIControlState.Normal);
+				btnRecord.SetImage (UIImage.FromFile("btn_done_recording.png"), UIControlState.Normal);
+				btnPlayVideo.Hidden = true;
+
 				weAreRecording = true;
 			} 
 			else {
 				output.StopRecording ();
 				weAreRecording = false;
-				btnRecord.SetTitle ("Record Again!", UIControlState.Normal);
+				btnRecord.SetImage (UIImage.FromFile("btn_Start_recording.png"), UIControlState.Normal);
 				btnPlayVideo.Hidden = false;
 			}
 		}
 
-		private void deleteVideo()
+		public static Boolean vidExists(string vidCheck)
+		{
+			NSFileManager mgr = new NSFileManager ();
+			if (mgr.FileExists (vidCheck)) {
+				return true;
+			} 
+
+			return false;
+
+
+		}
+
+		public static void deleteVideo(string vidToDelete)
 		{
 			NSFileManager manager = new NSFileManager ();
 			NSError error = new NSError ();
 
 			//delete the file if it is already there
-			if (manager.FileExists (videoPath)) {
-				manager.Remove (videoPath, out error);
+			if (manager.FileExists (vidToDelete)) {
+				manager.Remove (vidToDelete, out error);
 			}
 		}
+
 
 		public override void ViewWillDisappear(bool animated)
 		{
@@ -289,6 +298,8 @@ namespace speechTherapy
 			_playNow = playNow;
 
 		}
+
+
 
 	}
 }

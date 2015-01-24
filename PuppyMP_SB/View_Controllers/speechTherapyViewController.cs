@@ -36,6 +36,7 @@ namespace speechTherapy
 
 		public speechTherapyViewController (IntPtr handle) : base (handle)
 		{
+			iap = new InAppPurchaseManager ();
 		}
 
 		public override void DidReceiveMemoryWarning ()
@@ -63,6 +64,17 @@ namespace speechTherapy
 			handlerFCD=(s,e)=>iap.PurchaseProduct(fcdProduct);  handlerStopping=(s,e)=>iap.PurchaseProduct(stoppingProduct); 
 			handlerGliding=(s,e)=>iap.PurchaseProduct(glidingProduct);  handlerMulti=(s,e)=>iap.PurchaseProduct(multiProduct);  
 			handlerPre=(s,e)=>iap.PurchaseProduct(preProduct);  handlerPost=(s,e)=>iap.PurchaseProduct(postProduct); handlerStridency=(s,e)=>iap.PurchaseProduct(stridencyProduct);
+
+			this.btnFronting.TouchUpInside+=handlerFronting;
+			this.btnCluster.TouchUpInside+=handlerCR;
+			this.btnStopping.TouchUpInside+=handlerStopping;
+			this.btnPostVoicing.TouchUpInside +=handlerPost;
+			this.btnGliding.TouchUpInside+=handlerGliding;
+			this.btnPreVoicing.TouchUpInside +=handlerPre;
+			this.btnStridency.TouchUpInside +=handlerStridency;
+			this.btnMulti.TouchUpInside+=handlerMulti;
+			this.btnFinalConsonant.TouchUpInside+=handlerFCD;
+
 
 			buttonCheck ();
 
@@ -101,61 +113,48 @@ namespace speechTherapy
 				{
 					this.btnFronting.SetTitle("Fronting - "+frontingProduct.Price.ToString(), UIControlState.Normal);
 					this.btnFronting.Enabled = true;
-					this.btnFronting.TouchUpInside+=handlerFronting;
 				}
 
 				if(!iapHelpers.hasPurchased("cluster_reduction"))
 				{
 					this.btnCluster.SetTitle("Cluster Reduction - " +  crProduct.Price.ToString(), UIControlState.Normal);
 					this.btnCluster.Enabled = true;
-					this.btnCluster.TouchUpInside+=handlerCR;
 				}
 				if(!iapHelpers.hasPurchased("stopping"))
 				{
 					this.btnStopping.SetTitle("Stopping - " + stoppingProduct.Price.ToString(), UIControlState.Normal);
-					this.btnStopping.Enabled = true;
-					this.btnStopping.TouchUpInside+=handlerStopping;
+					this.btnStopping.Enabled = true;				
 				}
 				if(!iapHelpers.hasPurchased("postvocalic"))
 				{
 					this.btnPostVoicing.SetTitle("Post-Vocalic Voicing - " + postProduct.Price.ToString(), UIControlState.Normal);
 					this.btnPostVoicing.Enabled = true;
-					this.btnPostVoicing.TouchUpInside +=handlerPost;
 				}
 				if(!iapHelpers.hasPurchased("gliding"))
 				{
-					this.btnGliding.SetTitle("Gliding = " + glidingProduct.Price.ToString(), UIControlState.Normal);
+					this.btnGliding.SetTitle("Gliding - " + glidingProduct.Price.ToString(), UIControlState.Normal);
 					this.btnGliding.Enabled = true;
-					this.btnGliding.TouchUpInside+=handlerGliding;
 				}
 				if(!iapHelpers.hasPurchased("prevocalic"))
 				{
 					this.btnPreVoicing.SetTitle("Pre-Vocalic Voicing - " + preProduct.Price.ToString(),UIControlState.Normal);
 					this.btnPreVoicing.Enabled = true;
-					this.btnPreVoicing.TouchUpInside +=handlerPre;
 				}
 				if(!iapHelpers.hasPurchased("stridency_deletion"))
 				{
 					this.btnStridency.SetTitle("Stridency Deletion - " + stridencyProduct.Price.ToString(), UIControlState.Normal);
 					this.btnStridency.Enabled = true;
-					this.btnStridency.TouchUpInside +=handlerStridency;
 				}
 				if(!iapHelpers.hasPurchased("multi"))
 				{
 					this.btnMulti.SetTitle("Multi-Syllabalic Words - " + multiProduct.Price.ToString(), UIControlState.Normal);
 					this.btnMulti.Enabled = true;
-					this.btnMulti.TouchUpInside+=handlerMulti;
 				}
 				if(!iapHelpers.hasPurchased("final_consonant"))
 				{
 					this.btnFinalConsonant.SetTitle("Final Consonant Deletion - " + fcdProduct.Price.ToString(), UIControlState.Normal);
 					this.btnFinalConsonant.Enabled = true;
-					this.btnFinalConsonant.TouchUpInside+=handlerFCD;
-				}
-
-
-
-				
+				}			
 
 				Console.WriteLine("here");
 			});
@@ -178,11 +177,11 @@ namespace speechTherapy
 			});
 
 			noInterNetObserver = NSNotificationCenter.DefaultCenter.AddObserver (InAppPurchaseManager.NoInternetNotification, (notification) => {
-				UIAlertView noNetAlert = new UIAlertView("Connection Lost", "There seems to be an issue with your internet connection.  Please try purchase again with a better connection",null,"OK",null);
+				UIAlertView noNetAlert = new UIAlertView("Connection Lost", "There seems to be an issue with your internet connection. Feel free to use already purchased items!",null,"OK",null);
 				noNetAlert.Show();
 			});
 					
-			iap = new InAppPurchaseManager ();
+
 			List<String> allProdStrings = iapHelpers.getAllKeys ();
 			iap.RequestProductData (allProdStrings);
 		}
@@ -194,13 +193,13 @@ namespace speechTherapy
 
 		public override void ViewWillDisappear (bool animated)
 		{
-			base.ViewWillDisappear (animated);
 			NSNotificationCenter.DefaultCenter.RemoveObserver (priceObserver);
-		}
+			NSNotificationCenter.DefaultCenter.RemoveObserver (noInterNetObserver);
+			NSNotificationCenter.DefaultCenter.RemoveObserver (failedObserver);
+			NSNotificationCenter.DefaultCenter.RemoveObserver (requestObserver);
+			NSNotificationCenter.DefaultCenter.RemoveObserver (succeededObserver);
+			base.ViewWillDisappear (animated);
 
-		public override void ViewDidDisappear (bool animated)
-		{
-			base.ViewDidDisappear (animated);
 		}
 
 		public override void PrepareForSegue(UIStoryboardSegue segue, NSObject Sender)
@@ -212,12 +211,12 @@ namespace speechTherapy
 
 			var pairsWithPositions = listToPass.Where (p => p.position != null);
 
-			if (pairsWithPositions.Count() == listToPass.Count) {
+			if (pairsWithPositions.Count () == listToPass.Count) {
 				//pass it to the positioncontroller
 				var posVC = segue.DestinationViewController as PositionViewController;
-				posVC.setPairList (this,listToPass);
-			} else {
-
+				posVC.setPairList (this, listToPass);
+			} 
+			else{
 				var imageVC = segue.DestinationViewController as imagePgViewController;
 				imageVC.setPairList (this,listToPass);
 			}
@@ -276,6 +275,12 @@ namespace speechTherapy
 				btnPostVoicing.Enabled = true;
 				btnPostVoicing.TouchUpInside -= handlerPost;
 				btnPostVoicing.SetTitle ("Pre-Vocalic Voicing", UIControlState.Normal);
+			}
+
+			if (iapHelpers.hasPurchased ("final_consonant")) {
+				btnFinalConsonant.Enabled = true;
+				btnFinalConsonant.TouchUpInside -= handlerFCD;
+				btnFinalConsonant.SetTitle ("Final Consonant Deletion", UIControlState.Normal);
 			}
 		}
 			

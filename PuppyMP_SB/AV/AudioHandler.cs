@@ -99,11 +99,23 @@ namespace speechTherapy
 			player.Delegate = avDel;
 
 			player.Play ();
-
-
-
 	
 		}
+
+		public void playAudio(string path)
+		{
+			var newURL = new NSUrl ("Audio_Files/Hello.m4a");
+			session.SetActive (true);
+
+			player = AVAudioPlayer.FromUrl (newURL);
+
+			AVAudioPlayerDelegate avDel = new AVAudioPlayerDelegate ();
+			player.Delegate = avDel;
+
+			player.Play ();
+		}
+
+
 
 	}
 }

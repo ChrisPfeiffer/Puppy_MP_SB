@@ -21,16 +21,20 @@ namespace speechTherapy {
 			{
 			    switch (transaction.TransactionState)
 			    {
-			        case SKPaymentTransactionState.Purchased:
-			           theManager.CompleteTransaction(transaction);
+				case SKPaymentTransactionState.Purchased:
+					theManager.CompleteTransaction (transaction);
+					Console.WriteLine ("purchased status");
 			            break;
-			        case SKPaymentTransactionState.Failed:
-			           theManager.FailedTransaction(transaction);
+				case SKPaymentTransactionState.Failed:
+					theManager.FailedTransaction (transaction);
+					Console.WriteLine ("failed status");
 			            break;
-			        case SKPaymentTransactionState.Restored:
-			            theManager.RestoreTransaction(transaction);
+				case SKPaymentTransactionState.Restored:
+					theManager.RestoreTransaction (transaction);
+					Console.WriteLine ("restored status");
 			            break;
 				default:
+					Console.WriteLine ("other status");
 			            break;
 			    }
 			}

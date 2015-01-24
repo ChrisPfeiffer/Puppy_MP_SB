@@ -9,6 +9,7 @@ using System.Xml;
 using System.Collections.Generic;
 using System.Collections;
 using System.IO;
+using System.Linq;
 
 
 namespace speechTherapy
@@ -21,6 +22,9 @@ namespace speechTherapy
 		AudioHandler audioHandler;
 		//boolean to keep track of whether a recording is in progress.
 		bool recordingAudio;
+		bool isMulti;
+
+		string videoPath;
 
 		//public speechTherapyViewController Delegate { get; set; }
 		public UIViewController Delegate{ get; set; }
@@ -34,23 +38,56 @@ namespace speechTherapy
 		{
 			base.ViewDidLoad ();
 
-
+			this.spinner.StopAnimating ();
 			this.micImage.Hidden = true;
 			this.recordingAudio = false;
 
+			var result = pairList.Where (pl => pl.rightImageName != "NULL");
+			int count = result.Count ();
+			//figure out if it is the multi - view controller
+			if (count==0) {
+				//it is multi-syllabalic words
+				this.rightImageOutlet.Hidden = true;
+				this.leftImageOutlet.Hidden = true;
+				this.leftLabel.Hidden = true;
+				this.rightLabel.Hidden = true;
+
+				this.multiLabel.Hidden = false;
+				this.multiImage.Hidden = false;
+				this.isMulti = true; 
+
+			}
+
+			//get videopath so we know whether or not to display the play video button
+			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
+			var library = System.IO.Path.Combine (documents, "..", "Library");
+			videoPath = System.IO.Path.Combine (library, "sweetMovieFilm.mov");
+
+	
+
+			//if video exists, delete
+			videoController.deleteVideo (videoPath);
+			
 			//shuffle the list of pairs
 			pairList = HelperFunctions.Shuffle (pairList);
 
 			pairIndex = 0;
 			displayPair (pairIndex);
-
+						
+			//this.btnRecordAudio.SetImage (UIImage.FromFile ("iPad_Images/btnRecordAudio.png"), UIControlState.Normal);
 
 			this.btnNext.TouchUpInside += theNextClick;
 			this.btnPrevious.TouchUpInside += previousClick;
 			this.btnRecordAudio.TouchUpInside += toggleRecordAudio;
+			this.micImage.TouchUpInside += toggleRecordAudio;
 			this.btnPlayAudio.TouchUpInside += playAudio;
+
 			this.btnPlayAudio.Enabled = false;
-			this.btnPrevious.Enabled = false;
+			this.btnPrevious.Enabled = true;
+			this.btnPlayVideo.Enabled = false;
+
+
+
 			//this.btnPlayVideo.Enabled = false;
 			this.audioHandler = new AudioHandler ();
 
@@ -58,11 +95,29 @@ namespace speechTherapy
 
 		}
 
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear (animated);
+
+			this.spinner.StopAnimating ();
+
+
+			if (videoController.vidExists (videoPath)) {
+				this.btnPlayVideo.Enabled = true;
+			}
+
+			//decide whether or not to show the 
+		}
+
 		private void theNextClick(Object sender, EventArgs ea)
 		{
+
+			//delete last recorded video
+			videoController.deleteVideo (videoPath);
+
 			pairIndex++;
 			this.btnPlayAudio.Enabled = false;
-			this.btnPrevious.Enabled = true;
+			this.btnPlayVideo.Enabled = false;
 
 			if(pairList.Count > pairIndex)
 			{
@@ -80,14 +135,14 @@ namespace speechTherapy
 
 		void previousClick (object sender, EventArgs e)
 		{
-
+			if (pairIndex == 0) {
+				pairIndex = pairList.Count;
+			}
 			pairIndex--;
 			this.btnPlayAudio.Enabled = false;
+			this.btnPlayVideo.Enabled = false;
+			videoController.deleteVideo (videoPath);
 			displayPair (pairIndex);
-			if (pairIndex == 0) {
-				this.btnPrevious.Enabled = false;
-			}
-
 
 
 		}
@@ -100,21 +155,23 @@ namespace speechTherapy
 				audioHandler.startrecording ();
 				this.micImage.Hidden = false;
 				recordingAudio = true;
-				this.btnRecordAudio.SetTitle ("Done!", UIControlState.Normal);
+				this.btnRecordAudio.Enabled = false;
 				this.btnPrevious.Enabled = false;
 				this.btnNext.Enabled = false;
 				this.btnRecordVideo.Enabled = false;
 				this.btnPlayAudio.Enabled = false;
+				this.btnPlayVideo.Enabled = false;
 			} 
 			else {
 				//end the audio recording.
 				audioHandler.stopRecording ();
 				this.btnPlayAudio.Enabled = true;
 				this.micImage.Hidden = true;
-				this.btnRecordAudio.SetTitle ("Record", UIControlState.Normal);
+				this.btnRecordAudio.Enabled = true;
 				this.btnPrevious.Enabled = true;
 				this.btnNext.Enabled = true;
 				this.btnRecordVideo.Enabled = true;
+				this.btnPlayVideo.Enabled = true;
 				recordingAudio = false;
 			}
 		}
@@ -128,9 +185,14 @@ namespace speechTherapy
 
 			if(File.Exists(leftImagePath))
 			{
+
 				using(UIImage leftImage = UIImage.FromFile(leftImagePath))
 				{
-					this.leftImageOutlet.Image = leftImage;
+					if (!this.isMulti) {
+						this.leftImageOutlet.Image = leftImage;
+					} else {
+						this.multiImage.Image = leftImage;
+					}
 				}
 			}
 			else
@@ -140,22 +202,21 @@ namespace speechTherapy
 				}
 			}
 
-			if(File.Exists(rightImagePath))
-			{
-				using(UIImage rightImage =  UIImage.FromFile (rightImagePath))
-				{
-					this.rightImageOutlet.Image = rightImage;
-				}
-			}
-			else{
-				using(UIImage rightImage = UIImage.FromFile ("Photos/no_image.jpg"))
-				{
-					this.rightImageOutlet.Image = rightImage;
+			if (!this.isMulti) {
+				if (File.Exists (rightImagePath)) {
+					using (UIImage rightImage = UIImage.FromFile (rightImagePath)) {
+						this.rightImageOutlet.Image = rightImage;
+					}
+				} else {
+					using (UIImage rightImage = UIImage.FromFile ("Photos/no_image.jpg")) {
+						this.rightImageOutlet.Image = rightImage;
+					}
 				}
 			}
 
 			this.leftLabel.Text = pairList [index].leftImageName;
 			this.rightLabel.Text = pairList [index].rightImageName;
+			this.multiLabel.Text = pairList [index].leftImageName;
 
 		} 
 
@@ -185,14 +246,21 @@ namespace speechTherapy
 
 		public void playAudio (object sender, EventArgs e)
 		{
-			audioHandler.playAudio ();
+			audioHandler.playAudio ("word");
+		}
+
+		public void playWord (string word)
+		{
+			audioHandler.playAudio ("word");
 		}
 
 		public override void PrepareForSegue(UIStoryboardSegue Segue, NSObject Sender)
 		{
+
+			this.spinner.StartAnimating ();
+
 			base.PrepareForSegue (Segue, Sender);
 
-			this.btnPlayVideo.Enabled = true;
 
 			if (Segue.Identifier == "playSegue") {
 

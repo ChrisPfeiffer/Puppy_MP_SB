@@ -93,7 +93,7 @@ namespace SharedPCL
 					postVocalic.Add (pairToAdd);
 					break;
 
-				case "Syllable Deletion":
+				case "Multi":
 					multi.Add (pairToAdd);
 					break;
 										

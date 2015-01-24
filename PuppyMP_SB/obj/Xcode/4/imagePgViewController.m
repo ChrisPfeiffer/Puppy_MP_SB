@@ -19,6 +19,10 @@
 @synthesize btnPlayVideo = _btnPlayVideo;
 @synthesize btnPrevious = _btnPrevious;
 @synthesize btnRecordAudio = _btnRecordAudio;
+@synthesize btnRecordVideo = _btnRecordVideo;
 @synthesize micImage = _micImage;
+@synthesize multiImage = _multiImage;
+@synthesize multiLabel = _multiLabel;
+@synthesize spinner = _spinner;
 
 @end
