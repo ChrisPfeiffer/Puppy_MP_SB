@@ -56,7 +56,7 @@ namespace speechTherapy
 			//initialize buttons, buttons will be disabled until prices load or the purchase is checked
 			btnFronting.Enabled = false; btnCluster.Enabled = false; btnFinalConsonant.Enabled = false;
 			btnStopping.Enabled = false; btnGliding.Enabled = false; btnCluster.Enabled = false; btnStridency.Enabled = false; btnPreVoicing.Enabled = false;
-			btnPostVoicing.Enabled = false; btnMulti.Enabled = false;
+			btnPostVoicing.Enabled = false; 
 
 
 			handlerFronting = (s, e) => iap.PurchaseProduct (frontingProduct);

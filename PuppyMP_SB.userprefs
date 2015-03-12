@@ -1,13 +1,8 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/Main.cs">
+﻿<Properties StartupItem="PuppyMP_SB/PuppyMP_SB.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/View_Controllers/imagePgViewController.cs">
     <Files>
-      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/AV/AudioHandler.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/View_Controllers/videoController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/View_Controllers/videoPlayController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/View_Controllers/speechTherapyViewController.cs" Line="1" Column="1" />
-      <File FileName="PuppyMP_SB/Main.cs" Line="1" Column="1" />
+      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="34" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

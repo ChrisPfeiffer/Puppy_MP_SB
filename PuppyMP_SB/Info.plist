@@ -40,5 +40,10 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.christopherpfeiffer.speechtherapy</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>Icon-76@2x</string>
+		<string>Icon-76</string>
+	</array>
 </dict>
 </plist>

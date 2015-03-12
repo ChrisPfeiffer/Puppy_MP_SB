@@ -18,6 +18,10 @@ namespace speechTherapy
 	{
 
 		List<Pair> pairList { get; set; }
+
+		string _leftWord;
+		string _rightWord;
+
 		private int pairIndex;
 		AudioHandler audioHandler;
 		//boolean to keep track of whether a recording is in progress.
@@ -38,9 +42,9 @@ namespace speechTherapy
 		{
 			base.ViewDidLoad ();
 
-			this.spinner.StopAnimating ();
 			this.micImage.Hidden = true;
 			this.recordingAudio = false;
+			this.btnMulti.Hidden = true;
 
 			var result = pairList.Where (pl => pl.rightImageName != "NULL");
 			int count = result.Count ();
@@ -49,10 +53,10 @@ namespace speechTherapy
 				//it is multi-syllabalic words
 				this.rightImageOutlet.Hidden = true;
 				this.leftImageOutlet.Hidden = true;
-				this.leftLabel.Hidden = true;
-				this.rightLabel.Hidden = true;
+				this.btnLeft.Hidden = true;
+				this.btnRight.Hidden = true;
 
-				this.multiLabel.Hidden = false;
+				this.btnMulti.Hidden = false;
 				this.multiImage.Hidden = false;
 				this.isMulti = true; 
 
@@ -62,8 +66,6 @@ namespace speechTherapy
 			var documents = Environment.GetFolderPath (Environment.SpecialFolder.MyDocuments);
 			var library = System.IO.Path.Combine (documents, "..", "Library");
 			videoPath = System.IO.Path.Combine (library, "sweetMovieFilm.mov");
-
-	
 
 			//if video exists, delete
 			videoController.deleteVideo (videoPath);
@@ -82,25 +84,21 @@ namespace speechTherapy
 			this.micImage.TouchUpInside += toggleRecordAudio;
 			this.btnPlayAudio.TouchUpInside += playAudio;
 
+			this.btnLeft.TouchUpInside += playLeftWord;
+			this.btnRight.TouchUpInside += playRightWord;
+
+			this.btnMulti += playLeftWord;
+
 			this.btnPlayAudio.Enabled = false;
 			this.btnPrevious.Enabled = true;
 			this.btnPlayVideo.Enabled = false;
 
-
-
-			//this.btnPlayVideo.Enabled = false;
 			this.audioHandler = new AudioHandler ();
-
-
-
 		}
 
 		public override void ViewWillAppear(bool animated)
 		{
 			base.ViewWillAppear (animated);
-
-			this.spinner.StopAnimating ();
-
 
 			if (videoController.vidExists (videoPath)) {
 				this.btnPlayVideo.Enabled = true;
@@ -183,6 +181,10 @@ namespace speechTherapy
 			String leftImagePath = "iPad_Images/" + pairList [index].leftImageName + ".jpg";
 			String rightImagePath = "iPad_Images/" + pairList [index].rightImageName + ".jpg";
 
+			//set the class level variables so that if the left or right word is pushed we know what audio file to
+			this._leftWord = pairList [index].leftImageName;
+			this._rightWord = pairList [index].rightImageName;
+
 			if(File.Exists(leftImagePath))
 			{
 
@@ -214,9 +216,9 @@ namespace speechTherapy
 				}
 			}
 
-			this.leftLabel.Text = pairList [index].leftImageName;
-			this.rightLabel.Text = pairList [index].rightImageName;
-			this.multiLabel.Text = pairList [index].leftImageName;
+			this.btnLeft.SetTitle( pairList [index].leftImageName,UIControlState.Normal);
+			this.btnRight.SetTitle( pairList [index].rightImageName, UIControlState.Normal);
+			this.btnMulti.SetTitle( pairList [index].leftImageName, UIControlState.Normal);
 
 		} 
 
@@ -242,25 +244,26 @@ namespace speechTherapy
 				displayPair(pairIndex);
 			}
 		}
-
-
+			
 		public void playAudio (object sender, EventArgs e)
 		{
-			audioHandler.playAudio ("word");
+			audioHandler.playAudio ();
 		}
 
-		public void playWord (string word)
+		public void playLeftWord (object sender, EventArgs ea)
 		{
-			audioHandler.playAudio ("word");
+			audioHandler.playAudio (_leftWord);
+		}
+
+		public void playRightWord(object sender, EventArgs ea)
+		{
+			audioHandler.playAudio (_rightWord);
 		}
 
 		public override void PrepareForSegue(UIStoryboardSegue Segue, NSObject Sender)
 		{
 
-			this.spinner.StartAnimating ();
-
 			base.PrepareForSegue (Segue, Sender);
-
 
 			if (Segue.Identifier == "playSegue") {
 

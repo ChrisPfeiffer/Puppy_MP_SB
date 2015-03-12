@@ -102,13 +102,21 @@ namespace speechTherapy
 	
 		}
 
-		public void playAudio(string path)
+		public void playAudio(string word)
 		{
-			var newURL = new NSUrl ("Audio_Files/Hello.m4a");
+			var newURL = new NSUrl ("Audio_Files/"+word+".m4a");
+			var backupURL = new NSUrl ("Audio_Files/oat.m4a");
 			session.SetActive (true);
 
-			player = AVAudioPlayer.FromUrl (newURL);
+			try
+			{
+				player = AVAudioPlayer.FromUrl (newURL);
+			}
+			catch(Exception ex) {
 
+				//just play a random word so it doesn't crash.  Used to determine gaps
+				player = AVAudioPlayer.FromUrl (backupURL);
+			}
 			AVAudioPlayerDelegate avDel = new AVAudioPlayerDelegate ();
 			player.Delegate = avDel;
 

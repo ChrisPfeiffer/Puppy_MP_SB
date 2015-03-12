@@ -6,12 +6,6 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>mitt</Left>
-		<Right>miss</Right>
-		<Type>Stopping</Type>
-		<Position>Final</Position>
-	</Pair>
-	<Pair>
 		<Left>tub</Left>
 		<Right>sub</Right>
 		<Type>Stopping</Type>
@@ -36,8 +30,8 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>tea</Left>
-		<Right>sea</Right>
+		<Left>T</Left>
+		<Right>C</Right>
 		<Type>Stopping</Type>
 		<Position>Initial</Position>
 	</Pair>
@@ -204,22 +198,12 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>tent</Left>
-		<Right>cent</Right>
-		<Type>Stopping</Type>
-		<Position>Final</Position>
-	</Pair>
-	<Pair>
 		<Left>lap</Left>
 		<Right>laugh</Right>
 		<Type>Stopping</Type>
 		<Position>Final</Position>
 	</Pair>
-	<Pair>
-		<Left>toe</Left>
-		<Right>sew</Right>
-		<Position>Intial</Position>
-	</Pair>
+
 	<Pair>
 		<Left>pig</Left>
 		<Right>fig</Right>
@@ -228,12 +212,6 @@
 	</Pair>
 
 	<!--____Fronting____________-->
-	<Pair>
-		<Left>dumb</Left>
-		<Right>gum</Right>
-		<Type>Fronting</Type>
-		<Position>Initial</Position>
-	</Pair>
 
 	<Pair>
 		<Left>bud</Left>
@@ -243,7 +221,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>tea</Left>
+		<Left>T</Left>
 		<Right>key</Right>
 		<Type>Fronting</Type>
 		<Position>Initial</Position>
@@ -446,13 +424,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>down</Left>
-		<Right>gown</Right>
-		<Type>Fronting</Type>
-		<Position>Initial</Position>
-	</Pair>
-
-	<Pair>
 		<Left>bite</Left>
 		<Right>bike</Right>
 		<Type>Fronting</Type>
@@ -607,12 +578,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>moo</Left>
-		<Right>moon</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>raw</Left>
 		<Right>rock</Right>
 		<Type>Final Consonant Deletion</Type>
@@ -637,7 +602,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>buy</Left>
+		<Left>bye</Left>
 		<Right>bite</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -691,7 +656,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>tea</Left>
+		<Left>T</Left>
 		<Right>team</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -711,12 +676,6 @@
 	<Pair>
 		<Left>Sue</Left>
 		<Right>soup</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
-		<Left>knee</Left>
-		<Right>neat</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
 
@@ -745,12 +704,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>buy</Left>
-		<Right>bite</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>sew</Left>
 		<Right>soap</Right>
 		<Type>Final Consonant Deletion</Type>
@@ -763,7 +716,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>Ray</Left>
+		<Left>ray</Left>
 		<Right>race</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -955,7 +908,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>barp</Left>
+		<Left>bark</Left>
 		<Right>park</Right>
 		<Type>Prevocalic</Type>
 	</Pair>
@@ -1136,7 +1089,7 @@
 
 	<Pair>
 		<Left>weed</Left>
-		<Right>read</Right>
+		<Right>reed</Right>
 		<Type>Gliding</Type>
 	</Pair>
 
@@ -1187,13 +1140,6 @@
 		<Right>lick</Right>
 		<Type>Gliding</Type>
 	</Pair>
-
-	<Pair>
-		<Left>whip</Left>
-		<Right>lip</Right>
-		<Type>Gliding</Type>
-	</Pair>
-
 	<Pair>
 		<Left>weigh</Left>
 		<Right>lay</Right>
@@ -1248,11 +1194,6 @@
 		<Type>Gliding</Type>
 	</Pair>
 
-	<Pair>
-		<Left>wake</Left>
-		<Right>rake</Right>
-		<Type>Gliding</Type>
-	</Pair>
 
 	<!--____________________________-Initial Consonant Deletion__________________________-->
 
@@ -1279,13 +1220,6 @@
 		<Right>pill</Right>
 		<Type>Initial Consonant Deletion</Type>
 	</Pair>
-
-	<Pair>
-		<Left>oat</Left>
-		<Right>boat</Right>
-		<Type>Initial Consonant Deletion</Type>
-	</Pair>
-
 	<Pair>
 		<Left>pour</Left>
 		<Right>oar</Right>
@@ -1389,12 +1323,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>oat</Left>
-		<Right>boat</Right>
-		<Type>Initial Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>owl</Left>
 		<Right>howl</Right>
 		<Type>Initial Consonant Deletion</Type>
@@ -1427,12 +1355,6 @@
 	<Pair>
 		<Left>aim</Left>
 		<Right>game</Right>
-		<Type>Initial Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
-		<Left>add</Left>
-		<Right>dad</Right>
 		<Type>Initial Consonant Deletion</Type>
 	</Pair>
 
@@ -1540,7 +1462,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>T's</Left>
+		<Left>tease</Left>
 		<Right>cheese</Right>
 		<Type>Stridency Deletion</Type>
 	</Pair>
@@ -1806,11 +1728,6 @@
 		<Position>Inial</Position>
 	</Pair>
 <!--______________________________-Cluster Reduction______________________________-->
-	<Pair>
-		<Left>fog</Left>
-		<Right>frog</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
 
 	<Pair>
 		<Left>nail</Left>
@@ -1859,13 +1776,6 @@
 		<Right>snow</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
-
-	<Pair>
-		<Left>nail</Left>
-		<Right>snail</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
 	<Pair>
 		<Left>knees</Left>
 		<Right>sneeze</Right>
@@ -2011,7 +1921,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>4</Left>
+		<Left>four</Left>
 		<Right>floor</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>

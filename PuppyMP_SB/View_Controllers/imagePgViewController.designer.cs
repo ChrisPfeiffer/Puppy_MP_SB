@@ -18,16 +18,18 @@ namespace speechTherapy
 		MonoTouch.UIKit.UIImageView leftImageOutlet { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel leftLabel { get; set; }
-
-		[Outlet]
 		MonoTouch.UIKit.UIImageView rightImageOutlet { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UILabel rightLabel { get; set; }
+		MonoTouch.UIKit.UIButton theNextButton { get; set; }
 
 		[Outlet]
-		MonoTouch.UIKit.UIButton theNextButton { get; set; }
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnLeft { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnMulti { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -55,22 +57,26 @@ namespace speechTherapy
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnRight { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton micImage { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIImageView multiImage { get; set; }
 
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel multiLabel { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIActivityIndicatorView spinner { get; set; }
-
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnLeft != null) {
+				btnLeft.Dispose ();
+				btnLeft = null;
+			}
+			if (btnMulti != null) {
+				btnMulti.Dispose ();
+				btnMulti = null;
+			}
 			if (btnNext != null) {
 				btnNext.Dispose ();
 				btnNext = null;
@@ -95,6 +101,10 @@ namespace speechTherapy
 				btnRecordVideo.Dispose ();
 				btnRecordVideo = null;
 			}
+			if (btnRight != null) {
+				btnRight.Dispose ();
+				btnRight = null;
+			}
 			if (micImage != null) {
 				micImage.Dispose ();
 				micImage = null;
@@ -102,14 +112,6 @@ namespace speechTherapy
 			if (multiImage != null) {
 				multiImage.Dispose ();
 				multiImage = null;
-			}
-			if (multiLabel != null) {
-				multiLabel.Dispose ();
-				multiLabel = null;
-			}
-			if (spinner != null) {
-				spinner.Dispose ();
-				spinner = null;
 			}
 		}
 	}
