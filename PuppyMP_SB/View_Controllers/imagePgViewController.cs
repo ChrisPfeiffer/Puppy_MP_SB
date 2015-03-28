@@ -87,7 +87,7 @@ namespace speechTherapy
 			this.btnLeft.TouchUpInside += playLeftWord;
 			this.btnRight.TouchUpInside += playRightWord;
 
-			this.btnMulti += playLeftWord;
+			this.btnMulti.TouchUpInside += playLeftWord;
 
 			this.btnPlayAudio.Enabled = false;
 			this.btnPrevious.Enabled = true;

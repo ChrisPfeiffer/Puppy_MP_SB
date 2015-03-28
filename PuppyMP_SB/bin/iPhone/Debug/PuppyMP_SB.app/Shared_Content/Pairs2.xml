@@ -6,12 +6,6 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>mitt</Left>
-		<Right>miss</Right>
-		<Type>Stopping</Type>
-		<Position>Final</Position>
-	</Pair>
-	<Pair>
 		<Left>tub</Left>
 		<Right>sub</Right>
 		<Type>Stopping</Type>
@@ -37,7 +31,7 @@
 	</Pair>
 	<Pair>
 		<Left>T</Left>
-		<Right>sea</Right>
+		<Right>C</Right>
 		<Type>Stopping</Type>
 		<Position>Initial</Position>
 	</Pair>
@@ -204,12 +198,6 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>tent</Left>
-		<Right>cent</Right>
-		<Type>Stopping</Type>
-		<Position>Final</Position>
-	</Pair>
-	<Pair>
 		<Left>lap</Left>
 		<Right>laugh</Right>
 		<Type>Stopping</Type>
@@ -224,12 +212,6 @@
 	</Pair>
 
 	<!--____Fronting____________-->
-	<Pair>
-		<Left>dumb</Left>
-		<Right>gum</Right>
-		<Type>Fronting</Type>
-		<Position>Initial</Position>
-	</Pair>
 
 	<Pair>
 		<Left>bud</Left>
@@ -528,13 +510,6 @@
 		<Right>rope</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
-
-	<Pair>
-		<Left>pie</Left>
-		<Right>pipe</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
 	<Pair>
 		<Left>pa</Left>
 		<Right>pop</Right>
@@ -560,12 +535,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>bay</Left>
-		<Right>bait</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>bee</Left>
 		<Right>beet</Right>
 		<Type>Final Consonant Deletion</Type>
@@ -584,7 +553,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>ray</Left>
+		<Left>Ray</Left>
 		<Right>rain</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -614,13 +583,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>knee</Left>
-		<Right>neat</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
-		<Left>buy</Left>
+		<Left>bye</Left>
 		<Right>bite</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -680,7 +643,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>c</Left>
+		<Left>C</Left>
 		<Right>seed</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -708,33 +671,18 @@
 		<Right>couch</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
-
-	<Pair>
-		<Left>moo</Left>
-		<Right>moon</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
 	<Pair>
 		<Left>P</Left>
 		<Right>peach</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
-
 	<Pair>
 		<Left>sew</Left>
 		<Right>soap</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
-
 	<Pair>
-		<Left>T</Left>
-		<Right>team</Right>
-		<Type>Final Consonant Deletion</Type>
-	</Pair>
-
-	<Pair>
-		<Left>ray</Left>
+		<Left>Ray</Left>
 		<Right>race</Right>
 		<Type>Final Consonant Deletion</Type>
 	</Pair>
@@ -926,7 +874,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>barp</Left>
+		<Left>bark</Left>
 		<Right>park</Right>
 		<Type>Prevocalic</Type>
 	</Pair>
@@ -1107,7 +1055,7 @@
 
 	<Pair>
 		<Left>weed</Left>
-		<Right>read</Right>
+		<Right>reed</Right>
 		<Type>Gliding</Type>
 	</Pair>
 
@@ -1158,13 +1106,6 @@
 		<Right>lick</Right>
 		<Type>Gliding</Type>
 	</Pair>
-
-	<Pair>
-		<Left>whip</Left>
-		<Right>lip</Right>
-		<Type>Gliding</Type>
-	</Pair>
-
 	<Pair>
 		<Left>weigh</Left>
 		<Right>lay</Right>
@@ -1245,12 +1186,6 @@
 		<Right>pill</Right>
 		<Type>Initial Consonant Deletion</Type>
 	</Pair>
-	<Pair>
-		<Left>pour</Left>
-		<Right>oar</Right>
-		<Type>Initial Consonant Deletion</Type>
-	</Pair>
-
 	<Pair>
 		<Left>L</Left>
 		<Right>bell</Right>
@@ -1487,7 +1422,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>T's</Left>
+		<Left>tease</Left>
 		<Right>cheese</Right>
 		<Type>Stridency Deletion</Type>
 	</Pair>
@@ -1600,13 +1535,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>crown</Left>
-		<Right>crowd</Right>
-		<Type>Nasalization</Type>
-		<Position>Final</Position>
-	</Pair>
-
-	<Pair>
 		<Left>bean</Left>
 		<Right>bead</Right>
 		<Type>Nasalization</Type>
@@ -1689,7 +1617,6 @@
 		<Type>Nasalization</Type>
 		<Position>Inial</Position>
 	</Pair>
-
 	<Pair>
 		<Left>moo</Left>
 		<Right>boo</Right>
@@ -1777,13 +1704,6 @@
 		<Right>spy</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
-
-	<Pair>
-		<Left>pill</Left>
-		<Right>spill</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
 	<Pair>
 		<Left>tore</Left>
 		<Right>store</Right>
@@ -1801,13 +1721,6 @@
 		<Right>snow</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
-
-	<Pair>
-		<Left>nail</Left>
-		<Right>snail</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
 	<Pair>
 		<Left>knees</Left>
 		<Right>sneeze</Right>

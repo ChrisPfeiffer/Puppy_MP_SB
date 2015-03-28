@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="PuppyMP_SB/PuppyMP_SB.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PuppyMP_SB/View_Controllers/imagePgViewController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SharedPCL/Shared_Content/Pairs2.xml">
     <Files>
-      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="34" Column="34" />
+      <File FileName="PuppyMP_SB/View_Controllers/imagePgViewController.cs" Line="84" Column="53" />
+      <File FileName="SharedPCL/Shared_Content/Pairs2.xml" Line="1670" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
