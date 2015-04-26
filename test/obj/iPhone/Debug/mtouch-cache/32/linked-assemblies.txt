@@ -1,0 +1,10 @@
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/MonoTouch.Dialog-1.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/mscorlib.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/System.Core.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.iOS.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/System.Json.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/test.exe
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/SharedPCL.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/System.Xml.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/System.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/mtouch-cache/32/Link/MonoTouch.NUnitLite.dll

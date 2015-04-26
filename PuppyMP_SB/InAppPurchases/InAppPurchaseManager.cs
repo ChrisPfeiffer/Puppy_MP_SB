@@ -142,6 +142,10 @@ namespace speechTherapy {
 					NSNotificationCenter.DefaultCenter.PostNotificationName(InAppPurchaseManagerTransactionFailedNotification,this,userInfo);
 				}
 			}
+
+			UIApplication.SharedApplication.EndIgnoringInteractionEvents ();
+			UIApplication.SharedApplication.NetworkActivityIndicatorVisible = false;
+
 		}
 
 		/// <summary>

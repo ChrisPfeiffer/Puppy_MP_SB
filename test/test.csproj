@@ -1,0 +1,3135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>test</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>test</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="MonoTouch.NUnitLite" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ace.jpg">
+      <Link>ipad_images_pointer\ace.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ace%402x.jpg">
+      <Link>ipad_images_pointer\ace%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ache.jpg">
+      <Link>ipad_images_pointer\ache.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ache%402x.jpg">
+      <Link>ipad_images_pointer\ache%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\add.jpg">
+      <Link>ipad_images_pointer\add.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\add%402x.jpg">
+      <Link>ipad_images_pointer\add%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\aim.jpg">
+      <Link>ipad_images_pointer\aim.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\aim%402x.jpg">
+      <Link>ipad_images_pointer\aim%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\all.jpg">
+      <Link>ipad_images_pointer\all.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\all%402x.jpg">
+      <Link>ipad_images_pointer\all%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ant.jpg">
+      <Link>ipad_images_pointer\ant.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ant%402x.jpg">
+      <Link>ipad_images_pointer\ant%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ants.jpg">
+      <Link>ipad_images_pointer\ants.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ants%402x.jpg">
+      <Link>ipad_images_pointer\ants%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ape.jpg">
+      <Link>ipad_images_pointer\ape.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ape%402x.jpg">
+      <Link>ipad_images_pointer\ape%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\arm.jpg">
+      <Link>ipad_images_pointer\arm.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\arm%402x.jpg">
+      <Link>ipad_images_pointer\arm%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\armadillo.jpg">
+      <Link>ipad_images_pointer\armadillo.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\armadillo%402x.jpg">
+      <Link>ipad_images_pointer\armadillo%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\art.jpg">
+      <Link>ipad_images_pointer\art.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\art%402x.jpg">
+      <Link>ipad_images_pointer\art%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\astronaut.jpg">
+      <Link>ipad_images_pointer\astronaut.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\astronaut%402x.jpg">
+      <Link>ipad_images_pointer\astronaut%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\back.jpg">
+      <Link>ipad_images_pointer\back.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\back%402x.jpg">
+      <Link>ipad_images_pointer\back%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bag.jpg">
+      <Link>ipad_images_pointer\bag.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bag%402x.jpg">
+      <Link>ipad_images_pointer\bag%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bait.jpg">
+      <Link>ipad_images_pointer\bait.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bait%402x.jpg">
+      <Link>ipad_images_pointer\bait%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bake.jpg">
+      <Link>ipad_images_pointer\bake.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bake%402x.jpg">
+      <Link>ipad_images_pointer\bake%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ball.jpg">
+      <Link>ipad_images_pointer\ball.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ball%402x.jpg">
+      <Link>ipad_images_pointer\ball%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ballerina.jpg">
+      <Link>ipad_images_pointer\ballerina.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ballerina%402x.jpg">
+      <Link>ipad_images_pointer\ballerina%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\banana.jpg">
+      <Link>ipad_images_pointer\banana.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\banana%402x.jpg">
+      <Link>ipad_images_pointer\banana%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bass.jpg">
+      <Link>ipad_images_pointer\bass.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bass%402x.jpg">
+      <Link>ipad_images_pointer\bass%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bat.jpg">
+      <Link>ipad_images_pointer\bat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bat%402x.jpg">
+      <Link>ipad_images_pointer\bat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bath.jpg">
+      <Link>ipad_images_pointer\bath.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bath%402x.jpg">
+      <Link>ipad_images_pointer\bath%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beach.jpg">
+      <Link>ipad_images_pointer\beach.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beach%402x.jpg">
+      <Link>ipad_images_pointer\beach%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bean.jpg">
+      <Link>ipad_images_pointer\bean.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bean%402x.jpg">
+      <Link>ipad_images_pointer\bean%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bear.jpg">
+      <Link>ipad_images_pointer\bear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bear%402x.jpg">
+      <Link>ipad_images_pointer\bear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bed.jpg">
+      <Link>ipad_images_pointer\bed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bed%402x.jpg">
+      <Link>ipad_images_pointer\bed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bee.jpg">
+      <Link>ipad_images_pointer\bee.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bee%402x.jpg">
+      <Link>ipad_images_pointer\bee%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beep.jpg">
+      <Link>ipad_images_pointer\beep.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beep%402x.jpg">
+      <Link>ipad_images_pointer\beep%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bees.jpg">
+      <Link>ipad_images_pointer\bees.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bees%402x.jpg">
+      <Link>ipad_images_pointer\bees%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beet.jpg">
+      <Link>ipad_images_pointer\beet.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beet%402x.jpg">
+      <Link>ipad_images_pointer\beet%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beg.jpg">
+      <Link>ipad_images_pointer\beg.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beg%402x.jpg">
+      <Link>ipad_images_pointer\beg%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bell.jpg">
+      <Link>ipad_images_pointer\bell.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bell%402x.jpg">
+      <Link>ipad_images_pointer\bell%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\belt.jpg">
+      <Link>ipad_images_pointer\belt.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\belt%402x.jpg">
+      <Link>ipad_images_pointer\belt%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beluga.jpg">
+      <Link>ipad_images_pointer\beluga.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\beluga%402x.jpg">
+      <Link>ipad_images_pointer\beluga%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ben.jpg">
+      <Link>ipad_images_pointer\ben.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ben%402x.jpg">
+      <Link>ipad_images_pointer\ben%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bike.jpg">
+      <Link>ipad_images_pointer\bike.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bike%402x.jpg">
+      <Link>ipad_images_pointer\bike%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bite.jpg">
+      <Link>ipad_images_pointer\bite.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bite%402x.jpg">
+      <Link>ipad_images_pointer\bite%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\block.jpg">
+      <Link>ipad_images_pointer\block.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\block%402x.jpg">
+      <Link>ipad_images_pointer\block%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blocks.jpg">
+      <Link>ipad_images_pointer\blocks.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blocks%402x.jpg">
+      <Link>ipad_images_pointer\blocks%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blow.jpg">
+      <Link>ipad_images_pointer\blow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blow%402x.jpg">
+      <Link>ipad_images_pointer\blow%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blue.jpg">
+      <Link>ipad_images_pointer\blue.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\blue%402x.jpg">
+      <Link>ipad_images_pointer\blue%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boat.jpg">
+      <Link>ipad_images_pointer\boat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boat%402x.jpg">
+      <Link>ipad_images_pointer\boat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boil.jpg">
+      <Link>ipad_images_pointer\boil.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boil%402x.jpg">
+      <Link>ipad_images_pointer\boil%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bone.jpg">
+      <Link>ipad_images_pointer\bone.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bone%402x.jpg">
+      <Link>ipad_images_pointer\bone%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boo.jpg">
+      <Link>ipad_images_pointer\boo.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boo%402x.jpg">
+      <Link>ipad_images_pointer\boo%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boot.jpg">
+      <Link>ipad_images_pointer\boot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\boot%402x.jpg">
+      <Link>ipad_images_pointer\boot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bow.jpg">
+      <Link>ipad_images_pointer\bow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bow%402x.jpg">
+      <Link>ipad_images_pointer\bow%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bowl.jpg">
+      <Link>ipad_images_pointer\bowl.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bowl%402x.jpg">
+      <Link>ipad_images_pointer\bowl%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\box.jpg">
+      <Link>ipad_images_pointer\box.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\box%402x.jpg">
+      <Link>ipad_images_pointer\box%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bread.jpg">
+      <Link>ipad_images_pointer\bread.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bread%402x.jpg">
+      <Link>ipad_images_pointer\bread%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\break.jpg">
+      <Link>ipad_images_pointer\break.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\break%402x.jpg">
+      <Link>ipad_images_pointer\break%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\buck.jpg">
+      <Link>ipad_images_pointer\buck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\buck%402x.jpg">
+      <Link>ipad_images_pointer\buck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bud.jpg">
+      <Link>ipad_images_pointer\bud.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bud%402x.jpg">
+      <Link>ipad_images_pointer\bud%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bug.jpg">
+      <Link>ipad_images_pointer\bug.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bug%402x.jpg">
+      <Link>ipad_images_pointer\bug%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\buzz.jpg">
+      <Link>ipad_images_pointer\buzz.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\buzz%402x.jpg">
+      <Link>ipad_images_pointer\buzz%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bye.jpg">
+      <Link>ipad_images_pointer\bye.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bye%402x.jpg">
+      <Link>ipad_images_pointer\bye%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\C.jpg">
+      <Link>ipad_images_pointer\C.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\C%402x.jpg">
+      <Link>ipad_images_pointer\C%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cab.jpg">
+      <Link>ipad_images_pointer\cab.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cab%402x.jpg">
+      <Link>ipad_images_pointer\cab%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cage.jpg">
+      <Link>ipad_images_pointer\cage.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cage%402x.jpg">
+      <Link>ipad_images_pointer\cage%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cake.jpg">
+      <Link>ipad_images_pointer\cake.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cake%402x.jpg">
+      <Link>ipad_images_pointer\cake%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\calculator.jpg">
+      <Link>ipad_images_pointer\calculator.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\calculator%402x.jpg">
+      <Link>ipad_images_pointer\calculator%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\calendar.jpg">
+      <Link>ipad_images_pointer\calendar.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\calendar%402x.jpg">
+      <Link>ipad_images_pointer\calendar%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\can.jpg">
+      <Link>ipad_images_pointer\can.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\can%402x.jpg">
+      <Link>ipad_images_pointer\can%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cap.jpg">
+      <Link>ipad_images_pointer\cap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cap%402x.jpg">
+      <Link>ipad_images_pointer\cap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\car.jpg">
+      <Link>ipad_images_pointer\car.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\car%402x.jpg">
+      <Link>ipad_images_pointer\car%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\card.jpg">
+      <Link>ipad_images_pointer\card.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\card%402x.jpg">
+      <Link>ipad_images_pointer\card%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\case.jpg">
+      <Link>ipad_images_pointer\case.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\case%402x.jpg">
+      <Link>ipad_images_pointer\case%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cash.jpg">
+      <Link>ipad_images_pointer\cash.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cash%402x.jpg">
+      <Link>ipad_images_pointer\cash%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\castle.jpg">
+      <Link>ipad_images_pointer\castle.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\castle%402x.jpg">
+      <Link>ipad_images_pointer\castle%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cat.jpg">
+      <Link>ipad_images_pointer\cat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cat%402x.jpg">
+      <Link>ipad_images_pointer\cat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cattle.jpg">
+      <Link>ipad_images_pointer\cattle.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cattle%402x.jpg">
+      <Link>ipad_images_pointer\cattle%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cell.jpg">
+      <Link>ipad_images_pointer\cell.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cell%402x.jpg">
+      <Link>ipad_images_pointer\cell%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cent.jpg">
+      <Link>ipad_images_pointer\cent.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cent%402x.jpg">
+      <Link>ipad_images_pointer\cent%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chair.jpg">
+      <Link>ipad_images_pointer\chair.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chair%402x.jpg">
+      <Link>ipad_images_pointer\chair%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chart.jpg">
+      <Link>ipad_images_pointer\chart.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chart%402x.jpg">
+      <Link>ipad_images_pointer\chart%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chest.jpg">
+      <Link>ipad_images_pointer\chest.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chest%402x.jpg">
+      <Link>ipad_images_pointer\chest%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chew.jpg">
+      <Link>ipad_images_pointer\chew.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chew%402x.jpg">
+      <Link>ipad_images_pointer\chew%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chick.jpg">
+      <Link>ipad_images_pointer\chick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chick%402x.jpg">
+      <Link>ipad_images_pointer\chick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chin.jpg">
+      <Link>ipad_images_pointer\chin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chin%402x.jpg">
+      <Link>ipad_images_pointer\chin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chip.jpg">
+      <Link>ipad_images_pointer\chip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chip%402x.jpg">
+      <Link>ipad_images_pointer\chip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chop.jpg">
+      <Link>ipad_images_pointer\chop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\chop%402x.jpg">
+      <Link>ipad_images_pointer\chop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clap.jpg">
+      <Link>ipad_images_pointer\clap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clap%402x.jpg">
+      <Link>ipad_images_pointer\clap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clean.jpg">
+      <Link>ipad_images_pointer\clean.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clean2x.jpg">
+      <Link>ipad_images_pointer\clean2x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clip.jpg">
+      <Link>ipad_images_pointer\clip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clip%402x.jpg">
+      <Link>ipad_images_pointer\clip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clock.jpg">
+      <Link>ipad_images_pointer\clock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\clock%402x.jpg">
+      <Link>ipad_images_pointer\clock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coaster.jpg">
+      <Link>ipad_images_pointer\coaster.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coaster%402x.jpg">
+      <Link>ipad_images_pointer\coaster%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coat.jpg">
+      <Link>ipad_images_pointer\coat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coat%402x.jpg">
+      <Link>ipad_images_pointer\coat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cob.jpg">
+      <Link>ipad_images_pointer\cob.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cob%402x.jpg">
+      <Link>ipad_images_pointer\cob%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coffee.jpg">
+      <Link>ipad_images_pointer\coffee.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\coffee%402x.jpg">
+      <Link>ipad_images_pointer\coffee%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cold.jpg">
+      <Link>ipad_images_pointer\cold.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cold%402x.jpg">
+      <Link>ipad_images_pointer\cold%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\computer.jpg">
+      <Link>ipad_images_pointer\computer.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\computer%402x.jpg">
+      <Link>ipad_images_pointer\computer%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cop.jpg">
+      <Link>ipad_images_pointer\cop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cop%402x.jpg">
+      <Link>ipad_images_pointer\cop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\corn.jpg">
+      <Link>ipad_images_pointer\corn.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\corn%402x.jpg">
+      <Link>ipad_images_pointer\corn%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\couch.jpg">
+      <Link>ipad_images_pointer\couch.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\couch%402x.jpg">
+      <Link>ipad_images_pointer\couch%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cough.jpg">
+      <Link>ipad_images_pointer\cough.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cough%402x.jpg">
+      <Link>ipad_images_pointer\cough%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cow.jpg">
+      <Link>ipad_images_pointer\cow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cow%402x.jpg">
+      <Link>ipad_images_pointer\cow%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crab.jpg">
+      <Link>ipad_images_pointer\crab.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crab%402x.jpg">
+      <Link>ipad_images_pointer\crab%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crack.jpg">
+      <Link>ipad_images_pointer\crack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crack%402x.jpg">
+      <Link>ipad_images_pointer\crack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cub.jpg">
+      <Link>ipad_images_pointer\cub.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cub%402x.jpg">
+      <Link>ipad_images_pointer\cub%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cuff.jpg">
+      <Link>ipad_images_pointer\cuff.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cuff%402x.jpg">
+      <Link>ipad_images_pointer\cuff%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cup.jpg">
+      <Link>ipad_images_pointer\cup.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cup%402x.jpg">
+      <Link>ipad_images_pointer\cup%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dad.jpg">
+      <Link>ipad_images_pointer\dad.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dad%402x.jpg">
+      <Link>ipad_images_pointer\dad%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\date.jpg">
+      <Link>ipad_images_pointer\date.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\date%402x.jpg">
+      <Link>ipad_images_pointer\date%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\deck.jpg">
+      <Link>ipad_images_pointer\deck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\deck%402x.jpg">
+      <Link>ipad_images_pointer\deck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\deer.jpg">
+      <Link>ipad_images_pointer\deer.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\deer%402x.jpg">
+      <Link>ipad_images_pointer\deer%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dice.jpg">
+      <Link>ipad_images_pointer\dice.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dice%402x.jpg">
+      <Link>ipad_images_pointer\dice%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\die.jpg">
+      <Link>ipad_images_pointer\die.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\die%402x.jpg">
+      <Link>ipad_images_pointer\die%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dig.jpg">
+      <Link>ipad_images_pointer\dig.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dig%402x.jpg">
+      <Link>ipad_images_pointer\dig%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dine.jpg">
+      <Link>ipad_images_pointer\dine.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dine%402x.jpg">
+      <Link>ipad_images_pointer\dine%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dinosaur.jpg">
+      <Link>ipad_images_pointer\dinosaur.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dinosaur%402x.jpg">
+      <Link>ipad_images_pointer\dinosaur%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dip.jpg">
+      <Link>ipad_images_pointer\dip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dip%402x.jpg">
+      <Link>ipad_images_pointer\dip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dot.jpg">
+      <Link>ipad_images_pointer\dot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dot%402x.jpg">
+      <Link>ipad_images_pointer\dot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dough.jpg">
+      <Link>ipad_images_pointer\dough.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dough%402x.jpg">
+      <Link>ipad_images_pointer\dough%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\down.jpg">
+      <Link>ipad_images_pointer\down.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\down%402x.jpg">
+      <Link>ipad_images_pointer\down%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\drip.jpg">
+      <Link>ipad_images_pointer\drip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\drip%402x %281%29.jpg">
+      <Link>ipad_images_pointer\drip%402x %281%29.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\drip%402x.jpg">
+      <Link>ipad_images_pointer\drip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\duck.jpg">
+      <Link>ipad_images_pointer\duck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\duck%402x.jpg">
+      <Link>ipad_images_pointer\duck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dug.jpg">
+      <Link>ipad_images_pointer\dug.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dug%402x.jpg">
+      <Link>ipad_images_pointer\dug%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dust.jpg">
+      <Link>ipad_images_pointer\dust.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dust%402x.jpg">
+      <Link>ipad_images_pointer\dust%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\E.jpg">
+      <Link>ipad_images_pointer\E.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\E%402x.jpg">
+      <Link>ipad_images_pointer\E%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ear.jpg">
+      <Link>ipad_images_pointer\ear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ear%402x.jpg">
+      <Link>ipad_images_pointer\ear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eat.jpg">
+      <Link>ipad_images_pointer\eat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eat%402x.jpg">
+      <Link>ipad_images_pointer\eat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Ed.jpg">
+      <Link>ipad_images_pointer\Ed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Ed%402x.jpg">
+      <Link>ipad_images_pointer\Ed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\egg.jpg">
+      <Link>ipad_images_pointer\egg.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\egg%402x.jpg">
+      <Link>ipad_images_pointer\egg%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\elephant.jpg">
+      <Link>ipad_images_pointer\elephant.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\elephant%402x.jpg">
+      <Link>ipad_images_pointer\elephant%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eye.jpg">
+      <Link>ipad_images_pointer\eye.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eye%402x.jpg">
+      <Link>ipad_images_pointer\eye%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\face.jpg">
+      <Link>ipad_images_pointer\face.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\face%402x.jpg">
+      <Link>ipad_images_pointer\face%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fall.jpg">
+      <Link>ipad_images_pointer\fall.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fall%402x.jpg">
+      <Link>ipad_images_pointer\fall%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fan.jpg">
+      <Link>ipad_images_pointer\fan.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fan%402x.jpg">
+      <Link>ipad_images_pointer\fan%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\farm.jpg">
+      <Link>ipad_images_pointer\farm.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\farm%402x.jpg">
+      <Link>ipad_images_pointer\farm%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fee.jpg">
+      <Link>ipad_images_pointer\fee.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fee%402x.jpg">
+      <Link>ipad_images_pointer\fee%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feed.jpg">
+      <Link>ipad_images_pointer\feed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feed%402x.jpg">
+      <Link>ipad_images_pointer\feed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feel.jpg">
+      <Link>ipad_images_pointer\feel.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feel%402x.jpg">
+      <Link>ipad_images_pointer\feel%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feet.jpg">
+      <Link>ipad_images_pointer\feet.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\feet%402x.jpg">
+      <Link>ipad_images_pointer\feet%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fig.jpg">
+      <Link>ipad_images_pointer\fig.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fig%402x.jpg">
+      <Link>ipad_images_pointer\fig%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fin.jpg">
+      <Link>ipad_images_pointer\fin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fin%402x.jpg">
+      <Link>ipad_images_pointer\fin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fireman.jpg">
+      <Link>ipad_images_pointer\fireman.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fireman%402x.jpg">
+      <Link>ipad_images_pointer\fireman%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\flip.jpg">
+      <Link>ipad_images_pointer\flip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\flip%402x.jpg">
+      <Link>ipad_images_pointer\flip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\floor.jpg">
+      <Link>ipad_images_pointer\floor.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fork.jpg">
+      <Link>ipad_images_pointer\fork.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fork%402x.jpg">
+      <Link>ipad_images_pointer\fork%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\four.jpg">
+      <Link>ipad_images_pointer\four.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\four%402x.jpg">
+      <Link>ipad_images_pointer\four%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\frog.jpg">
+      <Link>ipad_images_pointer\frog.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\frog%402x.jpg">
+      <Link>ipad_images_pointer\frog%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\full.jpg">
+      <Link>ipad_images_pointer\full.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\full%402x.jpg">
+      <Link>ipad_images_pointer\full%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\game.jpg">
+      <Link>ipad_images_pointer\game.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\game%402x.jpg">
+      <Link>ipad_images_pointer\game%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gas.jpg">
+      <Link>ipad_images_pointer\gas.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gas%402x.jpg">
+      <Link>ipad_images_pointer\gas%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gate.jpg">
+      <Link>ipad_images_pointer\gate.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gate%402x.jpg">
+      <Link>ipad_images_pointer\gate%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gauge.jpg">
+      <Link>ipad_images_pointer\gauge.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gauge%402x.jpg">
+      <Link>ipad_images_pointer\gauge%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gear.jpg">
+      <Link>ipad_images_pointer\gear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gear%402x.jpg">
+      <Link>ipad_images_pointer\gear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ghost.jpg">
+      <Link>ipad_images_pointer\ghost.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ghost%402x.jpg">
+      <Link>ipad_images_pointer\ghost%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gingerbread.jpg">
+      <Link>ipad_images_pointer\gingerbread.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gingerbread%402x.jpg">
+      <Link>ipad_images_pointer\gingerbread%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glass.jpg">
+      <Link>ipad_images_pointer\glass.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glass%402x.jpg">
+      <Link>ipad_images_pointer\glass%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glove.jpg">
+      <Link>ipad_images_pointer\glove.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glove%402x.jpg">
+      <Link>ipad_images_pointer\glove%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glow.jpg">
+      <Link>ipad_images_pointer\glow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\glow%402x.jpg">
+      <Link>ipad_images_pointer\glow%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\go.jpg">
+      <Link>ipad_images_pointer\go.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\go%402x.jpg">
+      <Link>ipad_images_pointer\go%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\goat.jpg">
+      <Link>ipad_images_pointer\goat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\goat%402x.jpg">
+      <Link>ipad_images_pointer\goat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gold.jpg">
+      <Link>ipad_images_pointer\gold.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gold%402x.jpg">
+      <Link>ipad_images_pointer\gold%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gown.jpg">
+      <Link>ipad_images_pointer\gown.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gown%402x.jpg">
+      <Link>ipad_images_pointer\gown%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grass.jpg">
+      <Link>ipad_images_pointer\grass.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grass%402x.jpg">
+      <Link>ipad_images_pointer\grass%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grasshopper.jpg">
+      <Link>ipad_images_pointer\grasshopper.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grasshopper%402x.jpg">
+      <Link>ipad_images_pointer\grasshopper%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grin.jpg">
+      <Link>ipad_images_pointer\grin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\grin%402x.jpg">
+      <Link>ipad_images_pointer\grin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gust.jpg">
+      <Link>ipad_images_pointer\gust.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gust%402x.jpg">
+      <Link>ipad_images_pointer\gust%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\guy.jpg">
+      <Link>ipad_images_pointer\guy.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\guy%402x.jpg">
+      <Link>ipad_images_pointer\guy%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gwen.jpg">
+      <Link>ipad_images_pointer\gwen.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gwen%402x.jpg">
+      <Link>ipad_images_pointer\gwen%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\helicopter.jpg">
+      <Link>ipad_images_pointer\helicopter.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\helicopter%402x.jpg">
+      <Link>ipad_images_pointer\helicopter%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hippopotamus.jpg">
+      <Link>ipad_images_pointer\hippopotamus.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hippopotamus%402x.jpg">
+      <Link>ipad_images_pointer\hippopotamus%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hoe.jpg">
+      <Link>ipad_images_pointer\hoe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hoe%402x.jpg">
+      <Link>ipad_images_pointer\hoe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\home.jpg">
+      <Link>ipad_images_pointer\home.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\home%402x.jpg">
+      <Link>ipad_images_pointer\home%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hose.jpg">
+      <Link>ipad_images_pointer\hose.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hose%402x.jpg">
+      <Link>ipad_images_pointer\hose%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\howl.jpg">
+      <Link>ipad_images_pointer\howl.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\howl%402x.jpg">
+      <Link>ipad_images_pointer\howl%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ice.jpg">
+      <Link>ipad_images_pointer\ice.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ice%402x.jpg">
+      <Link>ipad_images_pointer\ice%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ill.jpg">
+      <Link>ipad_images_pointer\ill.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ill%402x.jpg">
+      <Link>ipad_images_pointer\ill%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\in.jpg">
+      <Link>ipad_images_pointer\in.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\in%402x.jpg">
+      <Link>ipad_images_pointer\in%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ink.jpg">
+      <Link>ipad_images_pointer\ink.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ink%402x.jpg">
+      <Link>ipad_images_pointer\ink%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\k.jpg">
+      <Link>ipad_images_pointer\k.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\k%402x.jpg">
+      <Link>ipad_images_pointer\k%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kangaroo.jpg">
+      <Link>ipad_images_pointer\kangaroo.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kangaroo%402x.jpg">
+      <Link>ipad_images_pointer\kangaroo%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\key.jpg">
+      <Link>ipad_images_pointer\key.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\key%402x.jpg">
+      <Link>ipad_images_pointer\key%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kiss.jpg">
+      <Link>ipad_images_pointer\kiss.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kiss%402x.jpg">
+      <Link>ipad_images_pointer\kiss%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kite.jpg">
+      <Link>ipad_images_pointer\kite.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kite%402x.jpg">
+      <Link>ipad_images_pointer\kite%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knee.jpg">
+      <Link>ipad_images_pointer\knee.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knee%402x.jpg">
+      <Link>ipad_images_pointer\knee%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knees.jpg">
+      <Link>ipad_images_pointer\knees.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knees%402x.jpg">
+      <Link>ipad_images_pointer\knees%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knock.jpg">
+      <Link>ipad_images_pointer\knock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knock%402x.jpg">
+      <Link>ipad_images_pointer\knock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\koalabear.jpg">
+      <Link>ipad_images_pointer\koalabear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\koalabear%402x.jpg">
+      <Link>ipad_images_pointer\koalabear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\L.jpg">
+      <Link>ipad_images_pointer\L.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\L%402x.jpg">
+      <Link>ipad_images_pointer\L%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ladybug.jpg">
+      <Link>ipad_images_pointer\ladybug.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ladybug%402x.jpg">
+      <Link>ipad_images_pointer\ladybug%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lamb.jpg">
+      <Link>ipad_images_pointer\lamb.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lamb%402x.jpg">
+      <Link>ipad_images_pointer\lamb%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lane.jpg">
+      <Link>ipad_images_pointer\lane.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lane%402x.jpg">
+      <Link>ipad_images_pointer\lane%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lap.jpg">
+      <Link>ipad_images_pointer\lap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lap%402x.jpg">
+      <Link>ipad_images_pointer\lap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\late.jpg">
+      <Link>ipad_images_pointer\late.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\late%402x.jpg">
+      <Link>ipad_images_pointer\late%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\laugh.jpg">
+      <Link>ipad_images_pointer\laugh.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\laugh%402x.jpg">
+      <Link>ipad_images_pointer\laugh%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lawn.jpg">
+      <Link>ipad_images_pointer\lawn.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lawn%402x.jpg">
+      <Link>ipad_images_pointer\lawn%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lay.jpg">
+      <Link>ipad_images_pointer\lay.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lay%402x.jpg">
+      <Link>ipad_images_pointer\lay%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lead.jpg">
+      <Link>ipad_images_pointer\lead.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lead%402x.jpg">
+      <Link>ipad_images_pointer\lead%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leaf.jpg">
+      <Link>ipad_images_pointer\leaf.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leaf%402x.jpg">
+      <Link>ipad_images_pointer\leaf%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leak.jpg">
+      <Link>ipad_images_pointer\leak.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leak%402x.jpg">
+      <Link>ipad_images_pointer\leak%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leap.jpg">
+      <Link>ipad_images_pointer\leap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leap%402x.jpg">
+      <Link>ipad_images_pointer\leap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leave.jpg">
+      <Link>ipad_images_pointer\leave.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leave%402x.jpg">
+      <Link>ipad_images_pointer\leave%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leaves.jpg">
+      <Link>ipad_images_pointer\leaves.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leaves%402x.jpg">
+      <Link>ipad_images_pointer\leaves%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leg.jpg">
+      <Link>ipad_images_pointer\leg.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\leg%402x.jpg">
+      <Link>ipad_images_pointer\leg%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lick.jpg">
+      <Link>ipad_images_pointer\lick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lick%402x.jpg">
+      <Link>ipad_images_pointer\lick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lid.jpg">
+      <Link>ipad_images_pointer\lid.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lid%402x.jpg">
+      <Link>ipad_images_pointer\lid%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lip.jpg">
+      <Link>ipad_images_pointer\lip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lip%402x.jpg">
+      <Link>ipad_images_pointer\lip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lizard.jpg">
+      <Link>ipad_images_pointer\lizard.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lizzard%402x.jpg">
+      <Link>ipad_images_pointer\lizzard%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lock.jpg">
+      <Link>ipad_images_pointer\lock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lock%402x.jpg">
+      <Link>ipad_images_pointer\lock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\loud.jpg">
+      <Link>ipad_images_pointer\loud.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\loud%402x.jpg">
+      <Link>ipad_images_pointer\loud%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\love.jpg">
+      <Link>ipad_images_pointer\love.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\love%402x.jpg">
+      <Link>ipad_images_pointer\love%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ma.jpg">
+      <Link>ipad_images_pointer\ma.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ma%402x.jpg">
+      <Link>ipad_images_pointer\ma%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mad.jpg">
+      <Link>ipad_images_pointer\mad.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mad%402x.jpg">
+      <Link>ipad_images_pointer\mad%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mall.jpg">
+      <Link>ipad_images_pointer\mall.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mall%402x.jpg">
+      <Link>ipad_images_pointer\mall%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\maraca.jpg">
+      <Link>ipad_images_pointer\maraca.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\maraca%402x.jpg">
+      <Link>ipad_images_pointer\maraca%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mark.jpg">
+      <Link>ipad_images_pointer\mark.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mark%402x.jpg">
+      <Link>ipad_images_pointer\mark%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mat.jpg">
+      <Link>ipad_images_pointer\mat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mat%402x.jpg">
+      <Link>ipad_images_pointer\mat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\math.jpg">
+      <Link>ipad_images_pointer\math.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\math%402x.jpg">
+      <Link>ipad_images_pointer\math%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\me.jpg">
+      <Link>ipad_images_pointer\me.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\me%402x.jpg">
+      <Link>ipad_images_pointer\me%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\meat.jpg">
+      <Link>ipad_images_pointer\meat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\meat%402x.jpg">
+      <Link>ipad_images_pointer\meat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\melt.jpg">
+      <Link>ipad_images_pointer\melt.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\melt%402x.jpg">
+      <Link>ipad_images_pointer\melt%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\men.jpg">
+      <Link>ipad_images_pointer\men.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\men%402x.jpg">
+      <Link>ipad_images_pointer\men%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mike.jpg">
+      <Link>ipad_images_pointer\mike.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mike%402x.jpg">
+      <Link>ipad_images_pointer\mike%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mitt.jpg">
+      <Link>ipad_images_pointer\mitt.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mitt%402x.jpg">
+      <Link>ipad_images_pointer\mitt%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mock.jpg">
+      <Link>ipad_images_pointer\mock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mock%402x.jpg">
+      <Link>ipad_images_pointer\mock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mom.jpg">
+      <Link>ipad_images_pointer\mom.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mom%402x.jpg">
+      <Link>ipad_images_pointer\mom%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\money.jpg">
+      <Link>ipad_images_pointer\money.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\money%402x.jpg">
+      <Link>ipad_images_pointer\money%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\moo.jpg">
+      <Link>ipad_images_pointer\moo.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\moo%402x.jpg">
+      <Link>ipad_images_pointer\moo%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mop.jpg">
+      <Link>ipad_images_pointer\mop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mop%402x.jpg">
+      <Link>ipad_images_pointer\mop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mug.jpg">
+      <Link>ipad_images_pointer\mug.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\mug%402x.jpg">
+      <Link>ipad_images_pointer\mug%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nail.jpg">
+      <Link>ipad_images_pointer\nail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nail%402x.jpg">
+      <Link>ipad_images_pointer\nail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\name.jpg">
+      <Link>ipad_images_pointer\name.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\name%402x.jpg">
+      <Link>ipad_images_pointer\name%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nap.jpg">
+      <Link>ipad_images_pointer\nap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nap%402x.jpg">
+      <Link>ipad_images_pointer\nap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\neck.jpg">
+      <Link>ipad_images_pointer\neck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\neck%402x.jpg">
+      <Link>ipad_images_pointer\neck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nest.jpg">
+      <Link>ipad_images_pointer\nest.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nest%402x.jpg">
+      <Link>ipad_images_pointer\nest%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\net.jpg">
+      <Link>ipad_images_pointer\net.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\net%402x.jpg">
+      <Link>ipad_images_pointer\net%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nice.jpg">
+      <Link>ipad_images_pointer\nice.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nice%402x.jpg">
+      <Link>ipad_images_pointer\nice%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nip.jpg">
+      <Link>ipad_images_pointer\nip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nip%402x.jpg">
+      <Link>ipad_images_pointer\nip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\no.jpg">
+      <Link>ipad_images_pointer\no.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\no%402x.jpg">
+      <Link>ipad_images_pointer\no%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nose.jpg">
+      <Link>ipad_images_pointer\nose.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nose%402x.jpg">
+      <Link>ipad_images_pointer\nose%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\note.jpg">
+      <Link>ipad_images_pointer\note.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\note%402x.jpg">
+      <Link>ipad_images_pointer\note%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\oat.jpg">
+      <Link>ipad_images_pointer\oat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\oat%402x.jpg">
+      <Link>ipad_images_pointer\oat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\octopus.jpg">
+      <Link>ipad_images_pointer\octopus.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\octopus%402x.jpg">
+      <Link>ipad_images_pointer\octopus%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\off.jpg">
+      <Link>ipad_images_pointer\off.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\off%402x.jpg">
+      <Link>ipad_images_pointer\off%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\oil.jpg">
+      <Link>ipad_images_pointer\oil.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\oil%402x.jpg">
+      <Link>ipad_images_pointer\oil%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\old.jpg">
+      <Link>ipad_images_pointer\old.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\old%402x.jpg">
+      <Link>ipad_images_pointer\old%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\on.jpg">
+      <Link>ipad_images_pointer\on.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\on%402x.jpg">
+      <Link>ipad_images_pointer\on%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\owl.jpg">
+      <Link>ipad_images_pointer\owl.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\owl%402x.jpg">
+      <Link>ipad_images_pointer\owl%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ox.jpg">
+      <Link>ipad_images_pointer\ox.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ox%402x.jpg">
+      <Link>ipad_images_pointer\ox%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\P.jpg">
+      <Link>ipad_images_pointer\P.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\P%402x.jpg">
+      <Link>ipad_images_pointer\P%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pa.jpg">
+      <Link>ipad_images_pointer\pa.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pa%402x.jpg">
+      <Link>ipad_images_pointer\pa%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pack.jpg">
+      <Link>ipad_images_pointer\pack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pack%402x.jpg">
+      <Link>ipad_images_pointer\pack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pain.jpg">
+      <Link>ipad_images_pointer\pain.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pain%402x.jpg">
+      <Link>ipad_images_pointer\pain%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\paint.jpg">
+      <Link>ipad_images_pointer\paint.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\paint%402x.jpg">
+      <Link>ipad_images_pointer\paint%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pair.jpg">
+      <Link>ipad_images_pointer\pair.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pair%402x.jpg">
+      <Link>ipad_images_pointer\pair%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pan.jpg">
+      <Link>ipad_images_pointer\pan.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pan%402x.jpg">
+      <Link>ipad_images_pointer\pan%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pandabear%402x.jpg">
+      <Link>ipad_images_pointer\pandabear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pants.jpg">
+      <Link>ipad_images_pointer\pants.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pants%402x.jpg">
+      <Link>ipad_images_pointer\pants%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\park.jpg">
+      <Link>ipad_images_pointer\park.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\park%402x.jpg">
+      <Link>ipad_images_pointer\park%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pass.jpg">
+      <Link>ipad_images_pointer\pass.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pass%402x.jpg">
+      <Link>ipad_images_pointer\pass%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pat.jpg">
+      <Link>ipad_images_pointer\pat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pat%402x.jpg">
+      <Link>ipad_images_pointer\pat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\path.jpg">
+      <Link>ipad_images_pointer\path.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\path%402x.jpg">
+      <Link>ipad_images_pointer\path%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pay.jpg">
+      <Link>ipad_images_pointer\pay.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pay%402x.jpg">
+      <Link>ipad_images_pointer\pay%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pea.jpg">
+      <Link>ipad_images_pointer\pea.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pea%402x.jpg">
+      <Link>ipad_images_pointer\pea%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peach.jpg">
+      <Link>ipad_images_pointer\peach.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peach%402x.jpg">
+      <Link>ipad_images_pointer\peach%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pear.jpg">
+      <Link>ipad_images_pointer\pear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pear%402x.jpg">
+      <Link>ipad_images_pointer\pear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peas.jpg">
+      <Link>ipad_images_pointer\peas.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peas%402x.jpg">
+      <Link>ipad_images_pointer\peas%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peck.jpg">
+      <Link>ipad_images_pointer\peck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peck%402x.jpg">
+      <Link>ipad_images_pointer\peck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peel.jpg">
+      <Link>ipad_images_pointer\peel.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\peel%402x.jpg">
+      <Link>ipad_images_pointer\peel%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pet.jpg">
+      <Link>ipad_images_pointer\pet.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pet%402x.jpg">
+      <Link>ipad_images_pointer\pet%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pictureframe.jpg">
+      <Link>ipad_images_pointer\pictureframe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pictureframe%402x.jpg">
+      <Link>ipad_images_pointer\pictureframe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pie.jpg">
+      <Link>ipad_images_pointer\pie.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pie%402x.jpg">
+      <Link>ipad_images_pointer\pie%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\piece.jpg">
+      <Link>ipad_images_pointer\piece.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\piece%402x.jpg">
+      <Link>ipad_images_pointer\piece%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pig.jpg">
+      <Link>ipad_images_pointer\pig.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pig%402x.jpg">
+      <Link>ipad_images_pointer\pig%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pill.jpg">
+      <Link>ipad_images_pointer\pill.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pill%402x.jpg">
+      <Link>ipad_images_pointer\pill%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pin.jpg">
+      <Link>ipad_images_pointer\pin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pin%402x.jpg">
+      <Link>ipad_images_pointer\pin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pine.jpg">
+      <Link>ipad_images_pointer\pine.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pine%402x.jpg">
+      <Link>ipad_images_pointer\pine%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\plane.jpg">
+      <Link>ipad_images_pointer\plane.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\plane%402x.jpg">
+      <Link>ipad_images_pointer\plane%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\plate.jpg">
+      <Link>ipad_images_pointer\plate.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\plate%402x.jpg">
+      <Link>ipad_images_pointer\plate%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\play.jpg">
+      <Link>ipad_images_pointer\play.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\play%402x.jpg">
+      <Link>ipad_images_pointer\play%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pole.jpg">
+      <Link>ipad_images_pointer\pole.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pole%402x.jpg">
+      <Link>ipad_images_pointer\pole%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pool.jpg">
+      <Link>ipad_images_pointer\pool.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pool%402x.jpg">
+      <Link>ipad_images_pointer\pool%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pop.jpg">
+      <Link>ipad_images_pointer\pop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pop%402x.jpg">
+      <Link>ipad_images_pointer\pop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pot.jpg">
+      <Link>ipad_images_pointer\pot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pot%402x.jpg">
+      <Link>ipad_images_pointer\pot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pour.jpg">
+      <Link>ipad_images_pointer\pour.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pour%402x.jpg">
+      <Link>ipad_images_pointer\pour%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pull.jpg">
+      <Link>ipad_images_pointer\pull.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pull%402x.jpg">
+      <Link>ipad_images_pointer\pull%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\purr.jpg">
+      <Link>ipad_images_pointer\purr.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\purr%402x.jpg">
+      <Link>ipad_images_pointer\purr%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\quack.jpg">
+      <Link>ipad_images_pointer\quack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\quack%402x.jpg">
+      <Link>ipad_images_pointer\quack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\race.jpg">
+      <Link>ipad_images_pointer\race.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\race%402x.jpg">
+      <Link>ipad_images_pointer\race%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rack.jpg">
+      <Link>ipad_images_pointer\rack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rack%402x.jpg">
+      <Link>ipad_images_pointer\rack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rag.jpg">
+      <Link>ipad_images_pointer\rag.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rag%402x.jpg">
+      <Link>ipad_images_pointer\rag%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rail.jpg">
+      <Link>ipad_images_pointer\rail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rail%402x.jpg">
+      <Link>ipad_images_pointer\rail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rain.jpg">
+      <Link>ipad_images_pointer\rain.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rain%402x.jpg">
+      <Link>ipad_images_pointer\rain%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\raise.jpg">
+      <Link>ipad_images_pointer\raise.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\raise%402x.jpg">
+      <Link>ipad_images_pointer\raise%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rake.jpg">
+      <Link>ipad_images_pointer\rake.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rake%402x.jpg">
+      <Link>ipad_images_pointer\rake%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\raw.jpg">
+      <Link>ipad_images_pointer\raw.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\raw%402x.jpg">
+      <Link>ipad_images_pointer\raw%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Ray.jpg">
+      <Link>ipad_images_pointer\Ray.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Ray%402x.jpg">
+      <Link>ipad_images_pointer\Ray%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\real.jpg">
+      <Link>ipad_images_pointer\real.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\real%402x.jpg">
+      <Link>ipad_images_pointer\real%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\red.jpg">
+      <Link>ipad_images_pointer\red.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\red%402x.jpg">
+      <Link>ipad_images_pointer\red%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\register.jpg">
+      <Link>ipad_images_pointer\register.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\register%402x.jpg">
+      <Link>ipad_images_pointer\register%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\reindeer.jpg">
+      <Link>ipad_images_pointer\reindeer.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\reindeer%402x.jpg">
+      <Link>ipad_images_pointer\reindeer%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rest.jpg">
+      <Link>ipad_images_pointer\rest.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rest%402x.jpg">
+      <Link>ipad_images_pointer\rest%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rice.jpg">
+      <Link>ipad_images_pointer\rice.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rice%402x.jpg">
+      <Link>ipad_images_pointer\rice%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rich.jpg">
+      <Link>ipad_images_pointer\rich.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rich%402x.jpg">
+      <Link>ipad_images_pointer\rich%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ride.jpg">
+      <Link>ipad_images_pointer\ride.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ride%402x.jpg">
+      <Link>ipad_images_pointer\ride%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rim.jpg">
+      <Link>ipad_images_pointer\rim.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rim%402x.jpg">
+      <Link>ipad_images_pointer\rim%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ring.jpg">
+      <Link>ipad_images_pointer\ring.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ring%402x.jpg">
+      <Link>ipad_images_pointer\ring%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rip.jpg">
+      <Link>ipad_images_pointer\rip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rip%402x .jpg">
+      <Link>ipad_images_pointer\rip%402x .jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ripe.jpg">
+      <Link>ipad_images_pointer\ripe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ripe%402x.jpg">
+      <Link>ipad_images_pointer\ripe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rise.jpg">
+      <Link>ipad_images_pointer\rise.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rise%402x.jpg">
+      <Link>ipad_images_pointer\rise%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\road.jpg">
+      <Link>ipad_images_pointer\road.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\road%402x.jpg">
+      <Link>ipad_images_pointer\road%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\robe.jpg">
+      <Link>ipad_images_pointer\robe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\robe%402x.jpg">
+      <Link>ipad_images_pointer\robe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rock.jpg">
+      <Link>ipad_images_pointer\rock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rock%402x.jpg">
+      <Link>ipad_images_pointer\rock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rope.jpg">
+      <Link>ipad_images_pointer\rope.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rope%402x.jpg">
+      <Link>ipad_images_pointer\rope%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rose.jpg">
+      <Link>ipad_images_pointer\rose.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rose%402x.jpg">
+      <Link>ipad_images_pointer\rose%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\row.jpg">
+      <Link>ipad_images_pointer\row.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\row%402x.jpg">
+      <Link>ipad_images_pointer\row%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\run.jpg">
+      <Link>ipad_images_pointer\run.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\run%402x.jpg">
+      <Link>ipad_images_pointer\run%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sack.jpg">
+      <Link>ipad_images_pointer\sack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sack%402x.jpg">
+      <Link>ipad_images_pointer\sack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sail.jpg">
+      <Link>ipad_images_pointer\sail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sail%402x.jpg">
+      <Link>ipad_images_pointer\sail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sat.jpg">
+      <Link>ipad_images_pointer\sat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sat%402x.jpg">
+      <Link>ipad_images_pointer\sat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\save.jpg">
+      <Link>ipad_images_pointer\save.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\save%402x.jpg">
+      <Link>ipad_images_pointer\save%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\school.jpg">
+      <Link>ipad_images_pointer\school.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\school%402x.jpg">
+      <Link>ipad_images_pointer\school%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\seat.jpg">
+      <Link>ipad_images_pointer\seat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\seat%402x.jpg">
+      <Link>ipad_images_pointer\seat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\seed.jpg">
+      <Link>ipad_images_pointer\seed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\seed%402x.jpg">
+      <Link>ipad_images_pointer\seed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sell.jpg">
+      <Link>ipad_images_pointer\sell.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sell%402x.jpg">
+      <Link>ipad_images_pointer\sell%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sew.jpg">
+      <Link>ipad_images_pointer\sew.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sew%402x.jpg">
+      <Link>ipad_images_pointer\sew%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shack.jpg">
+      <Link>ipad_images_pointer\shack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shack%402x.jpg">
+      <Link>ipad_images_pointer\shack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shake.jpg">
+      <Link>ipad_images_pointer\shake.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shake%402x.jpg">
+      <Link>ipad_images_pointer\shake%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shape.jpg">
+      <Link>ipad_images_pointer\shape.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shape%402x.jpg">
+      <Link>ipad_images_pointer\shape%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shave.jpg">
+      <Link>ipad_images_pointer\shave.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shave%402x.jpg">
+      <Link>ipad_images_pointer\shave%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\she.jpg">
+      <Link>ipad_images_pointer\she.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\she%402x.jpg">
+      <Link>ipad_images_pointer\she%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sheep.jpg">
+      <Link>ipad_images_pointer\sheep.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sheep%402x.jpg">
+      <Link>ipad_images_pointer\sheep%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shell.jpg">
+      <Link>ipad_images_pointer\shell.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shell%402x.jpg">
+      <Link>ipad_images_pointer\shell%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shin.jpg">
+      <Link>ipad_images_pointer\shin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shin%402x.jpg">
+      <Link>ipad_images_pointer\shin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shine.jpg">
+      <Link>ipad_images_pointer\shine.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shine%402x.jpg">
+      <Link>ipad_images_pointer\shine%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ship.jpg">
+      <Link>ipad_images_pointer\ship.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\ship%402x.jpg">
+      <Link>ipad_images_pointer\ship%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shoe.jpg">
+      <Link>ipad_images_pointer\shoe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shoe%402x.jpg">
+      <Link>ipad_images_pointer\shoe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shop.jpg">
+      <Link>ipad_images_pointer\shop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shop%402x.jpg">
+      <Link>ipad_images_pointer\shop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\show.jpg">
+      <Link>ipad_images_pointer\show.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\show%402x.jpg">
+      <Link>ipad_images_pointer\show%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shower.jpg">
+      <Link>ipad_images_pointer\shower.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\shower%402x.jpg">
+      <Link>ipad_images_pointer\shower%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sick.jpg">
+      <Link>ipad_images_pointer\sick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sick%402x.jpg">
+      <Link>ipad_images_pointer\sick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sign.jpg">
+      <Link>ipad_images_pointer\sign.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sign%402x.jpg">
+      <Link>ipad_images_pointer\sign%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sip.jpg">
+      <Link>ipad_images_pointer\sip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sip%402x.jpg">
+      <Link>ipad_images_pointer\sip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sit.jpg">
+      <Link>ipad_images_pointer\sit.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sit%402x.jpg">
+      <Link>ipad_images_pointer\sit%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\small.jpg">
+      <Link>ipad_images_pointer\small.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\small%402x.jpg">
+      <Link>ipad_images_pointer\small%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\smock.jpg">
+      <Link>ipad_images_pointer\smock.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\smock%402x.jpg">
+      <Link>ipad_images_pointer\smock%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snap.jpg">
+      <Link>ipad_images_pointer\snap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snap%402x.jpg">
+      <Link>ipad_images_pointer\snap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sneeze.jpg">
+      <Link>ipad_images_pointer\sneeze.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sneeze%402x.jpg">
+      <Link>ipad_images_pointer\sneeze%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snow.jpg">
+      <Link>ipad_images_pointer\snow.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snow%402x.jpg">
+      <Link>ipad_images_pointer\snow%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\soap.jpg">
+      <Link>ipad_images_pointer\soap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\soap%402x.jpg">
+      <Link>ipad_images_pointer\soap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\soup.jpg">
+      <Link>ipad_images_pointer\soup.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\soup%402x.jpg">
+      <Link>ipad_images_pointer\soup%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sour.jpg">
+      <Link>ipad_images_pointer\sour.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sour%402x.jpg">
+      <Link>ipad_images_pointer\sour%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spill.jpg">
+      <Link>ipad_images_pointer\spill.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spill%402x.jpg">
+      <Link>ipad_images_pointer\spill%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spin.jpg">
+      <Link>ipad_images_pointer\spin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spin%402x.jpg">
+      <Link>ipad_images_pointer\spin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spool.jpg">
+      <Link>ipad_images_pointer\spool.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spool%402x.jpg">
+      <Link>ipad_images_pointer\spool%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spot.jpg">
+      <Link>ipad_images_pointer\spot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spout.jpg">
+      <Link>ipad_images_pointer\spout.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spout%402x.jpg">
+      <Link>ipad_images_pointer\spout%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stack.jpg">
+      <Link>ipad_images_pointer\stack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stack%402x.jpg">
+      <Link>ipad_images_pointer\stack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stair.jpg">
+      <Link>ipad_images_pointer\stair.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stair%402x.jpg">
+      <Link>ipad_images_pointer\stair%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\star.jpg">
+      <Link>ipad_images_pointer\star.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\star%402x.jpg">
+      <Link>ipad_images_pointer\star%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stethoscope.jpg">
+      <Link>ipad_images_pointer\stethoscope.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stethoscope%402x.jpg">
+      <Link>ipad_images_pointer\stethoscope%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stick.jpg">
+      <Link>ipad_images_pointer\stick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stick%402x.jpg">
+      <Link>ipad_images_pointer\stick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stool.jpg">
+      <Link>ipad_images_pointer\stool.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stool%402x.jpg">
+      <Link>ipad_images_pointer\stool%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stop.jpg">
+      <Link>ipad_images_pointer\stop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\stop%402x.jpg">
+      <Link>ipad_images_pointer\stop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\store.jpg">
+      <Link>ipad_images_pointer\store.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\store%402x.jpg">
+      <Link>ipad_images_pointer\store%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\strawberry.jpg">
+      <Link>ipad_images_pointer\strawberry.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\strawberry%402x.jpg">
+      <Link>ipad_images_pointer\strawberry%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\street.jpg">
+      <Link>ipad_images_pointer\street.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\street%402x.jpg">
+      <Link>ipad_images_pointer\street%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sub.jpg">
+      <Link>ipad_images_pointer\sub.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sub%402x.jpg">
+      <Link>ipad_images_pointer\sub%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Sue.jpg">
+      <Link>ipad_images_pointer\Sue.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Sue%402x.jpg">
+      <Link>ipad_images_pointer\Sue%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sum.jpg">
+      <Link>ipad_images_pointer\sum.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sum%402x.jpg">
+      <Link>ipad_images_pointer\sum%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sunglasses.jpg">
+      <Link>ipad_images_pointer\sunglasses.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sunglasses%402x.jpg">
+      <Link>ipad_images_pointer\sunglasses%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Superman.jpg">
+      <Link>ipad_images_pointer\Superman.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Superman%402x.jpg">
+      <Link>ipad_images_pointer\Superman%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\swing.jpg">
+      <Link>ipad_images_pointer\swing.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\swing%402x.jpg">
+      <Link>ipad_images_pointer\swing%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\T.jpg">
+      <Link>ipad_images_pointer\T.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\T%402x.jpg">
+      <Link>ipad_images_pointer\T%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tack.jpg">
+      <Link>ipad_images_pointer\tack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tack%402x.jpg">
+      <Link>ipad_images_pointer\tack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tail.jpg">
+      <Link>ipad_images_pointer\tail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tail%402x.jpg">
+      <Link>ipad_images_pointer\tail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\take.jpg">
+      <Link>ipad_images_pointer\take.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\take%402x.jpg">
+      <Link>ipad_images_pointer\take%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\talk.jpg">
+      <Link>ipad_images_pointer\talk.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\talk%402x.jpg">
+      <Link>ipad_images_pointer\talk%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tall.jpg">
+      <Link>ipad_images_pointer\tall.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tall%402x.jpg">
+      <Link>ipad_images_pointer\tall%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tambourine.jpg">
+      <Link>ipad_images_pointer\tambourine.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tambourine%402x.jpg">
+      <Link>ipad_images_pointer\tambourine%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tan.jpg">
+      <Link>ipad_images_pointer\tan.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tan%402x.jpg">
+      <Link>ipad_images_pointer\tan%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tape.jpg">
+      <Link>ipad_images_pointer\tape.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tape%402x.jpg">
+      <Link>ipad_images_pointer\tape%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tar.jpg">
+      <Link>ipad_images_pointer\tar.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tar%402x.jpg">
+      <Link>ipad_images_pointer\tar%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\team.jpg">
+      <Link>ipad_images_pointer\team.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\team%402x.jpg">
+      <Link>ipad_images_pointer\team%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tear.jpg">
+      <Link>ipad_images_pointer\tear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tear%402x.jpg">
+      <Link>ipad_images_pointer\tear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tease.jpg">
+      <Link>ipad_images_pointer\tease.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tease%402x.jpg">
+      <Link>ipad_images_pointer\tease%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\teddy bear.jpg">
+      <Link>ipad_images_pointer\teddy bear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\teddy bear%402x.jpg">
+      <Link>ipad_images_pointer\teddy bear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tell.jpg">
+      <Link>ipad_images_pointer\tell.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tell%402x.jpg">
+      <Link>ipad_images_pointer\tell%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tent.jpg">
+      <Link>ipad_images_pointer\tent.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tent%402x.jpg">
+      <Link>ipad_images_pointer\tent%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\test.jpg">
+      <Link>ipad_images_pointer\test.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\test%402x.jpg">
+      <Link>ipad_images_pointer\test%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\thigh.jpg">
+      <Link>ipad_images_pointer\thigh.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\thigh%402x.jpg">
+      <Link>ipad_images_pointer\thigh%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tick.jpg">
+      <Link>ipad_images_pointer\tick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tick%402x.jpg">
+      <Link>ipad_images_pointer\tick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tie.jpg">
+      <Link>ipad_images_pointer\tie.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tie%402x.jpg">
+      <Link>ipad_images_pointer\tie%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\time.jpg">
+      <Link>ipad_images_pointer\time.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\time%402x.jpg">
+      <Link>ipad_images_pointer\time%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tin.jpg">
+      <Link>ipad_images_pointer\tin.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tin%402x.jpg">
+      <Link>ipad_images_pointer\tin%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tip.jpg">
+      <Link>ipad_images_pointer\tip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tip%402x.jpg">
+      <Link>ipad_images_pointer\tip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toad.jpg">
+      <Link>ipad_images_pointer\toad.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toad%402x.jpg">
+      <Link>ipad_images_pointer\toad%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toaster.jpg">
+      <Link>ipad_images_pointer\toaster.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toaster%402x.jpg">
+      <Link>ipad_images_pointer\toaster%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toe.jpg">
+      <Link>ipad_images_pointer\toe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toe%402x.jpg">
+      <Link>ipad_images_pointer\toe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toffee.jpg">
+      <Link>ipad_images_pointer\toffee.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\toffee%402x.jpg">
+      <Link>ipad_images_pointer\toffee%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tool.jpg">
+      <Link>ipad_images_pointer\tool.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tool%402x.jpg">
+      <Link>ipad_images_pointer\tool%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\top.jpg">
+      <Link>ipad_images_pointer\top.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\top%402x.jpg">
+      <Link>ipad_images_pointer\top%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tore.jpg">
+      <Link>ipad_images_pointer\tore.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tore%402x.jpg">
+      <Link>ipad_images_pointer\tore%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tot.jpg">
+      <Link>ipad_images_pointer\tot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tot%402x.jpg">
+      <Link>ipad_images_pointer\tot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tote.jpg">
+      <Link>ipad_images_pointer\tote.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tote%402x.jpg">
+      <Link>ipad_images_pointer\tote%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tower.jpg">
+      <Link>ipad_images_pointer\tower.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tower%402x.jpg">
+      <Link>ipad_images_pointer\tower%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\town.jpg">
+      <Link>ipad_images_pointer\town.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\town%402x.jpg">
+      <Link>ipad_images_pointer\town%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\track.jpg">
+      <Link>ipad_images_pointer\track.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\track%402x.jpg">
+      <Link>ipad_images_pointer\track%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\trail.jpg">
+      <Link>ipad_images_pointer\trail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\trail%402x.jpg">
+      <Link>ipad_images_pointer\trail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\treat.jpg">
+      <Link>ipad_images_pointer\treat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\treat%402x.jpg">
+      <Link>ipad_images_pointer\treat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tree.jpg">
+      <Link>ipad_images_pointer\tree.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tree%402x.jpg">
+      <Link>ipad_images_pointer\tree%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\trip.jpg">
+      <Link>ipad_images_pointer\trip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\trip%402x.jpg">
+      <Link>ipad_images_pointer\trip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tub.jpg">
+      <Link>ipad_images_pointer\tub.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tub%402x.jpg">
+      <Link>ipad_images_pointer\tub%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\turf.jpg">
+      <Link>ipad_images_pointer\turf.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\turf%402x.jpg">
+      <Link>ipad_images_pointer\turf%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tweet.jpg">
+      <Link>ipad_images_pointer\tweet.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tweet%402x.jpg">
+      <Link>ipad_images_pointer\tweet%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\two.jpg">
+      <Link>ipad_images_pointer\two.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\two%402x.jpg">
+      <Link>ipad_images_pointer\two%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\type.jpg">
+      <Link>ipad_images_pointer\type.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\type%402x.jpg">
+      <Link>ipad_images_pointer\type%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\up.jpg">
+      <Link>ipad_images_pointer\up.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\up%402x.jpg">
+      <Link>ipad_images_pointer\up%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\vase.jpg">
+      <Link>ipad_images_pointer\vase.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\vase%402x.jpg">
+      <Link>ipad_images_pointer\vase%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\w.jpg">
+      <Link>ipad_images_pointer\w.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\w%402x.jpg">
+      <Link>ipad_images_pointer\w%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wag.jpg">
+      <Link>ipad_images_pointer\wag.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wag%402x.jpg">
+      <Link>ipad_images_pointer\wag%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wake.jpg">
+      <Link>ipad_images_pointer\wake.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wake%402x.jpg">
+      <Link>ipad_images_pointer\wake%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\walkie talkie.jpg">
+      <Link>ipad_images_pointer\walkie talkie.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\walkie talkie%402x.jpg">
+      <Link>ipad_images_pointer\walkie talkie%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wave.jpg">
+      <Link>ipad_images_pointer\wave.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wave%402x.jpg">
+      <Link>ipad_images_pointer\wave%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wed.jpg">
+      <Link>ipad_images_pointer\wed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wed%402x.jpg">
+      <Link>ipad_images_pointer\wed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weed.jpg">
+      <Link>ipad_images_pointer\weed.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weed%402x.jpg">
+      <Link>ipad_images_pointer\weed%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\week.jpg">
+      <Link>ipad_images_pointer\week.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\week%402x.jpg">
+      <Link>ipad_images_pointer\week%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weigh.jpg">
+      <Link>ipad_images_pointer\weigh.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weigh%402x.jpg">
+      <Link>ipad_images_pointer\weigh%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\west.jpg">
+      <Link>ipad_images_pointer\west.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\west%402x.jpg">
+      <Link>ipad_images_pointer\west%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\whale.jpg">
+      <Link>ipad_images_pointer\whale.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\whale%402x.jpg">
+      <Link>ipad_images_pointer\whale%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wheel.jpg">
+      <Link>ipad_images_pointer\wheel.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wheel%402x.jpg">
+      <Link>ipad_images_pointer\wheel%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wick.jpg">
+      <Link>ipad_images_pointer\wick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wick%402x.jpg">
+      <Link>ipad_images_pointer\wick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wig.jpg">
+      <Link>ipad_images_pointer\wig.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wig%402x.jpg">
+      <Link>ipad_images_pointer\wig%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\win.jpg">
+      <Link>ipad_images_pointer\win.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\win%402x.jpg">
+      <Link>ipad_images_pointer\win%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wing.jpg">
+      <Link>ipad_images_pointer\wing.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wing%402x.jpg">
+      <Link>ipad_images_pointer\wing%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wipe.jpg">
+      <Link>ipad_images_pointer\wipe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wipe%402x.jpg">
+      <Link>ipad_images_pointer\wipe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\witch.jpg">
+      <Link>ipad_images_pointer\witch.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\witch%402x.jpg">
+      <Link>ipad_images_pointer\witch%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wok.jpg">
+      <Link>ipad_images_pointer\wok.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wok%402x.jpg">
+      <Link>ipad_images_pointer\wok%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\write.jpg">
+      <Link>ipad_images_pointer\write.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\write%402x.jpg">
+      <Link>ipad_images_pointer\write%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yam.jpg">
+      <Link>ipad_images_pointer\yam.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yam%402x.jpg">
+      <Link>ipad_images_pointer\yam%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yawn.jpg">
+      <Link>ipad_images_pointer\yawn.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yawn%402x.jpg">
+      <Link>ipad_images_pointer\yawn%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yuck.jpg">
+      <Link>ipad_images_pointer\yuck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\yuck%402x.jpg">
+      <Link>ipad_images_pointer\yuck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\zip.jpg">
+      <Link>ipad_images_pointer\zip.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\zip%402x.jpg">
+      <Link>ipad_images_pointer\zip%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\zoo.jpg">
+      <Link>ipad_images_pointer\zoo.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\zoo%402x.jpg">
+      <Link>ipad_images_pointer\zoo%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\SharedPCL\Shared_Content\Pairs2.xml">
+      <Link>Shared_Content\Pairs2.xml</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\MainStoryboard_iPad.storyboard">
+      <Link>ipad_images_pointer\MainStoryboard_iPad.storyboard</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bus.jpg">
+      <Link>ipad_images_pointer\bus.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bus%402x.jpg">
+      <Link>ipad_images_pointer\bus%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bush.jpg">
+      <Link>ipad_images_pointer\bush.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bush%402x.jpg">
+      <Link>ipad_images_pointer\bush%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cape.jpg">
+      <Link>ipad_images_pointer\cape.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cape%402x.jpg">
+      <Link>ipad_images_pointer\cape%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cheese.jpg">
+      <Link>ipad_images_pointer\cheese.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cheese%402x.jpg">
+      <Link>ipad_images_pointer\cheese%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cool.jpg">
+      <Link>ipad_images_pointer\cool.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cool%402x.jpg">
+      <Link>ipad_images_pointer\cool%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crawl.jpg">
+      <Link>ipad_images_pointer\crawl.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crawl%402x.jpg">
+      <Link>ipad_images_pointer\crawl%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crowd.jpg">
+      <Link>ipad_images_pointer\crowd.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crowd%402x.jpg">
+      <Link>ipad_images_pointer\crowd%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crown.jpg">
+      <Link>ipad_images_pointer\crown.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\crown%402x.jpg">
+      <Link>ipad_images_pointer\crown%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dame.jpg">
+      <Link>ipad_images_pointer\dame.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dame%402x.jpg">
+      <Link>ipad_images_pointer\dame%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\faint.jpg">
+      <Link>ipad_images_pointer\faint.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\faint%402x.jpg">
+      <Link>ipad_images_pointer\faint%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fair.jpg">
+      <Link>ipad_images_pointer\fair.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fair%402x.jpg">
+      <Link>ipad_images_pointer\fair%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gap.jpg">
+      <Link>ipad_images_pointer\gap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\gap%402x.jpg">
+      <Link>ipad_images_pointer\gap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\goal.jpg">
+      <Link>ipad_images_pointer\goal.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\goal%402x.jpg">
+      <Link>ipad_images_pointer\goal%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\guard.jpg">
+      <Link>ipad_images_pointer\guard.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\guard%402x.jpg">
+      <Link>ipad_images_pointer\guard%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Kate.jpg">
+      <Link>ipad_images_pointer\Kate.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Kate%402x.jpg">
+      <Link>ipad_images_pointer\Kate%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kick.jpg">
+      <Link>ipad_images_pointer\kick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kick%402x.jpg">
+      <Link>ipad_images_pointer\kick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kit.jpg">
+      <Link>ipad_images_pointer\kit.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\kit%402x.jpg">
+      <Link>ipad_images_pointer\kit%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knot.jpg">
+      <Link>ipad_images_pointer\knot.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knot%402x.jpg">
+      <Link>ipad_images_pointer\knot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lit.jpg">
+      <Link>ipad_images_pointer\lit.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lit%402x.jpg">
+      <Link>ipad_images_pointer\lit%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\log.jpg">
+      <Link>ipad_images_pointer\log.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\log%402x.jpg">
+      <Link>ipad_images_pointer\log%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\luck.jpg">
+      <Link>ipad_images_pointer\luck.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\luck%402x.jpg">
+      <Link>ipad_images_pointer\luck%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Lynn.jpg">
+      <Link>ipad_images_pointer\Lynn.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Lynn%402x.jpg">
+      <Link>ipad_images_pointer\Lynn%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\make.jpg">
+      <Link>ipad_images_pointer\make.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\make%402x.jpg">
+      <Link>ipad_images_pointer\make%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Meg.jpg">
+      <Link>ipad_images_pointer\Meg.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\Meg%402x.jpg">
+      <Link>ipad_images_pointer\Meg%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\moose.jpg">
+      <Link>ipad_images_pointer\moose.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\moose%402x.jpg">
+      <Link>ipad_images_pointer\moose%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\neigh.jpg">
+      <Link>ipad_images_pointer\neigh.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\neigh%402x.jpg">
+      <Link>ipad_images_pointer\neigh%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pick.jpg">
+      <Link>ipad_images_pointer\pick.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pick%402x.jpg">
+      <Link>ipad_images_pointer\pick%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pout.jpg">
+      <Link>ipad_images_pointer\pout.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pout%402x.jpg">
+      <Link>ipad_images_pointer\pout%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pug.jpg">
+      <Link>ipad_images_pointer\pug.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\pug%402x.jpg">
+      <Link>ipad_images_pointer\pug%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\push.jpg">
+      <Link>ipad_images_pointer\push.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\push%402x.jpg">
+      <Link>ipad_images_pointer\push%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\queen.jpg">
+      <Link>ipad_images_pointer\queen.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\queen%402x.jpg">
+      <Link>ipad_images_pointer\queen%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\read.jpg">
+      <Link>ipad_images_pointer\read.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\read%402x.jpg">
+      <Link>ipad_images_pointer\read%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sad.jpg">
+      <Link>ipad_images_pointer\sad.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sad%402x.jpg">
+      <Link>ipad_images_pointer\sad%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\safe.jpg">
+      <Link>ipad_images_pointer\safe.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\safe%402x.jpg">
+      <Link>ipad_images_pointer\safe%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\smack.jpg">
+      <Link>ipad_images_pointer\smack.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\smack%402x.jpg">
+      <Link>ipad_images_pointer\smack%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snail.jpg">
+      <Link>ipad_images_pointer\snail.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\snail%402x.jpg">
+      <Link>ipad_images_pointer\snail%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spy.jpg">
+      <Link>ipad_images_pointer\spy.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spy%402x.jpg">
+      <Link>ipad_images_pointer\spy%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tap.jpg">
+      <Link>ipad_images_pointer\tap.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tap%402x.jpg">
+      <Link>ipad_images_pointer\tap%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weep.jpg">
+      <Link>ipad_images_pointer\weep.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\weep%402x.jpg">
+      <Link>ipad_images_pointer\weep%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wink.jpg">
+      <Link>ipad_images_pointer\wink.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wink%402x.jpg">
+      <Link>ipad_images_pointer\wink%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wizard.jpg">
+      <Link>ipad_images_pointer\wizard.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\wizard%402x.jpg">
+      <Link>ipad_images_pointer\wizard%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\call.jpg">
+      <Link>ipad_images_pointer\call.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\call%402x.jpg">
+      <Link>ipad_images_pointer\call%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sacks.jpg">
+      <Link>ipad_images_pointer\sacks.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\sacks%402x.jpg">
+      <Link>ipad_images_pointer\sacks%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\baluga.jpg">
+      <Link>ipad_images_pointer\baluga.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\baluga%402x.jpg">
+      <Link>ipad_images_pointer\baluga%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bark.jpg">
+      <Link>ipad_images_pointer\bark.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bark%402x.jpg">
+      <Link>ipad_images_pointer\bark%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bead.jpg">
+      <Link>ipad_images_pointer\bead.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\bead%402x.jpg">
+      <Link>ipad_images_pointer\bead%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cowboy hat.jpg">
+      <Link>ipad_images_pointer\cowboy hat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\cowboy hat%402x.jpg">
+      <Link>ipad_images_pointer\cowboy hat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\D.jpg">
+      <Link>ipad_images_pointer\D.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\D%402x.jpg">
+      <Link>ipad_images_pointer\D%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dime.jpg">
+      <Link>ipad_images_pointer\dime.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\dime%402x.jpg">
+      <Link>ipad_images_pointer\dime%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eyes.jpg">
+      <Link>ipad_images_pointer\eyes.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\eyes%402x.jpg">
+      <Link>ipad_images_pointer\eyes%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fat.jpg">
+      <Link>ipad_images_pointer\fat.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fat%402x.jpg">
+      <Link>ipad_images_pointer\fat%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fur.jpg">
+      <Link>ipad_images_pointer\fur.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\fur%402x.jpg">
+      <Link>ipad_images_pointer\fur%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hula hoop.jpg">
+      <Link>ipad_images_pointer\hula hoop.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\hula hoop%402x.jpg">
+      <Link>ipad_images_pointer\hula hoop%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knight.jpg">
+      <Link>ipad_images_pointer\knight.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\knight%402x.jpg">
+      <Link>ipad_images_pointer\knight%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lab.jpg">
+      <Link>ipad_images_pointer\lab.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\lab%402x.jpg">
+      <Link>ipad_images_pointer\lab%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\miss.jpg">
+      <Link>ipad_images_pointer\miss.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\miss%402x.jpg">
+      <Link>ipad_images_pointer\miss%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\near.jpg">
+      <Link>ipad_images_pointer\near.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\near%402x.jpg">
+      <Link>ipad_images_pointer\near%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nine.jpg">
+      <Link>ipad_images_pointer\nine.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\nine%402x.jpg">
+      <Link>ipad_images_pointer\nine%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\one.jpg">
+      <Link>ipad_images_pointer\one.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\one%402x.jpg">
+      <Link>ipad_images_pointer\one%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\polar bear.jpg">
+      <Link>ipad_images_pointer\polar bear.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\polar bear%402x.jpg">
+      <Link>ipad_images_pointer\polar bear%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rib.jpg">
+      <Link>ipad_images_pointer\rib.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\rib%402x.jpg">
+      <Link>ipad_images_pointer\rib%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\right.jpg">
+      <Link>ipad_images_pointer\right.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\right%402x.jpg">
+      <Link>ipad_images_pointer\right%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\spot%402x.jpg">
+      <Link>ipad_images_pointer\spot%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tag.jpg">
+      <Link>ipad_images_pointer\tag.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\tag%402x.jpg">
+      <Link>ipad_images_pointer\tag%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\water bottle.jpg">
+      <Link>ipad_images_pointer\water bottle.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\water bottle%402x.jpg">
+      <Link>ipad_images_pointer\water bottle%402x.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\white.jpg">
+      <Link>ipad_images_pointer\white.jpg</Link>
+    </BundleResource>
+    <BundleResource Include="..\PuppyMP_SB\iPad_Images\white%402x.jpg">
+      <Link>ipad_images_pointer\white%402x.jpg</Link>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="UnitTestAppDelegate.cs" />
+    <Compile Include="UnitTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\SharedPCL\SharedPCL.csproj">
+      <Project>{229BF34A-DDCF-463E-B2BE-E0EE3D605EC0}</Project>
+      <Name>SharedPCL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ipad_images_pointer\" />
+    <Folder Include="Shared_Content\" />
+  </ItemGroup>
+</Project>

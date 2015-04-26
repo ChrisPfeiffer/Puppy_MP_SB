@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="imagePgViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3"/>
+                        <viewControllerLayoutGuide type="bottom" id="4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                                <rect key="frame" x="386" y="64" width="382" height="573"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="237">
+                                <rect key="frame" x="378" y="839" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6Rt-Zv-LTr"/>
+                                    <constraint firstAttribute="width" constant="358" id="uq6-dE-2l8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnPlayAudio.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="262">
+                                <rect key="frame" x="378" y="924" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Xou-KM-AwQ"/>
+                                    <constraint firstAttribute="width" constant="358" id="fpE-Yh-0vx"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnNext.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="301">
+                                <rect key="frame" x="32" y="924" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="u6h-4q-9pU"/>
+                                    <constraint firstAttribute="width" constant="358" id="z1x-FD-uzV"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnPrevious.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="314">
+                                <rect key="frame" x="32" y="839" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="FRm-ZK-Ujm"/>
+                                    <constraint firstAttribute="width" constant="358" id="QJW-JW-uuk"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnRecordAudio2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="320">
+                                <rect key="frame" x="378" y="754" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="Abu-bk-hAF"/>
+                                    <constraint firstAttribute="height" constant="80" id="ceg-CQ-8db"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnPlayVideo.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="424" kind="push" identifier="playSegue" id="596"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                                <rect key="frame" x="0.0" y="64" width="382" height="573"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="573" id="29"/>
+                                    <constraint firstAttribute="width" constant="382" id="30"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="720">
+                                <rect key="frame" x="193" y="64" width="382" height="573"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="573" id="721"/>
+                                    <constraint firstAttribute="width" constant="382" id="722"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="341">
+                                <rect key="frame" x="32" y="754" width="358" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="Wvg-BH-ceb"/>
+                                    <constraint firstAttribute="height" constant="80" id="hAU-A6-W0H"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btnRecordVideo2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="424" kind="push" identifier="recordSegue" id="428"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lZ-u6-Vxw">
+                                <rect key="frame" x="284" y="391" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="LyS-KQ-529"/>
+                                    <constraint firstAttribute="height" constant="200" id="yli-K7-44n"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="recordingImage.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgj-hn-biS">
+                                <rect key="frame" x="81" y="687" width="220" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Q5i-Xm-efr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-uD-nkf">
+                                <rect key="frame" x="467" y="687" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Ard-HU-tAv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwZ-Mz-h7f">
+                                <rect key="frame" x="274" y="687" width="220" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="h1j-rr-bMo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="25" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="27"/>
+                            <constraint firstItem="25" firstAttribute="top" secondItem="3" secondAttribute="bottom" id="28"/>
+                            <constraint firstItem="26" firstAttribute="top" secondItem="3" secondAttribute="bottom" id="31"/>
+                            <constraint firstAttribute="trailing" secondItem="26" secondAttribute="trailing" id="32"/>
+                            <constraint firstItem="26" firstAttribute="height" secondItem="25" secondAttribute="height" id="33"/>
+                            <constraint firstItem="26" firstAttribute="width" secondItem="25" secondAttribute="width" id="34"/>
+                            <constraint firstItem="720" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="723"/>
+                            <constraint firstItem="720" firstAttribute="centerY" secondItem="26" secondAttribute="centerY" id="724"/>
+                            <constraint firstItem="4lZ-u6-Vxw" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="327" id="268-gA-Uoj"/>
+                            <constraint firstItem="237" firstAttribute="top" secondItem="320" secondAttribute="bottom" constant="5" id="85f-UV-f4h"/>
+                            <constraint firstItem="314" firstAttribute="top" secondItem="341" secondAttribute="bottom" constant="5" id="AeF-ru-T7W"/>
+                            <constraint firstItem="4" firstAttribute="top" secondItem="301" secondAttribute="bottom" constant="20" id="BRX-R7-LpD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="262" secondAttribute="trailing" constant="12" id="Dng-rx-C06"/>
+                            <constraint firstItem="301" firstAttribute="top" secondItem="314" secondAttribute="bottom" constant="5" id="MBo-Bb-R9b"/>
+                            <constraint firstItem="314" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="NOd-3g-08Q"/>
+                            <constraint firstItem="uw1-uD-nkf" firstAttribute="centerX" secondItem="26" secondAttribute="centerX" id="QCM-64-PqI"/>
+                            <constraint firstItem="xgj-hn-biS" firstAttribute="top" secondItem="720" secondAttribute="bottom" constant="50" id="QxW-8e-0FD"/>
+                            <constraint firstItem="4" firstAttribute="top" secondItem="262" secondAttribute="bottom" constant="20" id="XTz-UH-b6e"/>
+                            <constraint firstItem="301" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="YLa-Qb-vdf"/>
+                            <constraint firstItem="341" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="a6q-bk-YJn"/>
+                            <constraint firstItem="25" firstAttribute="centerX" secondItem="xgj-hn-biS" secondAttribute="centerX" id="buR-9T-7fr"/>
+                            <constraint firstItem="XwZ-Mz-h7f" firstAttribute="top" secondItem="720" secondAttribute="bottom" constant="50" id="ehs-ZM-fP9"/>
+                            <constraint firstItem="uw1-uD-nkf" firstAttribute="top" secondItem="720" secondAttribute="bottom" constant="50" id="fM6-Nw-nKq"/>
+                            <constraint firstAttribute="centerX" secondItem="XwZ-Mz-h7f" secondAttribute="centerX" id="iIV-AW-ffI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="237" secondAttribute="trailing" constant="12" id="lLc-ki-0Rf"/>
+                            <constraint firstItem="262" firstAttribute="top" secondItem="237" secondAttribute="bottom" constant="5" id="nvV-lm-Ied"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="320" secondAttribute="trailing" constant="12" id="qNJ-Fq-ZYv"/>
+                            <constraint firstItem="4lZ-u6-Vxw" firstAttribute="centerX" secondItem="720" secondAttribute="centerX" id="vQG-lZ-qgW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="19"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="btnNext" destination="262" id="name-outlet-262"/>
+                        <outlet property="btnPlayAudio" destination="237" id="name-outlet-237"/>
+                        <outlet property="btnPlayVideo" destination="320" id="name-outlet-320"/>
+                        <outlet property="btnPrevious" destination="301" id="name-outlet-301"/>
+                        <outlet property="btnRecordAudio" destination="314" id="name-outlet-314"/>
+                        <outlet property="btnRecordVideo" destination="341" id="name-outlet-341"/>
+                        <outlet property="leftImageOutlet" destination="25" id="name-outlet-25"/>
+                        <outlet property="micImage" destination="4lZ-u6-Vxw" id="name-outlet-4lZ-u6-Vxw"/>
+                        <outlet property="multiImage" destination="720" id="name-outlet-720"/>
+                        <outlet property="rightImageOutlet" destination="26" id="name-outlet-26"/>
+                        <outlet property="btnLeft" destination="xgj-hn-biS" id="name-outlet-xgj-hn-biS"/>
+                        <outlet property="btnMulti" destination="XwZ-Mz-h7f" id="name-outlet-XwZ-Mz-h7f"/>
+                        <outlet property="btnRight" destination="uw1-uD-nkf" id="name-outlet-uw1-uD-nkf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="801"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="11">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="42" kind="relationship" relationship="rootViewController" id="54"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1003" y="11"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="41">
+            <objects>
+                <viewController id="42" customClass="speechTherapyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="39"/>
+                        <viewControllerLayoutGuide type="bottom" id="40"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="43">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60">
+                                <rect key="frame" x="20" y="424" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Initial Consonant Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="initial_consonant" id="137"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61">
+                                <rect key="frame" x="384" y="544" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Stopping">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" identifier="stopping" id="143"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62">
+                                <rect key="frame" x="20" y="784" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Multi-Syllabalic Words">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="multi" id="752"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                                <rect key="frame" x="384" y="784" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Stridency Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="stridency_deletion" id="618"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64">
+                                <rect key="frame" x="20" y="904" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Pre-Vocalic Voicing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="prevocalic" id="129"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66">
+                                <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                                <rect key="frame" x="20" y="664" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Gliding">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="gliding" id="609"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68">
+                                <rect key="frame" x="384" y="664" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Cluster Reduction">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="cluster_reduction" id="627"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69">
+                                <rect key="frame" x="20" y="544" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Fronting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49" kind="push" identifier="fronting" id="145"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98">
+                                <rect key="frame" x="384" y="424" width="364" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Final Consonant Deletion">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="final_consonant" id="139"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="708">
+                                <rect key="frame" x="20" y="64" width="728" height="120"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65">
+                                <rect key="frame" x="384" y="904" width="364" height="120"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Post-Vocalic Voicing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="postvocalic" id="127"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="710">
+                                <rect key="frame" x="384" y="304" width="364" height="120"/>
+                                <state key="normal" title="Buy Fronting">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="707">
+                                <rect key="frame" x="20" y="184" width="728" height="120"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Top_Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-4v-UL0">
+                                <rect key="frame" x="21" y="65" width="726" height="358"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="64" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="1rF-ma-aN6"/>
+                            <constraint firstItem="61" firstAttribute="leading" secondItem="69" secondAttribute="trailing" id="2Bc-HC-g0f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="98" secondAttribute="trailing" id="4cW-zD-vxf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="64" secondAttribute="bottom" id="6lm-1k-tVu"/>
+                            <constraint firstItem="68" firstAttribute="leading" secondItem="67" secondAttribute="trailing" id="7MO-M9-tP2"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="63" secondAttribute="width" id="7mg-qU-gzO"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="61" secondAttribute="height" id="8mx-QW-YcG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="68" secondAttribute="trailing" id="9jb-vA-3BS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GSQ-4v-UL0" secondAttribute="trailing" constant="1" id="Alu-KC-XAK"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="710" secondAttribute="height" id="Aqz-bC-DNA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="710" secondAttribute="trailing" id="C39-xs-Yz1"/>
+                            <constraint firstItem="64" firstAttribute="top" secondItem="62" secondAttribute="bottom" id="EMn-Q2-5gg"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="68" secondAttribute="width" id="F6t-M8-hmG"/>
+                            <constraint firstItem="69" firstAttribute="top" secondItem="60" secondAttribute="bottom" id="G3l-55-61g"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="65" secondAttribute="height" id="HhG-EX-JGt"/>
+                            <constraint firstItem="63" firstAttribute="top" secondItem="68" secondAttribute="bottom" id="I0G-d1-Rg9"/>
+                            <constraint firstItem="707" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="IAJ-SA-nZt"/>
+                            <constraint firstItem="63" firstAttribute="leading" secondItem="62" secondAttribute="trailing" id="ICJ-7U-hB3"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="65" secondAttribute="height" id="Jjr-4p-sbz"/>
+                            <constraint firstItem="61" firstAttribute="top" secondItem="98" secondAttribute="bottom" id="KvZ-wL-ZDX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="708" secondAttribute="trailing" id="Lcn-RU-RJr"/>
+                            <constraint firstItem="708" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="MLj-z9-ySK"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="60" secondAttribute="width" id="NIV-t3-JkX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="63" secondAttribute="trailing" id="Nas-Kp-BzK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="65" secondAttribute="trailing" id="NkX-na-SbY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="707" secondAttribute="trailing" id="OIV-2b-rrD"/>
+                            <constraint firstItem="GSQ-4v-UL0" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" constant="1" id="OYS-XJ-pa8"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="69" secondAttribute="width" id="P95-Bs-WOm"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="62" secondAttribute="height" id="Pw4-8A-t2Q"/>
+                            <constraint firstItem="65" firstAttribute="top" secondItem="63" secondAttribute="bottom" id="Q57-oB-iP4"/>
+                            <constraint firstItem="65" firstAttribute="leading" secondItem="64" secondAttribute="trailing" id="RpY-f5-QDQ"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="63" secondAttribute="height" id="SFH-Ld-9HW"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="67" secondAttribute="width" id="VWg-zh-EGe"/>
+                            <constraint firstItem="707" firstAttribute="top" secondItem="708" secondAttribute="bottom" id="W2F-0V-cT0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="61" secondAttribute="trailing" id="WFD-te-r5P"/>
+                            <constraint firstItem="67" firstAttribute="top" secondItem="69" secondAttribute="bottom" id="Wqh-b1-d95"/>
+                            <constraint firstItem="GSQ-4v-UL0" firstAttribute="top" secondItem="39" secondAttribute="bottom" constant="1" id="XCg-Du-iw2"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="707" secondAttribute="height" id="Y0r-EB-1u3"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="68" secondAttribute="height" id="YwC-yg-gVr"/>
+                            <constraint firstItem="708" firstAttribute="top" secondItem="39" secondAttribute="bottom" id="Z7I-gi-c8O"/>
+                            <constraint firstItem="710" firstAttribute="top" secondItem="707" secondAttribute="bottom" id="ZKl-GG-Ibv"/>
+                            <constraint firstItem="98" firstAttribute="height" secondItem="708" secondAttribute="height" id="amj-tF-OFJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="708" secondAttribute="trailing" id="bFk-LT-EWa"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="69" secondAttribute="height" id="bMh-Fy-4TZ"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="61" secondAttribute="width" id="chx-89-mo6"/>
+                            <constraint firstItem="68" firstAttribute="top" secondItem="61" secondAttribute="bottom" id="ehE-1m-c8h"/>
+                            <constraint firstItem="62" firstAttribute="top" secondItem="67" secondAttribute="bottom" id="hWI-Qg-O4Z"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="65" secondAttribute="bottom" id="jCD-9Z-siz"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="98" secondAttribute="width" id="jGv-5f-r2B"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="65" secondAttribute="width" id="kUC-t7-xmz"/>
+                            <constraint firstItem="710" firstAttribute="leading" secondItem="60" secondAttribute="trailing" id="lVi-cf-uhs"/>
+                            <constraint firstItem="62" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="mZa-45-OAx"/>
+                            <constraint firstItem="69" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="mvw-9C-kBO"/>
+                            <constraint firstItem="98" firstAttribute="top" secondItem="GSQ-4v-UL0" secondAttribute="bottom" constant="1" id="nBR-J3-U6r"/>
+                            <constraint firstItem="98" firstAttribute="leading" secondItem="60" secondAttribute="trailing" id="tdM-Ky-gwQ"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="60" secondAttribute="height" id="uQx-Qu-vpy"/>
+                            <constraint firstItem="60" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="uhm-zg-qES"/>
+                            <constraint firstItem="67" firstAttribute="leading" secondItem="43" secondAttribute="leadingMargin" id="unH-O9-fLQ"/>
+                            <constraint firstItem="98" firstAttribute="top" secondItem="710" secondAttribute="bottom" id="vhv-hL-dNs"/>
+                            <constraint firstItem="64" firstAttribute="width" secondItem="62" secondAttribute="width" id="y79-ms-fQ5"/>
+                            <constraint firstItem="67" firstAttribute="height" secondItem="64" secondAttribute="height" id="zJ4-SF-U8J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="53"/>
+                    <connections>
+                        <outlet property="btnCluster" destination="68" id="name-outlet-68"/>
+                        <outlet property="btnFinalConsonant" destination="98" id="name-outlet-98"/>
+                        <outlet property="btnFronting" destination="69" id="name-outlet-69"/>
+                        <outlet property="btnGliding" destination="67" id="name-outlet-67"/>
+                        <outlet property="btnInitialConsonant" destination="60" id="name-outlet-60"/>
+                        <outlet property="btnPostVoicing" destination="65" id="name-outlet-65"/>
+                        <outlet property="btnPreVoicing" destination="64" id="name-outlet-64"/>
+                        <outlet property="btnStopping" destination="61" id="name-outlet-61"/>
+                        <outlet property="btnStridency" destination="63" id="name-outlet-63"/>
+                        <outlet property="buyFronting" destination="710" id="name-outlet-710"/>
+                        <outlet property="btnMulti" destination="62" id="name-outlet-62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="12" y="31"/>
+        </scene>
+        <!--Position View Controller-->
+        <scene sceneID="48">
+            <objects>
+                <viewController id="49" customClass="PositionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="46"/>
+                        <viewControllerLayoutGuide type="bottom" id="47"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="50">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="154">
+                                <rect key="frame" x="0.0" y="64" width="768" height="480"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.71372549019607845" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Initial Position">
+                                    <color key="titleColor" red="0.96470588235294119" green="0.8901960784313725" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="initial_position" id="166"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="155">
+                                <rect key="frame" x="0.0" y="544" width="768" height="480"/>
+                                <color key="backgroundColor" red="0.67450980392156867" green="1" blue="0.47843137254901963" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Final Position">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" identifier="final_position" id="164"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="154" secondAttribute="trailing" id="156"/>
+                            <constraint firstItem="154" firstAttribute="leading" secondItem="50" secondAttribute="leading" id="157"/>
+                            <constraint firstItem="154" firstAttribute="top" secondItem="46" secondAttribute="bottom" id="158"/>
+                            <constraint firstItem="154" firstAttribute="height" secondItem="155" secondAttribute="height" id="159"/>
+                            <constraint firstItem="47" firstAttribute="top" secondItem="155" secondAttribute="bottom" id="160"/>
+                            <constraint firstAttribute="trailing" secondItem="155" secondAttribute="trailing" id="161"/>
+                            <constraint firstItem="155" firstAttribute="leading" secondItem="50" secondAttribute="leading" id="162"/>
+                            <constraint firstItem="155" firstAttribute="top" secondItem="154" secondAttribute="bottom" id="163"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="-424"/>
+        </scene>
+        <!--Video Controller-->
+        <scene sceneID="423">
+            <objects>
+                <viewController id="424" customClass="videoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="421"/>
+                        <viewControllerLayoutGuide type="bottom" id="422"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="425">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="436">
+                                <rect key="frame" x="319" y="844" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="EHw-1m-Ea7"/>
+                                    <constraint firstAttribute="width" constant="130" id="U2p-RY-TfP"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="btn_Start_recording.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="501">
+                                <rect key="frame" x="346" y="984" width="77" height="30"/>
+                                <state key="normal" title="Play Video!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="501" secondAttribute="centerX" id="564"/>
+                            <constraint firstAttribute="centerX" secondItem="436" secondAttribute="centerX" id="565"/>
+                            <constraint firstItem="422" firstAttribute="top" secondItem="436" secondAttribute="bottom" constant="50" id="566"/>
+                            <constraint firstItem="422" firstAttribute="top" secondItem="501" secondAttribute="bottom" constant="10" id="567"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlayVideo" destination="501" id="name-outlet-501"/>
+                        <outlet property="btnRecord" destination="436" id="name-outlet-436"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="426" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2441" y="787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_Top_Logo.png" width="1456" height="720"/>
+        <image name="btnNext.png" width="716" height="160"/>
+        <image name="btnPlayAudio.png" width="716" height="160"/>
+        <image name="btnPlayVideo.png" width="716" height="160"/>
+        <image name="btnPrevious.png" width="716" height="160"/>
+        <image name="btnRecordAudio2.png" width="716" height="160"/>
+        <image name="btnRecordVideo2.png" width="716" height="160"/>
+        <image name="btn_Start_recording.png" width="260" height="260"/>
+        <image name="recordingImage.png" width="400" height="400"/>
+        <image name="Default-568h.png" width="640" height="1136"/>
+        <image name="mic.png" width="256" height="256"/>
+        <image name="iPad_Images/C.jpg" width="382" height="573"/>
+        <image name="iPad_Images/L.jpg" width="382" height="573"/>
+        <image name="iPad_Images/Superman.jpg" width="382" height="573"/>
+        <image name="iPad_Images/add.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ant.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ants.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ape.jpg" width="382" height="573"/>
+        <image name="iPad_Images/art.jpg" width="382" height="573"/>
+        <image name="iPad_Images/astronaut.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bag.jpg" width="382" height="573"/>
+        <image name="iPad_Images/banana.jpg" width="382" height="573"/>
+        <image name="iPad_Images/banana22x.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/bat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bed.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bees.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bell.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bike.jpg" width="382" height="573"/>
+        <image name="iPad_Images/block.jpg" width="382" height="573"/>
+        <image name="iPad_Images/blocks.jpg" width="382" height="573"/>
+        <image name="iPad_Images/boot.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bug.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cab.jpg" width="382" height="573"/>
+        <image name="iPad_Images/calculator.jpg" width="382" height="573"/>
+        <image name="iPad_Images/can.jpg" width="382" height="573"/>
+        <image name="iPad_Images/car.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cell.jpg" width="382" height="573"/>
+        <image name="iPad_Images/chew.jpg" width="382" height="573"/>
+        <image name="iPad_Images/clock.jpg" width="382" height="573"/>
+        <image name="iPad_Images/coat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cob.jpg" width="382" height="573"/>
+        <image name="iPad_Images/computer.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cop.jpg" width="382" height="573"/>
+        <image name="iPad_Images/corn.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cow.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cub.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cup.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dad.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dice.jpg" width="382" height="573"/>
+        <image name="iPad_Images/die.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dough.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/eat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/elephant.jpg" width="382" height="573"/>
+        <image name="iPad_Images/eye.jpg" width="382" height="573"/>
+        <image name="iPad_Images/fireman.jpg" width="382" height="573"/>
+        <image name="iPad_Images/fork.jpg" width="382" height="573"/>
+        <image name="iPad_Images/four.jpg" width="382" height="573"/>
+        <image name="iPad_Images/frog.jpg" width="382" height="573"/>
+        <image name="iPad_Images/game.jpg" width="382" height="573"/>
+        <image name="iPad_Images/go.jpg" width="382" height="573"/>
+        <image name="iPad_Images/grasshopper.jpg" width="382" height="573"/>
+        <image name="iPad_Images/helicopter.jpg" width="382" height="573"/>
+        <image name="iPad_Images/hippopotamus.jpg" width="382" height="573"/>
+        <image name="iPad_Images/hose.jpg" width="382" height="573"/>
+        <image name="iPad_Images/howl.jpg" width="382" height="573"/>
+        <image name="iPad_Images/key.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lamb.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ma.jpg" width="382" height="573"/>
+        <image name="iPad_Images/math.jpg" width="382" height="573"/>
+        <image name="iPad_Images/meat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mom.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mug.jpg" width="382" height="573"/>
+        <image name="iPad_Images/octopus.jpg" width="382" height="573"/>
+        <image name="iPad_Images/oil.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pa.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pan.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pig.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pot.jpg" width="382" height="573"/>
+        <image name="iPad_Images/register.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rest.jpg" width="382" height="573"/>
+        <image name="iPad_Images/robe.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rope.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sack22x.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/shape.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sheep.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ship.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sign.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sit.jpg" width="382" height="573"/>
+        <image name="iPad_Images/snow.jpg" width="382" height="573"/>
+        <image name="iPad_Images/spin.jpg" width="382" height="573"/>
+        <image name="iPad_Images/stack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/star.jpg" width="382" height="573"/>
+        <image name="iPad_Images/stethoscope.jpg" width="382" height="573"/>
+        <image name="iPad_Images/stick.jpg" width="382" height="573"/>
+        <image name="iPad_Images/stop.jpg" width="382" height="573"/>
+        <image name="iPad_Images/strawberry.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sum.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sunglasses.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tambourine.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tape.jpg" width="382" height="573"/>
+        <image name="iPad_Images/teddy bear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tie.jpg" width="382" height="573"/>
+        <image name="iPad_Images/time.jpg" width="382" height="573"/>
+        <image name="iPad_Images/toad.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tower.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tree.jpg" width="382" height="573"/>
+        <image name="iPad_Images/two.jpg" width="382" height="573"/>
+        <image name="iPad_Images/type.jpg" width="382" height="573"/>
+        <image name="iPad_Images/walkie talkie.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ace.jpg" width="382" height="573"/>
+        <image name="iPad_Images/arm.jpg" width="382" height="573"/>
+        <image name="iPad_Images/armadillo.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ball.jpg" width="382" height="573"/>
+        <image name="iPad_Images/beet.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bread.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cake.jpg" width="382" height="573"/>
+        <image name="iPad_Images/calendar.jpg" width="382" height="573"/>
+        <image name="iPad_Images/card.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cash.jpg" width="382" height="573"/>
+        <image name="iPad_Images/castle.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cattle.jpg" width="382" height="573"/>
+        <image name="iPad_Images/chest.jpg" width="382" height="573"/>
+        <image name="iPad_Images/chick.jpg" width="382" height="573"/>
+        <image name="iPad_Images/clean.jpg" width="382" height="573"/>
+        <image name="iPad_Images/clean2x.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/coaster.jpg" width="382" height="573"/>
+        <image name="iPad_Images/coffee.jpg" width="382" height="573"/>
+        <image name="iPad_Images/cowboyhat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/date.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dinosaur.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dust.jpg" width="382" height="573"/>
+        <image name="iPad_Images/farm.jpg" width="382" height="573"/>
+        <image name="iPad_Images/fig.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gate.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gingerbread.jpg" width="382" height="573"/>
+        <image name="iPad_Images/glass.jpg" width="382" height="573"/>
+        <image name="iPad_Images/goat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/home.jpg" width="382" height="573"/>
+        <image name="iPad_Images/hulahoop.jpg" width="382" height="573"/>
+        <image name="iPad_Images/k.jpg" width="382" height="573"/>
+        <image name="iPad_Images/kiss.jpg" width="382" height="573"/>
+        <image name="iPad_Images/koalabear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ladybug.jpg" width="382" height="573"/>
+        <image name="iPad_Images/leaves.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lick.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lizard.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lizzard.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/money.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mop.jpg" width="382" height="573"/>
+        <image name="iPad_Images/name.jpg" width="382" height="573"/>
+        <image name="iPad_Images/net.jpg" width="382" height="573"/>
+        <image name="iPad_Images/owl.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ox.jpg" width="382" height="573"/>
+        <image name="iPad_Images/paint.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pandabear.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/pass.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/peel.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pet.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pictureframe.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pie.jpg" width="382" height="573"/>
+        <image name="iPad_Images/plate.jpg" width="382" height="573"/>
+        <image name="iPad_Images/polarbear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pour.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rake.jpg" width="382" height="573"/>
+        <image name="iPad_Images/reindeer.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ring.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rock.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shake.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shell.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shop.jpg" width="382" height="573"/>
+        <image name="iPad_Images/smock.jpg" width="382" height="573"/>
+        <image name="iPad_Images/soup.jpg" width="382" height="573"/>
+        <image name="iPad_Images/spool.jpg" width="382" height="573"/>
+        <image name="iPad_Images/street.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sub.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tease.jpg" width="382" height="573"/>
+        <image name="iPad_Images/toffee.jpg" width="382" height="573"/>
+        <image name="iPad_Images/top.jpg" width="382" height="573"/>
+        <image name="iPad_Images/vase.jpg" width="382" height="573"/>
+        <image name="iPad_Images/waterbottle.jpg" width="382" height="573"/>
+        <image name="iPad_Images/whale.jpg" width="382" height="573"/>
+        <image name="btnRecordAudio.png" width="716" height="160"/>
+        <image name="btn_done_recording.png" width="260" height="260"/>
+        <image name="iPad_Images/back.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bait.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bake.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bath.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/belt.jpg" width="382" height="573"/>
+        <image name="iPad_Images/beluga.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ben.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bite.jpg" width="382" height="573"/>
+        <image name="iPad_Images/boat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bone.jpg" width="382" height="573"/>
+        <image name="iPad_Images/boo.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bowl.jpg" width="382" height="573"/>
+        <image name="iPad_Images/buck.jpg" width="382" height="573"/>
+        <image name="iPad_Images/bud.jpg" width="382" height="573"/>
+        <image name="iPad_Images/buzz.jpg" width="382" height="573"/>
+        <image name="iPad_Images/case.jpg" width="382" height="573"/>
+        <image name="iPad_Images/chair.jpg" width="382" height="573"/>
+        <image name="iPad_Images/chart.jpg" width="382" height="573"/>
+        <image name="iPad_Images/clip.jpg" width="382" height="573"/>
+        <image name="iPad_Images/deck.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dine.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dip.jpg" width="382" height="573"/>
+        <image name="iPad_Images/dot.jpg" width="382" height="573"/>
+        <image name="iPad_Images/duck.jpg" width="382" height="573"/>
+        <image name="iPad_Images/Ed.jpg" width="382" height="573"/>
+        <image name="iPad_Images/fall.jpg" width="382" height="573"/>
+        <image name="iPad_Images/fin.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gas.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ghost.jpg" width="382" height="573"/>
+        <image name="iPad_Images/glow.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gown.jpg" width="382" height="573"/>
+        <image name="iPad_Images/grass.jpg" width="382" height="573"/>
+        <image name="iPad_Images/guy.jpg" width="382" height="573"/>
+        <image name="iPad_Images/gwen.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ill.jpg" width="382" height="573"/>
+        <image name="iPad_Images/IMG_3249.jpg" width="382" height="573"/>
+        <image name="iPad_Images/IMG_3300 (1).jpg" width="382" height="573"/>
+        <image name="iPad_Images/IMG_3300.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/IMG_3373.jpg" width="764" height="1146"/>
+        <image name="iPad_Images/IMG_3373(1).jpg" width="382" height="573"/>
+        <image name="iPad_Images/kite.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lawn.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lay.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lid.jpg" width="382" height="573"/>
+        <image name="iPad_Images/lock.jpg" width="382" height="573"/>
+        <image name="iPad_Images/love.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mark.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/men.jpg" width="382" height="573"/>
+        <image name="iPad_Images/mike.jpg" width="382" height="573"/>
+        <image name="iPad_Images/moo.jpg" width="382" height="573"/>
+        <image name="iPad_Images/nose.jpg" width="382" height="573"/>
+        <image name="iPad_Images/note.jpg" width="382" height="573"/>
+        <image name="iPad_Images/oat.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pay.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pea.jpg" width="382" height="255"/>
+        <image name="iPad_Images/peach.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pear.jpg" width="382" height="573"/>
+        <image name="iPad_Images/peas.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pine.jpg" width="382" height="573"/>
+        <image name="iPad_Images/plane.jpg" width="382" height="573"/>
+        <image name="iPad_Images/pole.jpg" width="382" height="573"/>
+        <image name="iPad_Images/purr.jpg" width="382" height="573"/>
+        <image name="iPad_Images/quack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rich.jpg" width="382" height="573"/>
+        <image name="iPad_Images/ripe.jpg" width="382" height="573"/>
+        <image name="iPad_Images/road.jpg" width="382" height="573"/>
+        <image name="iPad_Images/rose.jpg" width="382" height="573"/>
+        <image name="iPad_Images/save.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sew.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shack.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shave.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shoe.jpg" width="382" height="573"/>
+        <image name="iPad_Images/shower.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sick.jpg" width="382" height="573"/>
+        <image name="iPad_Images/snap.jpg" width="382" height="573"/>
+        <image name="iPad_Images/sour.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tent.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tool.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tot.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tub.jpg" width="382" height="573"/>
+        <image name="iPad_Images/tweet.jpg" width="382" height="573"/>
+        <image name="iPad_Images/wed.jpg" width="382" height="573"/>
+        <image name="iPad_Images/weigh.jpg" width="382" height="573"/>
+        <image name="iPad_Images/wick.jpg" width="382" height="573"/>
+        <image name="iPad_Images/wig.jpg" width="382" height="573"/>
+        <image name="iPad_Images/wipe.jpg" width="382" height="573"/>
+        <image name="iPad_Images/witch.jpg" width="382" height="573"/>
+        <image name="iPad_Images/wok.jpg" width="382" height="573"/>
+        <image name="iPad_Images/yam.jpg" width="382" height="573"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Home_Top_Logo.jpg" width="1452" height="716"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="627"/>
+        <segue reference="145"/>
+        <segue reference="596"/>
+    </inferredMetricsTieBreakers>
+</document>

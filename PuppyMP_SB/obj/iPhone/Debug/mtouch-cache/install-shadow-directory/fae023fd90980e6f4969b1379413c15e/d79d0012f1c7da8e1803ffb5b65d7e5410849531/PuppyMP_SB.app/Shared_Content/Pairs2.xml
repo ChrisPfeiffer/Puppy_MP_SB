@@ -36,18 +36,6 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>tore</Left>
-		<Right>sore</Right>
-		<Type>Stopping</Type>
-		<Position>Initial</Position>
-	</Pair>
-	<Pair>
-		<Left>turf</Left>
-		<Right>surf</Right>
-		<Type>Stopping</Type>
-		<Position>Initial</Position>
-	</Pair>
-	<Pair>
 		<Left>tail</Left>
 		<Right>sail</Right>
 		<Type>Stopping</Type>
@@ -90,7 +78,7 @@
 		<Position>Initial</Position>
 	</Pair>
 	<Pair>
-		<Left>night</Left>
+		<Left>knight</Left>
 		<Right>nice</Right>
 		<Type>Stopping</Type>
 		<Position>Final</Position>
@@ -138,12 +126,6 @@
 		<Position>Final</Position>
 	</Pair>
 	<Pair>
-		<Left>pork</Left>
-		<Right>fork</Right>
-		<Type>Stopping</Type>
-		<Position>Initial</Position>
-	</Pair>
-	<Pair>
 		<Left>pan</Left>
 		<Right>fan</Right>
 		<Type>Stopping</Type>
@@ -166,12 +148,6 @@
 		<Right>chair</Right>
 		<Type>Stopping</Type>
 		<Position>Initial</Position>
-	</Pair>
-	<Pair>
-		<Left>coat</Left>
-		<Right>coach</Right>
-		<Type>Stopping</Type>
-		<Position>Final</Position>
 	</Pair>
 	<Pair>
 		<Left>tape</Left>
@@ -312,13 +288,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>tight</Left>
-		<Right>kite</Right>
-		<Type>Fronting</Type>
-		<Position>Initial</Position>
-	</Pair>
-
-	<Pair>
 		<Left>tote</Left>
 		<Right>coat</Right>
 		<Type>Fronting</Type>
@@ -356,13 +325,6 @@
 	<Pair>
 		<Left>dust</Left>
 		<Right>gust</Right>
-		<Type>Fronting</Type>
-		<Position>Initial</Position>
-	</Pair>
-
-	<Pair>
-		<Left>dig</Left>
-		<Right>gig</Right>
 		<Type>Fronting</Type>
 		<Position>Initial</Position>
 	</Pair>
@@ -484,13 +446,6 @@
 		<Right>shave</Right>
 		<Type>Fronting</Type>
 		<Position>Initial</Position>
-	</Pair>
-
-	<Pair>
-		<Left>mud</Left>
-		<Right>bug</Right>
-		<Type>Fronting</Type>
-		<Position>Final</Position>
 	</Pair>
 
 	<Pair>
@@ -712,12 +667,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>puck</Left>
-		<Right>pug</Right>
-		<Type>Postvocalic</Type>
-	</Pair>
-
-	<Pair>
 		<Left>pick</Left>
 		<Right>pig</Right>
 		<Type>Postvocalic</Type>
@@ -748,7 +697,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>Matt</Left>
+		<Left>mat</Left>
 		<Right>mad</Right>
 		<Type>Postvocalic</Type>
 	</Pair>
@@ -788,13 +737,6 @@
 		<Right>eyes</Right>
 		<Type>Postvocalic</Type>
 	</Pair>
-
-	<Pair>
-		<Left>niece</Left>
-		<Right>knees</Right>
-		<Type>Postvocalic</Type>
-	</Pair>
-
 	<Pair>
 		<Left>race</Left>
 		<Right>raise</Right>
@@ -866,13 +808,6 @@
 		<Right>cage</Right>
 		<Type>Prevocalic</Type>
 	</Pair>
-
-	<Pair>
-		<Left>goal</Left>
-		<Right>coal</Right>
-		<Type>Prevocalic</Type>
-	</Pair>
-
 	<Pair>
 		<Left>bark</Left>
 		<Right>park</Right>
@@ -896,13 +831,6 @@
 		<Right>pass</Right>
 		<Type>Prevocalic</Type>
 	</Pair>
-
-	<Pair>
-		<Left>buck</Left>
-		<Right>puck</Right>
-		<Type>Prevocalic</Type>
-	</Pair>
-
 	<Pair>
 		<Left>bush</Left>
 		<Right>push</Right>
@@ -988,12 +916,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>ghost</Left>
-		<Right>coast</Right>
-		<Type>Prevocalic</Type>
-	</Pair>
-
-	<Pair>
 		<Left>guard</Left>
 		<Right>card</Right>
 		<Type>Prevocalic</Type>
@@ -1004,13 +926,6 @@
 		<Right>Kate</Right>
 		<Type>Prevocalic</Type>
 	</Pair>
-
-	<Pair>
-		<Left>van</Left>
-		<Right>fan</Right>
-		<Type>Prevocalic</Type>
-	</Pair>
-
 	<Pair>
 		<Left>vase</Left>
 		<Right>face</Right>
@@ -1055,7 +970,7 @@
 
 	<Pair>
 		<Left>weed</Left>
-		<Right>reed</Right>
+		<Right>read</Right>
 		<Type>Gliding</Type>
 	</Pair>
 
@@ -1079,7 +994,7 @@
 
 	<Pair>
 		<Left>west</Left>
-		<Right>rest</Right>
+		<Right>rest</Right> 
 		<Type>Gliding</Type>
 	</Pair>
 
@@ -1091,7 +1006,7 @@
 
 	<Pair>
 		<Left>white</Left>
-		<Right>right</Right>
+		<Right>write</Right>
 		<Type>Gliding</Type>
 	</Pair>
 
@@ -1153,13 +1068,6 @@
 		<Right>lawn</Right>
 		<Type>Gliding</Type>
 	</Pair>
-
-	<Pair>
-		<Left>wink</Left>
-		<Right>rink</Right>
-		<Type>Gliding</Type>
-	</Pair>
-
 
 	<!--____________________________-Initial Consonant Deletion__________________________-->
 
@@ -1269,13 +1177,6 @@
 		<Right>dad</Right>
 		<Type>Initial Consonant Deletion</Type>
 	</Pair>
-
-	<Pair>
-		<Left>ink</Left>
-		<Right>sink</Right>
-		<Type>Initial Consonant Deletion</Type>
-	</Pair>
-
 	<Pair>
 		<Left>ache</Left>
 		<Right>cake</Right>
@@ -1350,12 +1251,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>pine</Left>
-		<Right>fine</Right>
-		<Type>Stridency Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>peel</Left>
 		<Right>feel</Right>
 		<Type>Stridency Deletion</Type>
@@ -1416,12 +1311,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>tie</Left>
-		<Right>shy</Right>
-		<Type>Stridency Deletion</Type>
-	</Pair>
-
-	<Pair>
 		<Left>tease</Left>
 		<Right>cheese</Right>
 		<Type>Stridency Deletion</Type>
@@ -1471,12 +1360,6 @@
 
 <!--____________________________Nasalization______________________________________-->
 
-	<Pair>
-		<Left>knock</Left>
-		<Right>dock</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
-	</Pair>
 
 	<Pair>
 		<Left>knot</Left>
@@ -1507,13 +1390,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>neigh</Left>
-		<Right>day</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
-	</Pair>
-
-	<Pair>
 		<Left>neck</Left>
 		<Right>deck</Right>
 		<Type>Nasalization</Type>
@@ -1528,24 +1404,10 @@
 	</Pair>
 
 	<Pair>
-		<Left>nose</Left>
-		<Right>does</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
-	</Pair>
-
-	<Pair>
 		<Left>bean</Left>
 		<Right>bead</Right>
 		<Type>Nasalization</Type>
 		<Position>Final</Position>
-	</Pair>
-
-	<Pair>
-		<Left>mare</Left>
-		<Right>bear</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
 	</Pair>
 
 	<Pair>
@@ -1556,7 +1418,7 @@
 	</Pair>
 
 	<Pair>
-		<Left>Matt</Left>
+		<Left>mat</Left>
 		<Right>bat</Right>
 		<Type>Nasalization</Type>
 		<Position>Inial</Position>
@@ -1598,13 +1460,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>money</Left>
-		<Right>bunny</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
-	</Pair>
-
-	<Pair>
 		<Left>Mike</Left>
 		<Right>bike</Right>
 		<Type>Nasalization</Type>
@@ -1627,13 +1482,6 @@
 	<Pair>
 		<Left>Meg</Left>
 		<Right>beg</Right>
-		<Type>Nasalization</Type>
-		<Position>Inial</Position>
-	</Pair>
-
-	<Pair>
-		<Left>mud</Left>
-		<Right>bud</Right>
 		<Type>Nasalization</Type>
 		<Position>Inial</Position>
 	</Pair>
@@ -1738,19 +1586,6 @@
 		<Right>school</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
-
-	<Pair>
-		<Left>key</Left>
-		<Right>ski</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
-	<Pair>
-		<Left>car</Left>
-		<Right>scar</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
 	<Pair>
 		<Left>tar</Left>
 		<Right>star</Right>
@@ -1759,19 +1594,13 @@
 
 	<Pair>
 		<Left>tear</Left>
-		<Right>stare</Right>
+		<Right>stair</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
 
 	<Pair>
 		<Left>tool</Left>
 		<Right>stool</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
-	<Pair>
-		<Left>mile</Left>
-		<Right>smile</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
 
@@ -1792,13 +1621,6 @@
 		<Right>swing</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
-
-	<Pair>
-		<Left>led</Left>
-		<Right>sled</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
 	<Pair>
 		<Left>bow</Left>
 		<Right>blow</Right>
@@ -1914,12 +1736,6 @@
 	</Pair>
 
 	<Pair>
-		<Left>fog</Left>
-		<Right>frog</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
-	<Pair>
 		<Left>pain</Left>
 		<Right>plane</Right>
 		<Type>Cluster Reduction</Type>
@@ -1964,12 +1780,6 @@
 	<Pair>
 		<Left>lap</Left>
 		<Right>clap</Right>
-		<Type>Cluster Reduction</Type>
-	</Pair>
-
-	<Pair>
-		<Left>loud</Left>
-		<Right>cloud</Right>
 		<Type>Cluster Reduction</Type>
 	</Pair>
 
@@ -2031,17 +1841,17 @@
 	<Type>Multi</Type>
 </Pair>
 <Pair>
-	<Left>hoola hoop</Left>
+	<Left>hula hoop</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>
 <Pair>
-	<Left>waterbottle</Left>
+	<Left>water bottle</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>
 <Pair>
-	<Left>stethlescope</Left>
+	<Left>stethoscope</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>
@@ -2061,7 +1871,7 @@
 	<Type>Multi</Type>
 </Pair>
 <Pair>
-	<Left>teddybear</Left>
+	<Left>teddy bear</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>
@@ -2072,11 +1882,6 @@
 </Pair>
 <Pair>
 	<Left>register</Left>
-	<Right>NULL</Right>
-	<Type>Multi</Type>
-</Pair>
-<Pair>
-	<Left>superman</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>
@@ -2101,7 +1906,7 @@
 	<Type>Multi</Type>
 </Pair>
 <Pair>
-	<Left>tamborine</Left>
+	<Left>tambourine</Left>
 	<Right>NULL</Right>
 	<Type>Multi</Type>
 </Pair>

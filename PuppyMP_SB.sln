@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuppyMP_SB", "PuppyMP_SB\Pu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedPCL", "SharedPCL\SharedPCL.csproj", "{229BF34A-DDCF-463E-B2BE-E0EE3D605EC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -27,6 +29,18 @@ Global
 		{229BF34A-DDCF-463E-B2BE-E0EE3D605EC0}.Release|iPhone.Build.0 = Release|Any CPU
 		{229BF34A-DDCF-463E-B2BE-E0EE3D605EC0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{229BF34A-DDCF-463E-B2BE-E0EE3D605EC0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Debug|iPhone.Build.0 = Debug|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Release|iPhone.ActiveCfg = Release|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Release|iPhone.Build.0 = Release|iPhone
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{5BB719D2-EF2F-4FF5-8408-1740E46A0B17}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
@@ -39,8 +53,5 @@ Global
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.Release|iPhone.Build.0 = Release|iPhone
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{C102FB00-1453-4858-A920-360D1A1EDB69}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = PuppyMP_SB\PuppyMP_SB.csproj
 	EndGlobalSection
 EndGlobal

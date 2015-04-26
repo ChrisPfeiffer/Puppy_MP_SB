@@ -5857,12 +5857,12 @@ image_table:
 
 	.long 1,2,0,5,0
 	.asciz "SharedPCL"
-	.asciz "6448ADB4-840F-469C-9FD0-CDA053271584"
+	.asciz "00DF70E1-09CC-4F1A-9D3D-AF0628BA918C"
 	.asciz ""
 	.asciz ""
 	.align 3
 
-	.long 0,1,0,5563,40141
+	.long 0,1,0,5594,15687
 .data
 	.align 3
 _mono_aot_SharedPCL_got:
@@ -5871,7 +5871,7 @@ got_end:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "6448ADB4-840F-469C-9FD0-CDA053271584"
+	.asciz "00DF70E1-09CC-4F1A-9D3D-AF0628BA918C"
 .section __TEXT, __const
 	.align 2
 runtime_version:

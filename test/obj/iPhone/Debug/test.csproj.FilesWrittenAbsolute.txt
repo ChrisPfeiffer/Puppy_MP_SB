@@ -1,0 +1,10 @@
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/actool/partial-info.plist
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/actool/asset-manifest.plist
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/Default-568h@2x.png
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/bin/iPhone/Debug/test.exe.mdb
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/bin/iPhone/Debug/test.exe
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/test.exe
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/obj/iPhone/Debug/test.exe.mdb
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/bin/iPhone/Debug/SharedPCL.dll
+/Users/christopherpfeiffer/Projects/PuppyMP_SB/test/bin/iPhone/Debug/SharedPCL.dll.mdb

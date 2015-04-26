@@ -32,6 +32,7 @@ namespace speechTherapy
 		//event handlers
 		EventHandler handlerFronting, handlerCR, handlerFCD, handlerStopping, handlerGliding, handlerMulti, handlerStridency, handlerPre, handlerPost;
 
+		//the list that will hold all the pairs
 		private Dictionary<String, List<Pair>> pairLists = new Dictionary<string, List<Pair>> ();
 
 		public speechTherapyViewController (IntPtr handle) : base (handle)
@@ -59,11 +60,12 @@ namespace speechTherapy
 			btnPostVoicing.Enabled = false; 
 
 
-			handlerFronting = (s, e) => iap.PurchaseProduct (frontingProduct);
-			handlerCR = (s, e) => iap.PurchaseProduct (crProduct); 
-			handlerFCD=(s,e)=>iap.PurchaseProduct(fcdProduct);  handlerStopping=(s,e)=>iap.PurchaseProduct(stoppingProduct); 
-			handlerGliding=(s,e)=>iap.PurchaseProduct(glidingProduct);  handlerMulti=(s,e)=>iap.PurchaseProduct(multiProduct);  
-			handlerPre=(s,e)=>iap.PurchaseProduct(preProduct);  handlerPost=(s,e)=>iap.PurchaseProduct(postProduct); handlerStridency=(s,e)=>iap.PurchaseProduct(stridencyProduct);
+
+			handlerFronting = (s, e) => PurchaseProduct (frontingProduct);
+			handlerCR = (s, e) => PurchaseProduct (crProduct); 
+			handlerFCD=(s,e)=>PurchaseProduct(fcdProduct);  handlerStopping=(s,e)=>PurchaseProduct(stoppingProduct); 
+			handlerGliding=(s,e)=>PurchaseProduct(glidingProduct);  handlerMulti=(s,e)=>PurchaseProduct(multiProduct);  
+			handlerPre=(s,e)=>PurchaseProduct(preProduct);  handlerPost=(s,e)=>PurchaseProduct(postProduct); handlerStridency=(s,e)=>PurchaseProduct(stridencyProduct);
 
 			this.btnFronting.TouchUpInside+=handlerFronting;
 			this.btnCluster.TouchUpInside+=handlerCR;
@@ -90,6 +92,11 @@ namespace speechTherapy
 			imageParser parser = new imageParser ();
 
 			pairLists = parser.parsePairs (reader);
+
+			noInterNetObserver = NSNotificationCenter.DefaultCenter.AddObserver (InAppPurchaseManager.NoInternetNotification, (notification) => {
+				UIAlertView noNetAlert = new UIAlertView("Connection Lost", "There seems to be an issue with your internet connection. Feel free to use already purchased items!",null,"OK",null);
+				noNetAlert.Show();
+			});
 
 
 
@@ -176,10 +183,7 @@ namespace speechTherapy
 				alert2.Show();
 			});
 
-			noInterNetObserver = NSNotificationCenter.DefaultCenter.AddObserver (InAppPurchaseManager.NoInternetNotification, (notification) => {
-				UIAlertView noNetAlert = new UIAlertView("Connection Lost", "There seems to be an issue with your internet connection. Feel free to use already purchased items!",null,"OK",null);
-				noNetAlert.Show();
-			});
+
 					
 
 			List<String> allProdStrings = iapHelpers.getAllKeys ();
@@ -283,7 +287,16 @@ namespace speechTherapy
 				btnFinalConsonant.SetTitle ("Final Consonant Deletion", UIControlState.Normal);
 			}
 		}
-			
+
+		private void PurchaseProduct(SKProduct product)
+		{
+			Console.WriteLine ("disable");
+			UIApplication.SharedApplication.NetworkActivityIndicatorVisible = true;
+			UIApplication.SharedApplication.BeginIgnoringInteractionEvents();
+			iap.PurchaseProduct (product);
+
+
+		}
 
 		public override bool ShouldPerformSegue(string segueIdentifier, NSObject sender)
 		{

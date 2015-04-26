@@ -169,7 +169,6 @@ namespace speechTherapy
 				this.btnPrevious.Enabled = true;
 				this.btnNext.Enabled = true;
 				this.btnRecordVideo.Enabled = true;
-				this.btnPlayVideo.Enabled = true;
 				recordingAudio = false;
 			}
 		}
